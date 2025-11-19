@@ -1,0 +1,6360 @@
+{
+  "category": "xrank",
+  "community_id": "1896991026272723220",
+  "seed": [
+    {
+      "i": "joshsimenhoff",
+      "v": 0.34
+    },
+    {
+      "i": "LolaSt1400",
+      "v": 0.33
+    },
+    {
+      "i": "Jez_Cryptoz",
+      "v": 0.33
+    }
+  ],
+  "scores": [
+    {
+      "i": "mongdiny7",
+      "v": 1000.0
+    },
+    {
+      "i": "ritualintern",
+      "v": 979.87
+    },
+    {
+      "i": "niraj",
+      "v": 979.23
+    },
+    {
+      "i": "jany268",
+      "v": 943.16
+    },
+    {
+      "i": "smilypong",
+      "v": 925.34
+    },
+    {
+      "i": "tx_moc93813",
+      "v": 905.35
+    },
+    {
+      "i": "linh_ricky",
+      "v": 901.85
+    },
+    {
+      "i": "elifhilalumucu",
+      "v": 874.65
+    },
+    {
+      "i": "ericgudboy",
+      "v": 860.85
+    },
+    {
+      "i": "wallets12_lee",
+      "v": 855.39
+    },
+    {
+      "i": "cocoisgoodcat",
+      "v": 825.08
+    },
+    {
+      "i": "ritualcommunity",
+      "v": 812.83
+    },
+    {
+      "i": "raintaro_rt",
+      "v": 799.65
+    },
+    {
+      "i": "museowunsaram",
+      "v": 795.13
+    },
+    {
+      "i": "juju5378",
+      "v": 792.54
+    },
+    {
+      "i": "hannah_tran35",
+      "v": 786.71
+    },
+    {
+      "i": "sol_defi",
+      "v": 782.21
+    },
+    {
+      "i": "zesrong",
+      "v": 781.59
+    },
+    {
+      "i": "gizdusumandnode",
+      "v": 778.94
+    },
+    {
+      "i": "henry011219",
+      "v": 777.64
+    },
+    {
+      "i": "aglakbloom",
+      "v": 776.64
+    },
+    {
+      "i": "seu_ul",
+      "v": 774.05
+    },
+    {
+      "i": "cryptoexflow",
+      "v": 769.62
+    },
+    {
+      "i": "fridadegen1",
+      "v": 726.29
+    },
+    {
+      "i": "raupee_",
+      "v": 725.57
+    },
+    {
+      "i": "0xwooglin",
+      "v": 725.41
+    },
+    {
+      "i": "cryptopigin",
+      "v": 717.05
+    },
+    {
+      "i": "kratae168",
+      "v": 715.47
+    },
+    {
+      "i": "yusukegung1",
+      "v": 709.73
+    },
+    {
+      "i": "max_vezeus",
+      "v": 709.7
+    },
+    {
+      "i": "tutufly_yy",
+      "v": 708.97
+    },
+    {
+      "i": "cryptooflashh",
+      "v": 708.42
+    },
+    {
+      "i": "thuytrang02708",
+      "v": 705.9
+    },
+    {
+      "i": "altered927",
+      "v": 703.83
+    },
+    {
+      "i": "hurlxrr",
+      "v": 662.56
+    },
+    {
+      "i": "0xhighness",
+      "v": 591.09
+    },
+    {
+      "i": "meison_mswen",
+      "v": 589.64
+    },
+    {
+      "i": "raysonsiosol",
+      "v": 585.68
+    },
+    {
+      "i": "jasm1ne_eth",
+      "v": 580.1
+    },
+    {
+      "i": "myacxt",
+      "v": 578.49
+    },
+    {
+      "i": "ppmoon69",
+      "v": 576.61
+    },
+    {
+      "i": "woorld_island",
+      "v": 571.39
+    },
+    {
+      "i": "lawrenx_",
+      "v": 562.82
+    },
+    {
+      "i": "ritual_corner",
+      "v": 562.35
+    },
+    {
+      "i": "eternia_xx",
+      "v": 560.75
+    },
+    {
+      "i": "whitesocks256",
+      "v": 552.19
+    },
+    {
+      "i": "dunken9718",
+      "v": 551.34
+    },
+    {
+      "i": "ckartik_",
+      "v": 549.87
+    },
+    {
+      "i": "orpheuskaze",
+      "v": 548.27
+    },
+    {
+      "i": "thedanrodman",
+      "v": 546.33
+    },
+    {
+      "i": "lhordkrane",
+      "v": 543.94
+    },
+    {
+      "i": "miraj369",
+      "v": 542.75
+    },
+    {
+      "i": "iezramitchell",
+      "v": 542.67
+    },
+    {
+      "i": "_focapa",
+      "v": 542.37
+    },
+    {
+      "i": "ferdo717",
+      "v": 541.88
+    },
+    {
+      "i": "nft_hinata_eth",
+      "v": 541.68
+    },
+    {
+      "i": "herbcase7",
+      "v": 539.77
+    },
+    {
+      "i": "pgreyy",
+      "v": 539.14
+    },
+    {
+      "i": "zzing____",
+      "v": 536.44
+    },
+    {
+      "i": "tarekcryptojr",
+      "v": 535.36
+    },
+    {
+      "i": "kikiundo3",
+      "v": 535.03
+    },
+    {
+      "i": "seyoj7",
+      "v": 535.01
+    },
+    {
+      "i": "coffeedegen",
+      "v": 534.55
+    },
+    {
+      "i": "jumplifey9",
+      "v": 534.15
+    },
+    {
+      "i": "synedclover",
+      "v": 532.77
+    },
+    {
+      "i": "cryptohypegirl0",
+      "v": 530.65
+    },
+    {
+      "i": "johnjassper",
+      "v": 529.54
+    },
+    {
+      "i": "ucanseeofficial",
+      "v": 529.12
+    },
+    {
+      "i": "hero569715",
+      "v": 528.69
+    },
+    {
+      "i": "cuanbanyak2016",
+      "v": 528.26
+    },
+    {
+      "i": "leemomosi",
+      "v": 527.14
+    },
+    {
+      "i": "hellf17",
+      "v": 527.09
+    },
+    {
+      "i": "isnotgizdusum",
+      "v": 526.92
+    },
+    {
+      "i": "yjkang686510",
+      "v": 526.27
+    },
+    {
+      "i": "babyjulide",
+      "v": 526.13
+    },
+    {
+      "i": "hoangloi62557",
+      "v": 525.76
+    },
+    {
+      "i": "shim_sing",
+      "v": 524.39
+    },
+    {
+      "i": "samssuko",
+      "v": 523.6
+    },
+    {
+      "i": "ejcojo",
+      "v": 523.11
+    },
+    {
+      "i": "spillaeth",
+      "v": 523.09
+    },
+    {
+      "i": "wonseok_2",
+      "v": 523.05
+    },
+    {
+      "i": "mickyinho",
+      "v": 522.65
+    },
+    {
+      "i": "jericddd",
+      "v": 521.87
+    },
+    {
+      "i": "0xlinkevm",
+      "v": 521.86
+    },
+    {
+      "i": "mory_eth",
+      "v": 521.57
+    },
+    {
+      "i": "alssoee",
+      "v": 520.69
+    },
+    {
+      "i": "solncestoyaniee",
+      "v": 518.22
+    },
+    {
+      "i": "otto_crypt",
+      "v": 517.9
+    },
+    {
+      "i": "bigkaahunaa",
+      "v": 517.56
+    },
+    {
+      "i": "mason_candylid",
+      "v": 516.76
+    },
+    {
+      "i": "eagle_cryp86754",
+      "v": 516.52
+    },
+    {
+      "i": "darkthgink",
+      "v": 516.13
+    },
+    {
+      "i": "ch33chi",
+      "v": 515.29
+    },
+    {
+      "i": "16dotfun",
+      "v": 515.24
+    },
+    {
+      "i": "imtomatopizza",
+      "v": 513.94
+    },
+    {
+      "i": "teemomeeto",
+      "v": 511.29
+    },
+    {
+      "i": "pc970930",
+      "v": 510.94
+    },
+    {
+      "i": "love_ky1023",
+      "v": 510.67
+    },
+    {
+      "i": "harper_happya",
+      "v": 510.66
+    },
+    {
+      "i": "speedajaks",
+      "v": 509.74
+    },
+    {
+      "i": "songsong6059",
+      "v": 509.15
+    },
+    {
+      "i": "testnetnodes",
+      "v": 508.32
+    },
+    {
+      "i": "2shabby",
+      "v": 506.45
+    },
+    {
+      "i": "haveadream77",
+      "v": 505.67
+    },
+    {
+      "i": "ofalamin",
+      "v": 505.22
+    },
+    {
+      "i": "reallyhiro",
+      "v": 504.78
+    },
+    {
+      "i": "0x_binnyy",
+      "v": 504.54
+    },
+    {
+      "i": "rmi_crypt",
+      "v": 503.78
+    },
+    {
+      "i": "pageofws",
+      "v": 503.66
+    },
+    {
+      "i": "afixyz",
+      "v": 503.41
+    },
+    {
+      "i": "karinabee",
+      "v": 503.25
+    },
+    {
+      "i": "bv99z",
+      "v": 502.83
+    },
+    {
+      "i": "voldemar_v",
+      "v": 502.11
+    },
+    {
+      "i": "kempsterrrr",
+      "v": 501.88
+    },
+    {
+      "i": "sengoku_xyz",
+      "v": 414.33
+    },
+    {
+      "i": "leylagittiabim",
+      "v": 361.56
+    },
+    {
+      "i": "jiabtc",
+      "v": 347.77
+    },
+    {
+      "i": "mongooseai",
+      "v": 331.09
+    },
+    {
+      "i": "prim_crypto",
+      "v": 313.64
+    },
+    {
+      "i": "nft_onigiri",
+      "v": 307.91
+    },
+    {
+      "i": "moooo_iii",
+      "v": 298.62
+    },
+    {
+      "i": "bigleaguoor",
+      "v": 293.62
+    },
+    {
+      "i": "0xgokdeniz",
+      "v": 279.64
+    },
+    {
+      "i": "vekariya_kenil",
+      "v": 275.54
+    },
+    {
+      "i": "silverwave1000",
+      "v": 273.51
+    },
+    {
+      "i": "el_certified",
+      "v": 270.05
+    },
+    {
+      "i": "puresoul0109",
+      "v": 268.94
+    },
+    {
+      "i": "starknight50x",
+      "v": 265.33
+    },
+    {
+      "i": "baybaginsss",
+      "v": 261.59
+    },
+    {
+      "i": "jepannyaa",
+      "v": 245.37
+    },
+    {
+      "i": "0xhahawe",
+      "v": 243.9
+    },
+    {
+      "i": "edward_evm",
+      "v": 238.73
+    },
+    {
+      "i": "0xbobaa",
+      "v": 228.52
+    },
+    {
+      "i": "vuhi0811",
+      "v": 227.76
+    },
+    {
+      "i": "wlstn7189",
+      "v": 225.7
+    },
+    {
+      "i": "marvelcryptic",
+      "v": 218.93
+    },
+    {
+      "i": "nadisanoob",
+      "v": 218.59
+    },
+    {
+      "i": "beminecrypto",
+      "v": 215.52
+    },
+    {
+      "i": "zuerus",
+      "v": 208.82
+    },
+    {
+      "i": "kakashimonad",
+      "v": 207.95
+    },
+    {
+      "i": "fwmadu",
+      "v": 204.59
+    },
+    {
+      "i": "nftzella",
+      "v": 200.91
+    },
+    {
+      "i": "0xlunabean",
+      "v": 200.81
+    },
+    {
+      "i": "0x_assou",
+      "v": 200.7
+    },
+    {
+      "i": "cryptomaxiq",
+      "v": 197.53
+    },
+    {
+      "i": "grape_growth",
+      "v": 196.6
+    },
+    {
+      "i": "xvremyaperemenx",
+      "v": 195.02
+    },
+    {
+      "i": "tanvir_noone",
+      "v": 188.2
+    },
+    {
+      "i": "pangdung_",
+      "v": 186.84
+    },
+    {
+      "i": "nikitatechnik",
+      "v": 185.66
+    },
+    {
+      "i": "spacejunnk",
+      "v": 184.81
+    },
+    {
+      "i": "miebithefirst",
+      "v": 181.69
+    },
+    {
+      "i": "deathless_27",
+      "v": 181.25
+    },
+    {
+      "i": "masterygt07",
+      "v": 180.96
+    },
+    {
+      "i": "nheoweb3",
+      "v": 180.43
+    },
+    {
+      "i": "rauupe_",
+      "v": 177.33
+    },
+    {
+      "i": "manoc126",
+      "v": 177.2
+    },
+    {
+      "i": "innerpeace300",
+      "v": 176.65
+    },
+    {
+      "i": "bdwhale",
+      "v": 176.41
+    },
+    {
+      "i": "bk2843",
+      "v": 175.42
+    },
+    {
+      "i": "akpome_nehemiah",
+      "v": 175.25
+    },
+    {
+      "i": "_0xmei",
+      "v": 174.1
+    },
+    {
+      "i": "baebii_8",
+      "v": 174.0
+    },
+    {
+      "i": "andrey_versus",
+      "v": 172.13
+    },
+    {
+      "i": "farmtokyo",
+      "v": 171.43
+    },
+    {
+      "i": "marabatayfa",
+      "v": 170.16
+    },
+    {
+      "i": "rajlol01",
+      "v": 170.1
+    },
+    {
+      "i": "aadvark89",
+      "v": 170.04
+    },
+    {
+      "i": "ngvuong2702",
+      "v": 169.52
+    },
+    {
+      "i": "odharmieklever",
+      "v": 169.44
+    },
+    {
+      "i": "preshynode",
+      "v": 169.08
+    },
+    {
+      "i": "dimakuncik",
+      "v": 167.41
+    },
+    {
+      "i": "only__violet",
+      "v": 167.37
+    },
+    {
+      "i": "inwrld_",
+      "v": 167.18
+    },
+    {
+      "i": "m4lkxx",
+      "v": 166.04
+    },
+    {
+      "i": "pince_croco",
+      "v": 164.22
+    },
+    {
+      "i": "rocariedk",
+      "v": 163.95
+    },
+    {
+      "i": "kaye_moni",
+      "v": 161.05
+    },
+    {
+      "i": "basss_eth",
+      "v": 159.41
+    },
+    {
+      "i": "miketwinks",
+      "v": 157.06
+    },
+    {
+      "i": "retrodiskotek",
+      "v": 156.25
+    },
+    {
+      "i": "anna_annangaa",
+      "v": 156.25
+    },
+    {
+      "i": "avnisharma91",
+      "v": 156.23
+    },
+    {
+      "i": "lifextylz",
+      "v": 156.05
+    },
+    {
+      "i": "0xzhunurayn",
+      "v": 155.79
+    },
+    {
+      "i": "dappeum",
+      "v": 155.61
+    },
+    {
+      "i": "zamyoff",
+      "v": 154.96
+    },
+    {
+      "i": "paulothefirst",
+      "v": 152.86
+    },
+    {
+      "i": "cryptowoodd",
+      "v": 151.53
+    },
+    {
+      "i": "dkeedx",
+      "v": 151.1
+    },
+    {
+      "i": "trysteady",
+      "v": 150.82
+    },
+    {
+      "i": "ccrriiy",
+      "v": 150.14
+    },
+    {
+      "i": "cryptoanirudh",
+      "v": 149.69
+    },
+    {
+      "i": "pushkin_ievgen",
+      "v": 148.5
+    },
+    {
+      "i": "sepinich",
+      "v": 146.16
+    },
+    {
+      "i": "dter_neil",
+      "v": 145.29
+    },
+    {
+      "i": "cheff_eth",
+      "v": 145.24
+    },
+    {
+      "i": "cryptosnwdnnn",
+      "v": 144.87
+    },
+    {
+      "i": "qanmessiyamal10",
+      "v": 144.81
+    },
+    {
+      "i": "apophis554462",
+      "v": 144.12
+    },
+    {
+      "i": "pavlikguk",
+      "v": 143.77
+    },
+    {
+      "i": "nsanityq",
+      "v": 143.57
+    },
+    {
+      "i": "4betterlife__",
+      "v": 143.27
+    },
+    {
+      "i": "0xdessyy",
+      "v": 142.01
+    },
+    {
+      "i": "0x_angell",
+      "v": 141.96
+    },
+    {
+      "i": "0xfomo_sapiens",
+      "v": 141.88
+    },
+    {
+      "i": "vovgirl0885",
+      "v": 141.65
+    },
+    {
+      "i": "sundaysmy",
+      "v": 140.14
+    },
+    {
+      "i": "xannytheain",
+      "v": 138.91
+    },
+    {
+      "i": "tanphung000",
+      "v": 138.61
+    },
+    {
+      "i": "mooooon_art",
+      "v": 138.01
+    },
+    {
+      "i": "may_day_eth",
+      "v": 137.33
+    },
+    {
+      "i": "woniee_eth",
+      "v": 136.13
+    },
+    {
+      "i": "sterjke",
+      "v": 135.93
+    },
+    {
+      "i": "nycheweb3",
+      "v": 135.9
+    },
+    {
+      "i": "kairoo__",
+      "v": 134.64
+    },
+    {
+      "i": "glenfiddich_18",
+      "v": 134.24
+    },
+    {
+      "i": "darkigbogirl",
+      "v": 133.2
+    },
+    {
+      "i": "boranoona_",
+      "v": 131.9
+    },
+    {
+      "i": "0xtulkas0",
+      "v": 131.29
+    },
+    {
+      "i": "dsjwin",
+      "v": 130.93
+    },
+    {
+      "i": "kingiruma01",
+      "v": 128.34
+    },
+    {
+      "i": "ped_is_ram",
+      "v": 127.53
+    },
+    {
+      "i": "chidera_morgan",
+      "v": 126.89
+    },
+    {
+      "i": "ntl347_jpg",
+      "v": 126.51
+    },
+    {
+      "i": "dkdlelrk4658",
+      "v": 125.91
+    },
+    {
+      "i": "http_oj",
+      "v": 125.76
+    },
+    {
+      "i": "cryptoperseus_",
+      "v": 125.65
+    },
+    {
+      "i": "badman__snud",
+      "v": 125.34
+    },
+    {
+      "i": "jagamreally",
+      "v": 125.12
+    },
+    {
+      "i": "kkksoop",
+      "v": 124.91
+    },
+    {
+      "i": "aerichannim",
+      "v": 124.63
+    },
+    {
+      "i": "babori211146",
+      "v": 124.5
+    },
+    {
+      "i": "yooyoungmin3",
+      "v": 124.42
+    },
+    {
+      "i": "nlabplay",
+      "v": 123.7
+    },
+    {
+      "i": "ritual_ph",
+      "v": 123.64
+    },
+    {
+      "i": "rogue110797",
+      "v": 123.57
+    },
+    {
+      "i": "kgufranp",
+      "v": 122.83
+    },
+    {
+      "i": "waffledaizyo",
+      "v": 122.52
+    },
+    {
+      "i": "rohitisright",
+      "v": 121.8
+    },
+    {
+      "i": "irepraise",
+      "v": 121.74
+    },
+    {
+      "i": "name98230944",
+      "v": 120.99
+    },
+    {
+      "i": "aisuskii",
+      "v": 120.62
+    },
+    {
+      "i": "papaperez_7",
+      "v": 119.89
+    },
+    {
+      "i": "calicocat2025",
+      "v": 119.47
+    },
+    {
+      "i": "halosunny21",
+      "v": 119.4
+    },
+    {
+      "i": "only__dylan",
+      "v": 119.01
+    },
+    {
+      "i": "ayiipwashere",
+      "v": 119.01
+    },
+    {
+      "i": "cryptozen99",
+      "v": 118.1
+    },
+    {
+      "i": "god66363",
+      "v": 116.58
+    },
+    {
+      "i": "sae_itoshi_08",
+      "v": 116.22
+    },
+    {
+      "i": "medify5magic",
+      "v": 115.7
+    },
+    {
+      "i": "badmus_szn",
+      "v": 114.94
+    },
+    {
+      "i": "mempsonayo_",
+      "v": 114.74
+    },
+    {
+      "i": "lebsonwinner",
+      "v": 114.57
+    },
+    {
+      "i": "bnscoin",
+      "v": 114.54
+    },
+    {
+      "i": "dan_linn",
+      "v": 114.17
+    },
+    {
+      "i": "egeaybars1",
+      "v": 113.85
+    },
+    {
+      "i": "followmanss",
+      "v": 113.82
+    },
+    {
+      "i": "ingjang3",
+      "v": 113.77
+    },
+    {
+      "i": "3amdexter",
+      "v": 113.39
+    },
+    {
+      "i": "dustling_gg",
+      "v": 112.9
+    },
+    {
+      "i": "0xmaximo1",
+      "v": 112.71
+    },
+    {
+      "i": "nxh1702",
+      "v": 111.32
+    },
+    {
+      "i": "axoticat",
+      "v": 110.99
+    },
+    {
+      "i": "chandrians0",
+      "v": 110.83
+    },
+    {
+      "i": "deeamiko",
+      "v": 110.82
+    },
+    {
+      "i": "debovibes",
+      "v": 110.61
+    },
+    {
+      "i": "jayy_ayofe",
+      "v": 110.43
+    },
+    {
+      "i": "cherdi_cher",
+      "v": 110.26
+    },
+    {
+      "i": "yunbbong",
+      "v": 110.23
+    },
+    {
+      "i": "elatysatnaf",
+      "v": 110.04
+    },
+    {
+      "i": "momoflisa_21",
+      "v": 110.02
+    },
+    {
+      "i": "darvicii_ds",
+      "v": 109.69
+    },
+    {
+      "i": "gogogogogo9797",
+      "v": 109.66
+    },
+    {
+      "i": "igorwaltzigor",
+      "v": 109.34
+    },
+    {
+      "i": "jinsu336",
+      "v": 109.09
+    },
+    {
+      "i": "mashpotatop",
+      "v": 107.66
+    },
+    {
+      "i": "loclop12a1",
+      "v": 107.6
+    },
+    {
+      "i": "q2q2cc",
+      "v": 107.24
+    },
+    {
+      "i": "klashiinko",
+      "v": 106.98
+    },
+    {
+      "i": "placeboeffect_0",
+      "v": 106.93
+    },
+    {
+      "i": "raf1_opium",
+      "v": 106.75
+    },
+    {
+      "i": "badjonone",
+      "v": 106.56
+    },
+    {
+      "i": "maybewildie",
+      "v": 106.47
+    },
+    {
+      "i": "omoaka10",
+      "v": 105.33
+    },
+    {
+      "i": "boram992",
+      "v": 105.24
+    },
+    {
+      "i": "pddprof",
+      "v": 104.99
+    },
+    {
+      "i": "chief_mmorgs",
+      "v": 104.74
+    },
+    {
+      "i": "lailasaniah9",
+      "v": 104.67
+    },
+    {
+      "i": "daorealmeth",
+      "v": 104.45
+    },
+    {
+      "i": "0x_cyph",
+      "v": 104.19
+    },
+    {
+      "i": "rahmansial477",
+      "v": 103.79
+    },
+    {
+      "i": "memme_25",
+      "v": 103.7
+    },
+    {
+      "i": "alfasier",
+      "v": 103.53
+    },
+    {
+      "i": "fijimlk",
+      "v": 103.51
+    },
+    {
+      "i": "1000jae00001",
+      "v": 102.57
+    },
+    {
+      "i": "gunsol2",
+      "v": 102.44
+    },
+    {
+      "i": "dappy_nft",
+      "v": 102.18
+    },
+    {
+      "i": "13penguinnn",
+      "v": 102.12
+    },
+    {
+      "i": "melanthaia",
+      "v": 101.81
+    },
+    {
+      "i": "tomcatcatt",
+      "v": 101.67
+    },
+    {
+      "i": "0xeren13_",
+      "v": 101.56
+    },
+    {
+      "i": "0xbrzz",
+      "v": 101.31
+    },
+    {
+      "i": "dar1ria",
+      "v": 100.7
+    },
+    {
+      "i": "only1coziii",
+      "v": 100.43
+    },
+    {
+      "i": "ig28eth",
+      "v": 100.04
+    },
+    {
+      "i": "_tiibar",
+      "v": 99.76
+    },
+    {
+      "i": "cyptomerchant",
+      "v": 99.44
+    },
+    {
+      "i": "_twolight",
+      "v": 99.09
+    },
+    {
+      "i": "n1nja_011",
+      "v": 98.91
+    },
+    {
+      "i": "rahaman_sh22530",
+      "v": 98.69
+    },
+    {
+      "i": "chopperstate1",
+      "v": 98.0
+    },
+    {
+      "i": "0xhopelives",
+      "v": 97.58
+    },
+    {
+      "i": "0xkaybu",
+      "v": 97.17
+    },
+    {
+      "i": "imborie",
+      "v": 97.05
+    },
+    {
+      "i": "kaiser_d99",
+      "v": 96.83
+    },
+    {
+      "i": "bili_mima",
+      "v": 96.55
+    },
+    {
+      "i": "thereal_jaypaul",
+      "v": 96.34
+    },
+    {
+      "i": "tubterfly",
+      "v": 95.95
+    },
+    {
+      "i": "gyeongyee2",
+      "v": 95.78
+    },
+    {
+      "i": "anton_yoww",
+      "v": 95.48
+    },
+    {
+      "i": "debthemelon",
+      "v": 95.18
+    },
+    {
+      "i": "secret121091",
+      "v": 94.83
+    },
+    {
+      "i": "magshaven",
+      "v": 94.76
+    },
+    {
+      "i": "maha420m",
+      "v": 94.57
+    },
+    {
+      "i": "bubbletea01_",
+      "v": 94.19
+    },
+    {
+      "i": "0xth320v",
+      "v": 94.02
+    },
+    {
+      "i": "itsmeagoyy",
+      "v": 93.58
+    },
+    {
+      "i": "cbfrank110",
+      "v": 93.22
+    },
+    {
+      "i": "juisnnfe",
+      "v": 92.59
+    },
+    {
+      "i": "sugarpic162989",
+      "v": 92.12
+    },
+    {
+      "i": "sajisa_trigger",
+      "v": 91.65
+    },
+    {
+      "i": "artology04",
+      "v": 91.56
+    },
+    {
+      "i": "ccs_chak",
+      "v": 90.4
+    },
+    {
+      "i": "kun200214",
+      "v": 90.24
+    },
+    {
+      "i": "lightdxj",
+      "v": 90.17
+    },
+    {
+      "i": "renatghoste",
+      "v": 90.16
+    },
+    {
+      "i": "vikseta",
+      "v": 89.85
+    },
+    {
+      "i": "nostalgiagila",
+      "v": 88.77
+    },
+    {
+      "i": "ifuru___",
+      "v": 88.43
+    },
+    {
+      "i": "cepirit25",
+      "v": 88.09
+    },
+    {
+      "i": "0xdenta",
+      "v": 87.87
+    },
+    {
+      "i": "excusemenad",
+      "v": 87.77
+    },
+    {
+      "i": "lixssszz",
+      "v": 87.75
+    },
+    {
+      "i": "vikking0909",
+      "v": 87.69
+    },
+    {
+      "i": "0xdodohage",
+      "v": 87.53
+    },
+    {
+      "i": "0xjkbee",
+      "v": 87.43
+    },
+    {
+      "i": "bossbaby_nft",
+      "v": 86.98
+    },
+    {
+      "i": "ccatdrops",
+      "v": 86.9
+    },
+    {
+      "i": "jackhmsys",
+      "v": 86.66
+    },
+    {
+      "i": "jhjm5648",
+      "v": 86.29
+    },
+    {
+      "i": "peridot020202",
+      "v": 86.06
+    },
+    {
+      "i": "conqueror_hhh",
+      "v": 85.78
+    },
+    {
+      "i": "hubdeft",
+      "v": 85.44
+    },
+    {
+      "i": "eth_insanelee",
+      "v": 85.34
+    },
+    {
+      "i": "ziagyu",
+      "v": 85.31
+    },
+    {
+      "i": "scylla_98",
+      "v": 85.18
+    },
+    {
+      "i": "n1ck_2025",
+      "v": 84.82
+    },
+    {
+      "i": "rekisan__",
+      "v": 83.83
+    },
+    {
+      "i": "anotherdndea",
+      "v": 83.65
+    },
+    {
+      "i": "ayxxnang",
+      "v": 82.83
+    },
+    {
+      "i": "shmaeyox",
+      "v": 82.31
+    },
+    {
+      "i": "linhlambo",
+      "v": 82.07
+    },
+    {
+      "i": "dpressedturkey",
+      "v": 81.91
+    },
+    {
+      "i": "whykay___",
+      "v": 81.84
+    },
+    {
+      "i": "arrrgraphic",
+      "v": 81.6
+    },
+    {
+      "i": "lalararara37",
+      "v": 81.52
+    },
+    {
+      "i": "sekret_off",
+      "v": 81.5
+    },
+    {
+      "i": "0xvietnguyen",
+      "v": 81.43
+    },
+    {
+      "i": "rolekserr",
+      "v": 81.24
+    },
+    {
+      "i": "victornawf2",
+      "v": 80.95
+    },
+    {
+      "i": "iinging747",
+      "v": 80.81
+    },
+    {
+      "i": "superbiawakz",
+      "v": 80.64
+    },
+    {
+      "i": "hoangthao123313",
+      "v": 80.17
+    },
+    {
+      "i": "0x_vibevortex",
+      "v": 80.08
+    },
+    {
+      "i": "jepslife",
+      "v": 79.93
+    },
+    {
+      "i": "xaitoshi_",
+      "v": 79.89
+    },
+    {
+      "i": "tan_decka",
+      "v": 79.47
+    },
+    {
+      "i": "0xsimaoso",
+      "v": 79.23
+    },
+    {
+      "i": "nodennts",
+      "v": 79.08
+    },
+    {
+      "i": "13laze_420",
+      "v": 79.07
+    },
+    {
+      "i": "supermasteen",
+      "v": 79.02
+    },
+    {
+      "i": "akshatg7",
+      "v": 78.93
+    },
+    {
+      "i": "bestxml007",
+      "v": 78.84
+    },
+    {
+      "i": "bbori__art",
+      "v": 78.74
+    },
+    {
+      "i": "mmxdiii1",
+      "v": 78.34
+    },
+    {
+      "i": "youfound_fayy",
+      "v": 78.12
+    },
+    {
+      "i": "din_tranthanh",
+      "v": 77.89
+    },
+    {
+      "i": "itsmenobi_",
+      "v": 77.64
+    },
+    {
+      "i": "toretotel177800",
+      "v": 77.49
+    },
+    {
+      "i": "onemax00",
+      "v": 77.46
+    },
+    {
+      "i": "guru_heat",
+      "v": 77.34
+    },
+    {
+      "i": "nini25_1",
+      "v": 77.11
+    },
+    {
+      "i": "kinghorlee_",
+      "v": 76.76
+    },
+    {
+      "i": "romancrg7",
+      "v": 76.48
+    },
+    {
+      "i": "18samickjotgong",
+      "v": 76.17
+    },
+    {
+      "i": "callmek0dak",
+      "v": 75.87
+    },
+    {
+      "i": "liagiska4",
+      "v": 75.72
+    },
+    {
+      "i": "s33s4c",
+      "v": 75.51
+    },
+    {
+      "i": "phamphu56023714",
+      "v": 75.21
+    },
+    {
+      "i": "0xayeee",
+      "v": 74.61
+    },
+    {
+      "i": "sinaucapital",
+      "v": 74.57
+    },
+    {
+      "i": "yasenka244",
+      "v": 74.54
+    },
+    {
+      "i": "404lady_",
+      "v": 74.37
+    },
+    {
+      "i": "vidang30_10",
+      "v": 74.15
+    },
+    {
+      "i": "dadx_btc",
+      "v": 73.78
+    },
+    {
+      "i": "vanhanha_n",
+      "v": 73.68
+    },
+    {
+      "i": "choejunho5625",
+      "v": 73.68
+    },
+    {
+      "i": "josepnft1",
+      "v": 72.95
+    },
+    {
+      "i": "syowro",
+      "v": 72.91
+    },
+    {
+      "i": "hriaznovden",
+      "v": 72.81
+    },
+    {
+      "i": "dencryptoo",
+      "v": 72.69
+    },
+    {
+      "i": "tachidoesweb3",
+      "v": 72.67
+    },
+    {
+      "i": "izzygoeshardfr",
+      "v": 72.59
+    },
+    {
+      "i": "underratedloner",
+      "v": 72.5
+    },
+    {
+      "i": "0xdabid",
+      "v": 72.43
+    },
+    {
+      "i": "be_trible",
+      "v": 72.12
+    },
+    {
+      "i": "whois_kl_",
+      "v": 71.69
+    },
+    {
+      "i": "arteemiida",
+      "v": 71.06
+    },
+    {
+      "i": "bysenua",
+      "v": 70.91
+    },
+    {
+      "i": "wolfx1_xyz",
+      "v": 70.49
+    },
+    {
+      "i": "atikrush",
+      "v": 70.19
+    },
+    {
+      "i": "99nevey",
+      "v": 69.92
+    },
+    {
+      "i": "not_arthas",
+      "v": 69.76
+    },
+    {
+      "i": "cihan121011271",
+      "v": 69.62
+    },
+    {
+      "i": "thutmusx",
+      "v": 68.87
+    },
+    {
+      "i": "ohsahib11",
+      "v": 68.65
+    },
+    {
+      "i": "jedai_s",
+      "v": 68.44
+    },
+    {
+      "i": "jaypolaris7",
+      "v": 68.41
+    },
+    {
+      "i": "ay0the4th",
+      "v": 68.16
+    },
+    {
+      "i": "nerdy674",
+      "v": 68.03
+    },
+    {
+      "i": "alelpoan",
+      "v": 67.76
+    },
+    {
+      "i": "rzstwnn_",
+      "v": 67.54
+    },
+    {
+      "i": "clordexchanger",
+      "v": 67.5
+    },
+    {
+      "i": "huytran1108hd",
+      "v": 67.49
+    },
+    {
+      "i": "mexonecrypto",
+      "v": 67.34
+    },
+    {
+      "i": "nikka8818",
+      "v": 67.24
+    },
+    {
+      "i": "varaz_z",
+      "v": 67.18
+    },
+    {
+      "i": "rave_90210",
+      "v": 66.81
+    },
+    {
+      "i": "bl888m_eth",
+      "v": 66.72
+    },
+    {
+      "i": "am_urboy",
+      "v": 66.66
+    },
+    {
+      "i": "kenshinxatori",
+      "v": 66.37
+    },
+    {
+      "i": "cognamul",
+      "v": 66.35
+    },
+    {
+      "i": "barawayne95",
+      "v": 65.91
+    },
+    {
+      "i": "xcomesu",
+      "v": 65.31
+    },
+    {
+      "i": "konotaka",
+      "v": 64.92
+    },
+    {
+      "i": "nyanya_1315",
+      "v": 64.84
+    },
+    {
+      "i": "mmrjung",
+      "v": 64.17
+    },
+    {
+      "i": "cheesenads",
+      "v": 64.0
+    },
+    {
+      "i": "eth_whyte",
+      "v": 63.92
+    },
+    {
+      "i": "molara_xo",
+      "v": 63.87
+    },
+    {
+      "i": "nuellweb3",
+      "v": 63.7
+    },
+    {
+      "i": "cryptkelvin",
+      "v": 62.94
+    },
+    {
+      "i": "voyager_2kzn",
+      "v": 62.9
+    },
+    {
+      "i": "th787252",
+      "v": 62.63
+    },
+    {
+      "i": "who_is_ayo",
+      "v": 62.26
+    },
+    {
+      "i": "myste_h",
+      "v": 62.21
+    },
+    {
+      "i": "dacron_yt",
+      "v": 61.96
+    },
+    {
+      "i": "iam_kay_o_kay",
+      "v": 61.83
+    },
+    {
+      "i": "lani_lee_i",
+      "v": 61.6
+    },
+    {
+      "i": "rikkydwiyanto",
+      "v": 61.45
+    },
+    {
+      "i": "stone_gaze08",
+      "v": 61.18
+    },
+    {
+      "i": "namle5cu",
+      "v": 61.08
+    },
+    {
+      "i": "reriyazmagic",
+      "v": 60.63
+    },
+    {
+      "i": "sohota122",
+      "v": 60.57
+    },
+    {
+      "i": "kejankrn",
+      "v": 60.51
+    },
+    {
+      "i": "zeanious",
+      "v": 60.41
+    },
+    {
+      "i": "enigma33_3",
+      "v": 60.41
+    },
+    {
+      "i": "cybttx",
+      "v": 60.32
+    },
+    {
+      "i": "mimiseasons",
+      "v": 60.1
+    },
+    {
+      "i": "ihadseenthings",
+      "v": 60.06
+    },
+    {
+      "i": "0x_yinka",
+      "v": 60.0
+    },
+    {
+      "i": "cruelpluto",
+      "v": 59.87
+    },
+    {
+      "i": "nuenaive",
+      "v": 59.74
+    },
+    {
+      "i": "inhwan9999",
+      "v": 59.68
+    },
+    {
+      "i": "fcastr0x",
+      "v": 59.65
+    },
+    {
+      "i": "what_is_crypto0",
+      "v": 59.62
+    },
+    {
+      "i": "yeim123",
+      "v": 59.59
+    },
+    {
+      "i": "gelumeluu_eth",
+      "v": 58.85
+    },
+    {
+      "i": "dfriendlybrown",
+      "v": 58.73
+    },
+    {
+      "i": "mozammall258",
+      "v": 58.64
+    },
+    {
+      "i": "0xcuongdo1203",
+      "v": 58.47
+    },
+    {
+      "i": "mr_satoshiii",
+      "v": 58.34
+    },
+    {
+      "i": "0xmiaaaami",
+      "v": 57.8
+    },
+    {
+      "i": "bhlong0609",
+      "v": 57.74
+    },
+    {
+      "i": "azkm00",
+      "v": 57.35
+    },
+    {
+      "i": "cigy_01",
+      "v": 57.25
+    },
+    {
+      "i": "baeko_02",
+      "v": 56.68
+    },
+    {
+      "i": "gamefiivan96683",
+      "v": 56.62
+    },
+    {
+      "i": "agnesismus",
+      "v": 56.61
+    },
+    {
+      "i": "salmana98329324",
+      "v": 56.47
+    },
+    {
+      "i": "kensanglnz",
+      "v": 56.27
+    },
+    {
+      "i": "tinhtrann",
+      "v": 56.19
+    },
+    {
+      "i": "whoseyan1",
+      "v": 56.05
+    },
+    {
+      "i": "bytecypher",
+      "v": 55.82
+    },
+    {
+      "i": "oetayvs",
+      "v": 55.73
+    },
+    {
+      "i": "danilcrypt1",
+      "v": 55.37
+    },
+    {
+      "i": "lord__luci",
+      "v": 55.33
+    },
+    {
+      "i": "ofwassupp",
+      "v": 55.25
+    },
+    {
+      "i": "erntasci04",
+      "v": 55.18
+    },
+    {
+      "i": "lika__enigma",
+      "v": 55.0
+    },
+    {
+      "i": "bbzza66",
+      "v": 54.95
+    },
+    {
+      "i": "fury_1243",
+      "v": 54.88
+    },
+    {
+      "i": "etmisayhi",
+      "v": 54.75
+    },
+    {
+      "i": "_pidgintrader",
+      "v": 54.72
+    },
+    {
+      "i": "iamtressy",
+      "v": 54.46
+    },
+    {
+      "i": "hamidkh_boss",
+      "v": 54.43
+    },
+    {
+      "i": "bz_dndka2",
+      "v": 54.04
+    },
+    {
+      "i": "ashtheb0t",
+      "v": 53.68
+    },
+    {
+      "i": "shobweb3",
+      "v": 53.38
+    },
+    {
+      "i": "dfwkeem",
+      "v": 53.21
+    },
+    {
+      "i": "konst_1972",
+      "v": 53.19
+    },
+    {
+      "i": "jani_shanu",
+      "v": 53.18
+    },
+    {
+      "i": "iamhyunnn",
+      "v": 52.8
+    },
+    {
+      "i": "unfoursecond",
+      "v": 52.66
+    },
+    {
+      "i": "0xteecrypt",
+      "v": 52.52
+    },
+    {
+      "i": "_youridolo",
+      "v": 52.16
+    },
+    {
+      "i": "popomonkor",
+      "v": 51.83
+    },
+    {
+      "i": "fearlesscr7777",
+      "v": 51.76
+    },
+    {
+      "i": "tayyibofweb3",
+      "v": 51.57
+    },
+    {
+      "i": "bk12692",
+      "v": 51.5
+    },
+    {
+      "i": "windabz_23",
+      "v": 51.49
+    },
+    {
+      "i": "mavro_xyz",
+      "v": 51.26
+    },
+    {
+      "i": "jafarrofficial",
+      "v": 51.09
+    },
+    {
+      "i": "dyquino733233",
+      "v": 50.81
+    },
+    {
+      "i": "ariesangel300",
+      "v": 50.77
+    },
+    {
+      "i": "newpunkart69",
+      "v": 50.72
+    },
+    {
+      "i": "dhammy69",
+      "v": 50.71
+    },
+    {
+      "i": "ourcawhalee",
+      "v": 50.45
+    },
+    {
+      "i": "trungkts29",
+      "v": 50.26
+    },
+    {
+      "i": "thegusperok",
+      "v": 50.15
+    },
+    {
+      "i": "zorohuntersp",
+      "v": 50.07
+    },
+    {
+      "i": "g11dentak",
+      "v": 50.05
+    },
+    {
+      "i": "web3illy",
+      "v": 50.0
+    },
+    {
+      "i": "alannakamo13834",
+      "v": 49.91
+    },
+    {
+      "i": "menfiiisx0",
+      "v": 49.31
+    },
+    {
+      "i": "miykun105",
+      "v": 49.16
+    },
+    {
+      "i": "odongklepon",
+      "v": 49.13
+    },
+    {
+      "i": "louzarieth",
+      "v": 49.11
+    },
+    {
+      "i": "dxi_vii",
+      "v": 48.8
+    },
+    {
+      "i": "crypto_maryua",
+      "v": 48.76
+    },
+    {
+      "i": "nolabashy",
+      "v": 48.37
+    },
+    {
+      "i": "newrypto",
+      "v": 48.34
+    },
+    {
+      "i": "ikvasovstan",
+      "v": 48.26
+    },
+    {
+      "i": "0xerhann",
+      "v": 48.18
+    },
+    {
+      "i": "just_skkid",
+      "v": 47.89
+    },
+    {
+      "i": "just_zee003",
+      "v": 47.84
+    },
+    {
+      "i": "kimsw_7",
+      "v": 47.8
+    },
+    {
+      "i": "fom_ai",
+      "v": 47.75
+    },
+    {
+      "i": "dittoerror404",
+      "v": 47.74
+    },
+    {
+      "i": "i_lexxa",
+      "v": 47.45
+    },
+    {
+      "i": "not_adeyemi",
+      "v": 47.18
+    },
+    {
+      "i": "shafinbinnur",
+      "v": 46.96
+    },
+    {
+      "i": "lyfour_",
+      "v": 46.88
+    },
+    {
+      "i": "vellia_79",
+      "v": 46.83
+    },
+    {
+      "i": "lehuuhuan06",
+      "v": 46.57
+    },
+    {
+      "i": "widyakrnwn",
+      "v": 46.55
+    },
+    {
+      "i": "khalilvsworld",
+      "v": 46.26
+    },
+    {
+      "i": "readakenus",
+      "v": 45.91
+    },
+    {
+      "i": "chithiya9",
+      "v": 45.66
+    },
+    {
+      "i": "xywalf",
+      "v": 45.58
+    },
+    {
+      "i": "impalementd",
+      "v": 45.52
+    },
+    {
+      "i": "rakib_hosen01",
+      "v": 45.5
+    },
+    {
+      "i": "shobethenotcat",
+      "v": 45.44
+    },
+    {
+      "i": "sekinaababy",
+      "v": 45.22
+    },
+    {
+      "i": "priyankajai30",
+      "v": 45.08
+    },
+    {
+      "i": "holosko_eth",
+      "v": 44.77
+    },
+    {
+      "i": "mynameisgoodday",
+      "v": 44.5
+    },
+    {
+      "i": "alazyilmaz3519",
+      "v": 44.44
+    },
+    {
+      "i": "idaratbn",
+      "v": 44.34
+    },
+    {
+      "i": "wiyeonsug",
+      "v": 44.32
+    },
+    {
+      "i": "celinexmrz",
+      "v": 44.15
+    },
+    {
+      "i": "laja_0x",
+      "v": 43.98
+    },
+    {
+      "i": "callmexenom",
+      "v": 43.92
+    },
+    {
+      "i": "qpzmzm",
+      "v": 43.5
+    },
+    {
+      "i": "manas0x",
+      "v": 43.4
+    },
+    {
+      "i": "its_axios",
+      "v": 43.22
+    },
+    {
+      "i": "dev_cagin",
+      "v": 43.2
+    },
+    {
+      "i": "chichi1crypto",
+      "v": 43.15
+    },
+    {
+      "i": "wandeknowsball",
+      "v": 43.15
+    },
+    {
+      "i": "sigit_suharno",
+      "v": 43.1
+    },
+    {
+      "i": "_ofreeguy",
+      "v": 43.07
+    },
+    {
+      "i": "fuckinares",
+      "v": 42.89
+    },
+    {
+      "i": "inkaxyz",
+      "v": 42.74
+    },
+    {
+      "i": "caginonthesky",
+      "v": 42.58
+    },
+    {
+      "i": "arsetate",
+      "v": 42.56
+    },
+    {
+      "i": "bhuttozindaha",
+      "v": 42.5
+    },
+    {
+      "i": "btcslayer0506",
+      "v": 42.48
+    },
+    {
+      "i": "hestiamae__",
+      "v": 42.34
+    },
+    {
+      "i": "karimh5544",
+      "v": 42.23
+    },
+    {
+      "i": "fitzg3rald_eth",
+      "v": 41.87
+    },
+    {
+      "i": "0xboomin",
+      "v": 41.86
+    },
+    {
+      "i": "kostya279079301",
+      "v": 41.76
+    },
+    {
+      "i": "setokaibaah",
+      "v": 41.71
+    },
+    {
+      "i": "auokky",
+      "v": 41.4
+    },
+    {
+      "i": "fairytothemoon",
+      "v": 41.24
+    },
+    {
+      "i": "na2raaaa",
+      "v": 41.13
+    },
+    {
+      "i": "fardolax_100",
+      "v": 41.03
+    },
+    {
+      "i": "monadroider",
+      "v": 40.96
+    },
+    {
+      "i": "yourinuu",
+      "v": 40.95
+    },
+    {
+      "i": "ui_anon",
+      "v": 40.83
+    },
+    {
+      "i": "cizisaki",
+      "v": 40.81
+    },
+    {
+      "i": "therealfaroukk",
+      "v": 40.79
+    },
+    {
+      "i": "tommyblinder_",
+      "v": 40.79
+    },
+    {
+      "i": "san3solomonn",
+      "v": 40.26
+    },
+    {
+      "i": "xogur1685",
+      "v": 40.24
+    },
+    {
+      "i": "soulsoftheunded",
+      "v": 40.21
+    },
+    {
+      "i": "trantuan_1996",
+      "v": 40.07
+    },
+    {
+      "i": "yuboghyeon70434",
+      "v": 40.03
+    },
+    {
+      "i": "sherlock_bond_",
+      "v": 39.61
+    },
+    {
+      "i": "pinn_000",
+      "v": 39.47
+    },
+    {
+      "i": "listener1120",
+      "v": 39.12
+    },
+    {
+      "i": "kuncik_dima",
+      "v": 39.09
+    },
+    {
+      "i": "tokoxq1",
+      "v": 38.37
+    },
+    {
+      "i": "nigershimadun",
+      "v": 38.27
+    },
+    {
+      "i": "xcii555",
+      "v": 38.26
+    },
+    {
+      "i": "sakrawira",
+      "v": 38.13
+    },
+    {
+      "i": "dablqs",
+      "v": 38.08
+    },
+    {
+      "i": "serhatweb3",
+      "v": 38.03
+    },
+    {
+      "i": "emperorhad",
+      "v": 37.67
+    },
+    {
+      "i": "thiagosama22",
+      "v": 37.64
+    },
+    {
+      "i": "cryptansha",
+      "v": 37.23
+    },
+    {
+      "i": "nquang_2610",
+      "v": 36.96
+    },
+    {
+      "i": "zldh42",
+      "v": 36.9
+    },
+    {
+      "i": "trouble_mia",
+      "v": 36.73
+    },
+    {
+      "i": "john77500s",
+      "v": 36.57
+    },
+    {
+      "i": "justaman_euei",
+      "v": 36.43
+    },
+    {
+      "i": "kingingveek",
+      "v": 36.41
+    },
+    {
+      "i": "surojitpvt",
+      "v": 36.41
+    },
+    {
+      "i": "chocobisip",
+      "v": 36.36
+    },
+    {
+      "i": "thatneega_",
+      "v": 36.33
+    },
+    {
+      "i": "tanvir_heree",
+      "v": 36.16
+    },
+    {
+      "i": "yuyi_mmm",
+      "v": 36.08
+    },
+    {
+      "i": "zkvrs_",
+      "v": 35.89
+    },
+    {
+      "i": "matvey6109",
+      "v": 35.82
+    },
+    {
+      "i": "ucheisweird",
+      "v": 35.82
+    },
+    {
+      "i": "slade__willson",
+      "v": 35.76
+    },
+    {
+      "i": "_quiet_lady",
+      "v": 35.73
+    },
+    {
+      "i": "harumbyarum04",
+      "v": 35.59
+    },
+    {
+      "i": "196_crypto",
+      "v": 35.54
+    },
+    {
+      "i": "pillze_",
+      "v": 35.5
+    },
+    {
+      "i": "akeemmx",
+      "v": 35.46
+    },
+    {
+      "i": "caesareth_",
+      "v": 35.44
+    },
+    {
+      "i": "milpara_8",
+      "v": 35.41
+    },
+    {
+      "i": "yaaaori",
+      "v": 35.23
+    },
+    {
+      "i": "best_freetoken",
+      "v": 35.17
+    },
+    {
+      "i": "anginakr",
+      "v": 35.05
+    },
+    {
+      "i": "0xbadel",
+      "v": 34.89
+    },
+    {
+      "i": "br1ce337",
+      "v": 34.72
+    },
+    {
+      "i": "westngxn",
+      "v": 34.7
+    },
+    {
+      "i": "solana_hustler",
+      "v": 34.66
+    },
+    {
+      "i": "frnkln_x",
+      "v": 34.57
+    },
+    {
+      "i": "jackonefeez",
+      "v": 34.5
+    },
+    {
+      "i": "soaringss",
+      "v": 34.45
+    },
+    {
+      "i": "prayfordisney",
+      "v": 34.35
+    },
+    {
+      "i": "pleasestopppfr",
+      "v": 34.09
+    },
+    {
+      "i": "weneligible",
+      "v": 34.01
+    },
+    {
+      "i": "xleva_eth",
+      "v": 33.31
+    },
+    {
+      "i": "richie_kalalo",
+      "v": 33.3
+    },
+    {
+      "i": "chillguymonad",
+      "v": 33.25
+    },
+    {
+      "i": "meindozah___",
+      "v": 33.17
+    },
+    {
+      "i": "pazhik_ido",
+      "v": 32.78
+    },
+    {
+      "i": "wharley_56",
+      "v": 32.74
+    },
+    {
+      "i": "r_esiems",
+      "v": 32.65
+    },
+    {
+      "i": "ritik_pandey999",
+      "v": 32.46
+    },
+    {
+      "i": "0xchlorinee",
+      "v": 32.32
+    },
+    {
+      "i": "vhowa",
+      "v": 32.26
+    },
+    {
+      "i": "seikolambo19",
+      "v": 32.23
+    },
+    {
+      "i": "ieunog504253133",
+      "v": 32.06
+    },
+    {
+      "i": "ne1z3r",
+      "v": 32.01
+    },
+    {
+      "i": "samurafik",
+      "v": 31.89
+    },
+    {
+      "i": "antongandon0",
+      "v": 31.57
+    },
+    {
+      "i": "farooqcryp68782",
+      "v": 31.51
+    },
+    {
+      "i": "gibsa_log",
+      "v": 31.16
+    },
+    {
+      "i": "linlinsona",
+      "v": 30.99
+    },
+    {
+      "i": "kenxboi2",
+      "v": 30.9
+    },
+    {
+      "i": "cocolovefogo",
+      "v": 30.88
+    },
+    {
+      "i": "gugusbinegara",
+      "v": 30.75
+    },
+    {
+      "i": "0xdhyzal",
+      "v": 30.74
+    },
+    {
+      "i": "0xbutcherr",
+      "v": 30.67
+    },
+    {
+      "i": "autumn_1108",
+      "v": 30.4
+    },
+    {
+      "i": "huynhthien037",
+      "v": 30.38
+    },
+    {
+      "i": "ragnarok0905",
+      "v": 30.3
+    },
+    {
+      "i": "defibagira",
+      "v": 30.14
+    },
+    {
+      "i": "ilyzabor",
+      "v": 30.07
+    },
+    {
+      "i": "0xtomiwa",
+      "v": 29.98
+    },
+    {
+      "i": "maza65ct",
+      "v": 29.94
+    },
+    {
+      "i": "xeroisgreat",
+      "v": 29.78
+    },
+    {
+      "i": "eycofkoylusu",
+      "v": 29.64
+    },
+    {
+      "i": "nesaave9",
+      "v": 29.63
+    },
+    {
+      "i": "zarvxbt",
+      "v": 29.62
+    },
+    {
+      "i": "agboemmy1",
+      "v": 29.6
+    },
+    {
+      "i": "temitope_isola8",
+      "v": 29.59
+    },
+    {
+      "i": "_ilshi_",
+      "v": 29.55
+    },
+    {
+      "i": "oxwonder",
+      "v": 29.52
+    },
+    {
+      "i": "leeroy_0x",
+      "v": 29.5
+    },
+    {
+      "i": "mathewogwuche5",
+      "v": 29.49
+    },
+    {
+      "i": "maniiarc",
+      "v": 29.41
+    },
+    {
+      "i": "sozdetrader",
+      "v": 29.29
+    },
+    {
+      "i": "quali__",
+      "v": 29.26
+    },
+    {
+      "i": "ahmtmchtky",
+      "v": 29.22
+    },
+    {
+      "i": "dayhor_",
+      "v": 29.14
+    },
+    {
+      "i": "onig1ri_multi",
+      "v": 29.14
+    },
+    {
+      "i": "trav_intern",
+      "v": 29.08
+    },
+    {
+      "i": "heisseraphim",
+      "v": 29.02
+    },
+    {
+      "i": "criptoprimem",
+      "v": 29.01
+    },
+    {
+      "i": "padremotehq",
+      "v": 28.92
+    },
+    {
+      "i": "genie_anew",
+      "v": 28.72
+    },
+    {
+      "i": "tizzy_i",
+      "v": 28.57
+    },
+    {
+      "i": "thumbcraft",
+      "v": 28.54
+    },
+    {
+      "i": "cryptossjared",
+      "v": 28.41
+    },
+    {
+      "i": "quawiyszn",
+      "v": 28.39
+    },
+    {
+      "i": "dat_sznn",
+      "v": 28.2
+    },
+    {
+      "i": "aedan_xyz",
+      "v": 28.18
+    },
+    {
+      "i": "onnozea",
+      "v": 28.16
+    },
+    {
+      "i": "carameljoyy",
+      "v": 28.15
+    },
+    {
+      "i": "simrasimra2",
+      "v": 28.1
+    },
+    {
+      "i": "tlam2123",
+      "v": 28.06
+    },
+    {
+      "i": "seokseok1004",
+      "v": 28.02
+    },
+    {
+      "i": "0xprobeat",
+      "v": 27.88
+    },
+    {
+      "i": "htwtech_",
+      "v": 27.84
+    },
+    {
+      "i": "alslalsl033",
+      "v": 27.44
+    },
+    {
+      "i": "peachauroraa",
+      "v": 27.4
+    },
+    {
+      "i": "yssayaka",
+      "v": 27.36
+    },
+    {
+      "i": "richiliciouz",
+      "v": 27.03
+    },
+    {
+      "i": "vanbangco01",
+      "v": 26.88
+    },
+    {
+      "i": "nft_leymz",
+      "v": 26.88
+    },
+    {
+      "i": "vinnn_exe",
+      "v": 26.87
+    },
+    {
+      "i": "orchidimum",
+      "v": 26.81
+    },
+    {
+      "i": "yahmanpudin",
+      "v": 26.77
+    },
+    {
+      "i": "ledi_de_",
+      "v": 26.61
+    },
+    {
+      "i": "bkrnaltn",
+      "v": 26.54
+    },
+    {
+      "i": "taymietopee_x",
+      "v": 26.08
+    },
+    {
+      "i": "0q_bulletproof",
+      "v": 25.8
+    },
+    {
+      "i": "grrreaze",
+      "v": 25.55
+    },
+    {
+      "i": "a1ex971",
+      "v": 25.49
+    },
+    {
+      "i": "only1davx",
+      "v": 25.47
+    },
+    {
+      "i": "tommywales",
+      "v": 25.47
+    },
+    {
+      "i": "whosbenjaminn",
+      "v": 25.44
+    },
+    {
+      "i": "brozobrozo",
+      "v": 25.43
+    },
+    {
+      "i": "totowillrich",
+      "v": 25.28
+    },
+    {
+      "i": "santosh_as",
+      "v": 25.25
+    },
+    {
+      "i": "meji4pf_",
+      "v": 25.14
+    },
+    {
+      "i": "nyedweak",
+      "v": 25.09
+    },
+    {
+      "i": "gmkpacman",
+      "v": 24.83
+    },
+    {
+      "i": "deyplay77",
+      "v": 24.73
+    },
+    {
+      "i": "czeeeyy",
+      "v": 24.72
+    },
+    {
+      "i": "0xkassam",
+      "v": 24.69
+    },
+    {
+      "i": "effat_emon",
+      "v": 24.51
+    },
+    {
+      "i": "1_bankai",
+      "v": 24.5
+    },
+    {
+      "i": "0xbabicrypto",
+      "v": 24.49
+    },
+    {
+      "i": "linggaywnd",
+      "v": 24.33
+    },
+    {
+      "i": "skrtttt_34",
+      "v": 24.3
+    },
+    {
+      "i": "loloz1st",
+      "v": 24.26
+    },
+    {
+      "i": "psychdegen",
+      "v": 24.2
+    },
+    {
+      "i": "asher1622",
+      "v": 24.2
+    },
+    {
+      "i": "bexyybois",
+      "v": 24.13
+    },
+    {
+      "i": "kron397364",
+      "v": 23.57
+    },
+    {
+      "i": "ngduc2202",
+      "v": 23.26
+    },
+    {
+      "i": "tweetbysherf004",
+      "v": 23.19
+    },
+    {
+      "i": "melihg10",
+      "v": 23.14
+    },
+    {
+      "i": "akinz_michael",
+      "v": 23.08
+    },
+    {
+      "i": "0x1amt",
+      "v": 23.07
+    },
+    {
+      "i": "mrbree_ze",
+      "v": 22.95
+    },
+    {
+      "i": "hoolalala_",
+      "v": 22.85
+    },
+    {
+      "i": "mayor_rode",
+      "v": 22.85
+    },
+    {
+      "i": "aceop_xyz",
+      "v": 22.73
+    },
+    {
+      "i": "dancanto07",
+      "v": 22.56
+    },
+    {
+      "i": "pawn_rtl",
+      "v": 22.55
+    },
+    {
+      "i": "thecadddy",
+      "v": 22.47
+    },
+    {
+      "i": "arts_monster__",
+      "v": 22.41
+    },
+    {
+      "i": "peterzhommez",
+      "v": 22.41
+    },
+    {
+      "i": "thecroyton",
+      "v": 22.24
+    },
+    {
+      "i": "hen_zoh",
+      "v": 22.23
+    },
+    {
+      "i": "yulianvakh",
+      "v": 22.09
+    },
+    {
+      "i": "coinking90",
+      "v": 21.95
+    },
+    {
+      "i": "ppfnetherlands",
+      "v": 21.74
+    },
+    {
+      "i": "w3heffsquare",
+      "v": 21.65
+    },
+    {
+      "i": "gingztweets__",
+      "v": 21.63
+    },
+    {
+      "i": "trnanh_tran",
+      "v": 21.6
+    },
+    {
+      "i": "pabilipobigas",
+      "v": 21.58
+    },
+    {
+      "i": "dotbymarek",
+      "v": 21.49
+    },
+    {
+      "i": "sufyan06385577",
+      "v": 21.4
+    },
+    {
+      "i": "stormtau",
+      "v": 21.32
+    },
+    {
+      "i": "mblj10",
+      "v": 21.31
+    },
+    {
+      "i": "umair_6713",
+      "v": 21.26
+    },
+    {
+      "i": "serduk95683",
+      "v": 21.25
+    },
+    {
+      "i": "nanajiang8888",
+      "v": 21.05
+    },
+    {
+      "i": "pomopumu",
+      "v": 21.05
+    },
+    {
+      "i": "0xmjfmjf",
+      "v": 21.01
+    },
+    {
+      "i": "nftpriest_1",
+      "v": 20.98
+    },
+    {
+      "i": "bigzahft",
+      "v": 20.96
+    },
+    {
+      "i": "web3_nellyy",
+      "v": 20.95
+    },
+    {
+      "i": "zerodripzz",
+      "v": 20.95
+    },
+    {
+      "i": "dcrib9ja_tv",
+      "v": 20.9
+    },
+    {
+      "i": "kiriruwu",
+      "v": 20.88
+    },
+    {
+      "i": "xxxtripleme",
+      "v": 20.83
+    },
+    {
+      "i": "bodyabasick",
+      "v": 20.77
+    },
+    {
+      "i": "eionmakc",
+      "v": 20.75
+    },
+    {
+      "i": "liz_aguwa",
+      "v": 20.66
+    },
+    {
+      "i": "jaylex_1",
+      "v": 20.63
+    },
+    {
+      "i": "overdose55",
+      "v": 20.41
+    },
+    {
+      "i": "biennyqt",
+      "v": 20.38
+    },
+    {
+      "i": "gm_illy",
+      "v": 20.36
+    },
+    {
+      "i": "lazy_santo",
+      "v": 20.33
+    },
+    {
+      "i": "panggangirisan",
+      "v": 20.3
+    },
+    {
+      "i": "major2actv",
+      "v": 20.28
+    },
+    {
+      "i": "83mhog",
+      "v": 20.23
+    },
+    {
+      "i": "dwirizaldy9",
+      "v": 20.22
+    },
+    {
+      "i": "babysolape_",
+      "v": 20.17
+    },
+    {
+      "i": "arrowpunt",
+      "v": 20.16
+    },
+    {
+      "i": "kriptomontanaa",
+      "v": 20.03
+    },
+    {
+      "i": "indomitable_xox",
+      "v": 20.02
+    },
+    {
+      "i": "apilpirman",
+      "v": 20.02
+    },
+    {
+      "i": "bl0ck64grandson",
+      "v": 19.84
+    },
+    {
+      "i": "cryptoremixg",
+      "v": 19.82
+    },
+    {
+      "i": "sukrucildirr",
+      "v": 19.79
+    },
+    {
+      "i": "goliath_q",
+      "v": 19.73
+    },
+    {
+      "i": "gladiy_",
+      "v": 19.72
+    },
+    {
+      "i": "fudrat1",
+      "v": 19.5
+    },
+    {
+      "i": "onyinyecci",
+      "v": 19.33
+    },
+    {
+      "i": "coraeth_",
+      "v": 19.08
+    },
+    {
+      "i": "cloudnftz",
+      "v": 19.07
+    },
+    {
+      "i": "block_sage12",
+      "v": 19.07
+    },
+    {
+      "i": "gemiler1960",
+      "v": 19.06
+    },
+    {
+      "i": "mj_bluu",
+      "v": 19.04
+    },
+    {
+      "i": "gorongs0101",
+      "v": 18.98
+    },
+    {
+      "i": "s_zinnie",
+      "v": 18.95
+    },
+    {
+      "i": "elforjani_ali",
+      "v": 18.92
+    },
+    {
+      "i": "ajuloheimer",
+      "v": 18.88
+    },
+    {
+      "i": "rrrrbtc",
+      "v": 18.86
+    },
+    {
+      "i": "thekingpraise_",
+      "v": 18.82
+    },
+    {
+      "i": "icetosin",
+      "v": 18.79
+    },
+    {
+      "i": "wjmdiary",
+      "v": 18.76
+    },
+    {
+      "i": "evmpapa",
+      "v": 18.68
+    },
+    {
+      "i": "_burn",
+      "v": 18.64
+    },
+    {
+      "i": "minikotii",
+      "v": 18.6
+    },
+    {
+      "i": "meli1ssandre",
+      "v": 18.52
+    },
+    {
+      "i": "grape_fogo",
+      "v": 18.46
+    },
+    {
+      "i": "ndancrypto",
+      "v": 18.45
+    },
+    {
+      "i": "fvckingdegen",
+      "v": 18.43
+    },
+    {
+      "i": "vmbcanhchimviet",
+      "v": 18.35
+    },
+    {
+      "i": "333saniii",
+      "v": 18.35
+    },
+    {
+      "i": "bigbam_ox",
+      "v": 18.35
+    },
+    {
+      "i": "bossdenxy",
+      "v": 18.32
+    },
+    {
+      "i": "5stttttar",
+      "v": 18.3
+    },
+    {
+      "i": "insidoor69",
+      "v": 18.2
+    },
+    {
+      "i": "0xcome",
+      "v": 18.17
+    },
+    {
+      "i": "gbolahan0353",
+      "v": 18.14
+    },
+    {
+      "i": "ponta_kokemomo",
+      "v": 18.08
+    },
+    {
+      "i": "zeraheliud",
+      "v": 18.0
+    },
+    {
+      "i": "avaroncrypto",
+      "v": 17.81
+    },
+    {
+      "i": "damoarewa",
+      "v": 17.77
+    },
+    {
+      "i": "verrnny",
+      "v": 17.66
+    },
+    {
+      "i": "stefanusri39106",
+      "v": 17.66
+    },
+    {
+      "i": "sancharidi",
+      "v": 17.59
+    },
+    {
+      "i": "patringgg_web3",
+      "v": 17.5
+    },
+    {
+      "i": "samvka_",
+      "v": 17.5
+    },
+    {
+      "i": "cryptsmile",
+      "v": 17.46
+    },
+    {
+      "i": "onlyonearcane",
+      "v": 17.46
+    },
+    {
+      "i": "rampo____",
+      "v": 17.43
+    },
+    {
+      "i": "adeyemijaleel",
+      "v": 17.39
+    },
+    {
+      "i": "panda_nad6",
+      "v": 17.35
+    },
+    {
+      "i": "0_heavnlydemn_0",
+      "v": 17.3
+    },
+    {
+      "i": "zombie_edn",
+      "v": 17.25
+    },
+    {
+      "i": "kpr001",
+      "v": 17.23
+    },
+    {
+      "i": "gimyuhan77996",
+      "v": 17.19
+    },
+    {
+      "i": "sameditz7777777",
+      "v": 17.16
+    },
+    {
+      "i": "smileplese99",
+      "v": 17.07
+    },
+    {
+      "i": "derrelreyhan",
+      "v": 17.02
+    },
+    {
+      "i": "tobweby00",
+      "v": 17.0
+    },
+    {
+      "i": "karpovec35987",
+      "v": 16.86
+    },
+    {
+      "i": "gudlah375",
+      "v": 16.81
+    },
+    {
+      "i": "adecmp",
+      "v": 16.77
+    },
+    {
+      "i": "bearush_xrp",
+      "v": 16.69
+    },
+    {
+      "i": "ninuunik",
+      "v": 16.66
+    },
+    {
+      "i": "uncle_vill",
+      "v": 16.64
+    },
+    {
+      "i": "thatboy_stan",
+      "v": 16.6
+    },
+    {
+      "i": "one_polymath",
+      "v": 16.56
+    },
+    {
+      "i": "not_rho",
+      "v": 16.55
+    },
+    {
+      "i": "fakejed_",
+      "v": 16.52
+    },
+    {
+      "i": "syphsiph",
+      "v": 16.43
+    },
+    {
+      "i": "nostoryboss",
+      "v": 16.37
+    },
+    {
+      "i": "mesentericvein",
+      "v": 16.23
+    },
+    {
+      "i": "0xyuura",
+      "v": 16.18
+    },
+    {
+      "i": "fivesymbols",
+      "v": 16.17
+    },
+    {
+      "i": "katty_70",
+      "v": 16.08
+    },
+    {
+      "i": "zelarnzdo005",
+      "v": 16.08
+    },
+    {
+      "i": "merickzgn",
+      "v": 16.04
+    },
+    {
+      "i": "iamjhnifer",
+      "v": 15.94
+    },
+    {
+      "i": "immortalhowwl",
+      "v": 15.92
+    },
+    {
+      "i": "yulee0707",
+      "v": 15.89
+    },
+    {
+      "i": "pirish_07",
+      "v": 15.87
+    },
+    {
+      "i": "sahilballer25",
+      "v": 15.86
+    },
+    {
+      "i": "the_first_2nd",
+      "v": 15.85
+    },
+    {
+      "i": "0xneira",
+      "v": 15.84
+    },
+    {
+      "i": "rayzo_nexo",
+      "v": 15.84
+    },
+    {
+      "i": "juliapiekh",
+      "v": 15.84
+    },
+    {
+      "i": "yuminhwan4",
+      "v": 15.81
+    },
+    {
+      "i": "0xteea",
+      "v": 15.72
+    },
+    {
+      "i": "kizito9911",
+      "v": 15.63
+    },
+    {
+      "i": "saitamahelevand",
+      "v": 15.62
+    },
+    {
+      "i": "lovesickgirl1k",
+      "v": 15.58
+    },
+    {
+      "i": "martynov014",
+      "v": 15.52
+    },
+    {
+      "i": "itwwasntmee",
+      "v": 15.52
+    },
+    {
+      "i": "ogtarnished",
+      "v": 15.5
+    },
+    {
+      "i": "julia_just_",
+      "v": 15.33
+    },
+    {
+      "i": "_dream_artistry",
+      "v": 15.31
+    },
+    {
+      "i": "godspeed49",
+      "v": 15.19
+    },
+    {
+      "i": "fokingball",
+      "v": 15.18
+    },
+    {
+      "i": "frarrno1",
+      "v": 15.13
+    },
+    {
+      "i": "kanteylee",
+      "v": 15.07
+    },
+    {
+      "i": "imbiswa12",
+      "v": 14.99
+    },
+    {
+      "i": "950720k",
+      "v": 14.92
+    },
+    {
+      "i": "kuora0x",
+      "v": 14.83
+    },
+    {
+      "i": "bughive_",
+      "v": 14.82
+    },
+    {
+      "i": "nikdandy_",
+      "v": 14.78
+    },
+    {
+      "i": "fanyy_crypt",
+      "v": 14.78
+    },
+    {
+      "i": "mzain_2292",
+      "v": 14.74
+    },
+    {
+      "i": "dayatjaul",
+      "v": 14.67
+    },
+    {
+      "i": "kingop0007",
+      "v": 14.66
+    },
+    {
+      "i": "duylv197",
+      "v": 14.65
+    },
+    {
+      "i": "holy3pirit",
+      "v": 14.61
+    },
+    {
+      "i": "valetxd",
+      "v": 14.52
+    },
+    {
+      "i": "0xnellyblazas",
+      "v": 14.42
+    },
+    {
+      "i": "_lordskid",
+      "v": 14.35
+    },
+    {
+      "i": "deficybergirl",
+      "v": 14.34
+    },
+    {
+      "i": "boynicesz",
+      "v": 14.32
+    },
+    {
+      "i": "sadeem_alam",
+      "v": 14.24
+    },
+    {
+      "i": "maleeh02",
+      "v": 14.22
+    },
+    {
+      "i": "btc_board",
+      "v": 14.14
+    },
+    {
+      "i": "web3kemi",
+      "v": 14.02
+    },
+    {
+      "i": "stewxbt",
+      "v": 14.01
+    },
+    {
+      "i": "0xprincewill_",
+      "v": 13.88
+    },
+    {
+      "i": "connect01x",
+      "v": 13.77
+    },
+    {
+      "i": "k0pl4xz",
+      "v": 13.72
+    },
+    {
+      "i": "woof_chain",
+      "v": 13.63
+    },
+    {
+      "i": "atulvstar165",
+      "v": 13.57
+    },
+    {
+      "i": "mohsen83a",
+      "v": 13.54
+    },
+    {
+      "i": "jhoon1130",
+      "v": 13.53
+    },
+    {
+      "i": "pape12377749",
+      "v": 13.51
+    },
+    {
+      "i": "llama_agi",
+      "v": 13.48
+    },
+    {
+      "i": "miraclee95",
+      "v": 13.45
+    },
+    {
+      "i": "satriap82398420",
+      "v": 13.43
+    },
+    {
+      "i": "ckddnjs6356",
+      "v": 13.37
+    },
+    {
+      "i": "44k0fweb",
+      "v": 13.25
+    },
+    {
+      "i": "001andros",
+      "v": 13.25
+    },
+    {
+      "i": "dimka785",
+      "v": 13.23
+    },
+    {
+      "i": "abolerkale",
+      "v": 13.21
+    },
+    {
+      "i": "bigsulaimon",
+      "v": 13.17
+    },
+    {
+      "i": "amosope2",
+      "v": 13.15
+    },
+    {
+      "i": "hyalking16",
+      "v": 13.06
+    },
+    {
+      "i": "omerrilhan",
+      "v": 13.01
+    },
+    {
+      "i": "irvinecold",
+      "v": 13.01
+    },
+    {
+      "i": "wobendog",
+      "v": 12.98
+    },
+    {
+      "i": "prettyreznik",
+      "v": 12.97
+    },
+    {
+      "i": "deecypherrr",
+      "v": 12.96
+    },
+    {
+      "i": "usaxxxxxx",
+      "v": 12.92
+    },
+    {
+      "i": "skubidu_dao",
+      "v": 12.8
+    },
+    {
+      "i": "_maxxyy1",
+      "v": 12.65
+    },
+    {
+      "i": "rafilism",
+      "v": 12.63
+    },
+    {
+      "i": "honmarveled",
+      "v": 12.62
+    },
+    {
+      "i": "calm_keep2525",
+      "v": 12.61
+    },
+    {
+      "i": "dayborrrr",
+      "v": 12.58
+    },
+    {
+      "i": "call_me_demola",
+      "v": 12.56
+    },
+    {
+      "i": "kunglau0",
+      "v": 12.48
+    },
+    {
+      "i": "keem_the_ghost",
+      "v": 12.41
+    },
+    {
+      "i": "satomimahilum",
+      "v": 12.35
+    },
+    {
+      "i": "flaimeee",
+      "v": 12.34
+    },
+    {
+      "i": "yussybaby",
+      "v": 12.33
+    },
+    {
+      "i": "ekpe262",
+      "v": 12.32
+    },
+    {
+      "i": "alanstonestones",
+      "v": 12.25
+    },
+    {
+      "i": "ivan_badadan",
+      "v": 12.24
+    },
+    {
+      "i": "lehoang182",
+      "v": 12.22
+    },
+    {
+      "i": "k0sh33n",
+      "v": 12.21
+    },
+    {
+      "i": "vladpetrenko73",
+      "v": 12.18
+    },
+    {
+      "i": "bluesilver84",
+      "v": 12.11
+    },
+    {
+      "i": "_kuffee",
+      "v": 12.08
+    },
+    {
+      "i": "saalaaxx",
+      "v": 12.06
+    },
+    {
+      "i": "boogiekosi",
+      "v": 12.05
+    },
+    {
+      "i": "prudentdev_xyz",
+      "v": 12.05
+    },
+    {
+      "i": "echogoblin_eth",
+      "v": 12.04
+    },
+    {
+      "i": "breezy_bunmi",
+      "v": 11.95
+    },
+    {
+      "i": "lynnx6969",
+      "v": 11.9
+    },
+    {
+      "i": "oxvalox",
+      "v": 11.87
+    },
+    {
+      "i": "kudoo04",
+      "v": 11.56
+    },
+    {
+      "i": "wilamz_",
+      "v": 11.53
+    },
+    {
+      "i": "powerpuff_degen",
+      "v": 11.51
+    },
+    {
+      "i": "ridwin0",
+      "v": 11.47
+    },
+    {
+      "i": "mztaprince",
+      "v": 11.39
+    },
+    {
+      "i": "xenon1x_",
+      "v": 11.26
+    },
+    {
+      "i": "thekenofweb3",
+      "v": 11.16
+    },
+    {
+      "i": "astronaut_exe",
+      "v": 11.13
+    },
+    {
+      "i": "sayanyalupa",
+      "v": 11.12
+    },
+    {
+      "i": "waleturner02",
+      "v": 11.08
+    },
+    {
+      "i": "uncle_bennnnn",
+      "v": 11.03
+    },
+    {
+      "i": "aall_212121",
+      "v": 11.02
+    },
+    {
+      "i": "degenbaby007",
+      "v": 11.01
+    },
+    {
+      "i": "caprisonne_",
+      "v": 10.98
+    },
+    {
+      "i": "_mafiyaa",
+      "v": 10.81
+    },
+    {
+      "i": "ponchik_lll",
+      "v": 10.76
+    },
+    {
+      "i": "0xchubedan",
+      "v": 10.67
+    },
+    {
+      "i": "web3king_v",
+      "v": 10.65
+    },
+    {
+      "i": "frostbyte2077",
+      "v": 10.64
+    },
+    {
+      "i": "kvnqobi",
+      "v": 10.59
+    },
+    {
+      "i": "phamphammonad",
+      "v": 10.53
+    },
+    {
+      "i": "katrin_fwa",
+      "v": 10.51
+    },
+    {
+      "i": "0xbiawakz",
+      "v": 10.47
+    },
+    {
+      "i": "lopez_adriana12",
+      "v": 10.46
+    },
+    {
+      "i": "spacemooney",
+      "v": 10.46
+    },
+    {
+      "i": "monk_jumong",
+      "v": 10.46
+    },
+    {
+      "i": "0pium_sol",
+      "v": 10.43
+    },
+    {
+      "i": "tug160202",
+      "v": 10.4
+    },
+    {
+      "i": "eazi__moi",
+      "v": 10.36
+    },
+    {
+      "i": "navrmafia3",
+      "v": 10.34
+    },
+    {
+      "i": "ndanairdrop",
+      "v": 10.29
+    },
+    {
+      "i": "defisensei7",
+      "v": 10.26
+    },
+    {
+      "i": "ahnjh8431gmail1",
+      "v": 10.24
+    },
+    {
+      "i": "jtngpt",
+      "v": 10.22
+    },
+    {
+      "i": "torich_hard",
+      "v": 10.21
+    },
+    {
+      "i": "pen_artisan",
+      "v": 10.13
+    },
+    {
+      "i": "moon_rider0951",
+      "v": 10.04
+    },
+    {
+      "i": "acube_1",
+      "v": 9.91
+    },
+    {
+      "i": "sunnymalx",
+      "v": 9.83
+    },
+    {
+      "i": "edosmyy",
+      "v": 9.82
+    },
+    {
+      "i": "vitali_skinner",
+      "v": 9.67
+    },
+    {
+      "i": "xxxhoey",
+      "v": 9.6
+    },
+    {
+      "i": "devmillian",
+      "v": 9.55
+    },
+    {
+      "i": "coin79nhatrang",
+      "v": 9.52
+    },
+    {
+      "i": "emmyblaize64",
+      "v": 9.51
+    },
+    {
+      "i": "onelip123",
+      "v": 9.51
+    },
+    {
+      "i": "thatboymoh",
+      "v": 9.5
+    },
+    {
+      "i": "onchainb0y",
+      "v": 9.45
+    },
+    {
+      "i": "0xsersmin",
+      "v": 9.38
+    },
+    {
+      "i": "dailyodoy",
+      "v": 9.38
+    },
+    {
+      "i": "tmquan888",
+      "v": 9.37
+    },
+    {
+      "i": "mowziee",
+      "v": 9.29
+    },
+    {
+      "i": "sobazzang2",
+      "v": 9.25
+    },
+    {
+      "i": "desire3590",
+      "v": 9.19
+    },
+    {
+      "i": "experienceajuz1",
+      "v": 9.15
+    },
+    {
+      "i": "sultana_meena",
+      "v": 9.12
+    },
+    {
+      "i": "slntpkra36838",
+      "v": 9.02
+    },
+    {
+      "i": "starrgaxe",
+      "v": 8.8
+    },
+    {
+      "i": "bilibabis",
+      "v": 8.73
+    },
+    {
+      "i": "gigglyn_",
+      "v": 8.71
+    },
+    {
+      "i": "__believer_____",
+      "v": 8.67
+    },
+    {
+      "i": "radwazoski",
+      "v": 8.64
+    },
+    {
+      "i": "0x_encrypt",
+      "v": 8.63
+    },
+    {
+      "i": "santanzsn",
+      "v": 8.62
+    },
+    {
+      "i": "_spamdropp",
+      "v": 8.61
+    },
+    {
+      "i": "shunvualidon",
+      "v": 8.61
+    },
+    {
+      "i": "72friend",
+      "v": 8.57
+    },
+    {
+      "i": "aranoweb3",
+      "v": 8.57
+    },
+    {
+      "i": "sun_shine_chain",
+      "v": 8.53
+    },
+    {
+      "i": "gorocryptos",
+      "v": 8.52
+    },
+    {
+      "i": "ichbindun",
+      "v": 8.47
+    },
+    {
+      "i": "itskesha02",
+      "v": 8.38
+    },
+    {
+      "i": "endlessevill",
+      "v": 8.35
+    },
+    {
+      "i": "xedgecrypt",
+      "v": 8.33
+    },
+    {
+      "i": "myopic57",
+      "v": 8.27
+    },
+    {
+      "i": "linesyaaa0x",
+      "v": 8.26
+    },
+    {
+      "i": "rimuru185",
+      "v": 8.23
+    },
+    {
+      "i": "sammyy_sol",
+      "v": 8.2
+    },
+    {
+      "i": "tboss2433",
+      "v": 8.17
+    },
+    {
+      "i": "easymoneyfatih",
+      "v": 8.16
+    },
+    {
+      "i": "fawaztherager",
+      "v": 8.15
+    },
+    {
+      "i": "tonywhitecr",
+      "v": 8.11
+    },
+    {
+      "i": "alphaodus",
+      "v": 8.09
+    },
+    {
+      "i": "0xkillz",
+      "v": 8.08
+    },
+    {
+      "i": "0x_jeamzu",
+      "v": 7.98
+    },
+    {
+      "i": "westt121",
+      "v": 7.97
+    },
+    {
+      "i": "sapiku3939",
+      "v": 7.96
+    },
+    {
+      "i": "tiredhunter1",
+      "v": 7.94
+    },
+    {
+      "i": "spotoracle",
+      "v": 7.91
+    },
+    {
+      "i": "qwert_rain",
+      "v": 7.91
+    },
+    {
+      "i": "kingkong4real",
+      "v": 7.9
+    },
+    {
+      "i": "divinea921",
+      "v": 7.88
+    },
+    {
+      "i": "hotweirdstuff",
+      "v": 7.81
+    },
+    {
+      "i": "ashafa499",
+      "v": 7.8
+    },
+    {
+      "i": "pseudonymweb3",
+      "v": 7.76
+    },
+    {
+      "i": "smithdied",
+      "v": 7.76
+    },
+    {
+      "i": "anton_slyusar",
+      "v": 7.74
+    },
+    {
+      "i": "swangorgty",
+      "v": 7.74
+    },
+    {
+      "i": "lotachi0814",
+      "v": 7.73
+    },
+    {
+      "i": "tikimaraa0805",
+      "v": 7.67
+    },
+    {
+      "i": "colawithvodka",
+      "v": 7.66
+    },
+    {
+      "i": "0x_yuvn789",
+      "v": 7.65
+    },
+    {
+      "i": "web3_fawaz",
+      "v": 7.6
+    },
+    {
+      "i": "blainedowner201",
+      "v": 7.59
+    },
+    {
+      "i": "salamanca21223",
+      "v": 7.59
+    },
+    {
+      "i": "aitoflyer",
+      "v": 7.57
+    },
+    {
+      "i": "scottrepreneur_",
+      "v": 7.54
+    },
+    {
+      "i": "kosmosgr175",
+      "v": 7.49
+    },
+    {
+      "i": "cryptier0",
+      "v": 7.49
+    },
+    {
+      "i": "martezoy",
+      "v": 7.49
+    },
+    {
+      "i": "wonderfulshinso",
+      "v": 7.48
+    },
+    {
+      "i": "nosac34283",
+      "v": 7.48
+    },
+    {
+      "i": "rainstar5123",
+      "v": 7.48
+    },
+    {
+      "i": "blur_city",
+      "v": 7.45
+    },
+    {
+      "i": "0xdevildice",
+      "v": 7.42
+    },
+    {
+      "i": "dckkhead",
+      "v": 7.4
+    },
+    {
+      "i": "tippy_ogx",
+      "v": 7.37
+    },
+    {
+      "i": "prv04_",
+      "v": 7.34
+    },
+    {
+      "i": "wbychv",
+      "v": 7.33
+    },
+    {
+      "i": "lee34829",
+      "v": 7.3
+    },
+    {
+      "i": "cryptchive",
+      "v": 7.29
+    },
+    {
+      "i": "heisjoyroy",
+      "v": 7.29
+    },
+    {
+      "i": "vybes__",
+      "v": 7.28
+    },
+    {
+      "i": "firnotera",
+      "v": 7.28
+    },
+    {
+      "i": "royxnn",
+      "v": 7.27
+    },
+    {
+      "i": "ata_ata0",
+      "v": 7.24
+    },
+    {
+      "i": "gateway_sol",
+      "v": 7.23
+    },
+    {
+      "i": "cjay_tyqoon",
+      "v": 7.22
+    },
+    {
+      "i": "picassoring",
+      "v": 7.2
+    },
+    {
+      "i": "peakfoolin",
+      "v": 7.19
+    },
+    {
+      "i": "feklasrozi",
+      "v": 7.18
+    },
+    {
+      "i": "0xbalesu",
+      "v": 7.17
+    },
+    {
+      "i": "bulan_eth",
+      "v": 7.17
+    },
+    {
+      "i": "huyenpham1702",
+      "v": 7.15
+    },
+    {
+      "i": "lbg2843",
+      "v": 7.13
+    },
+    {
+      "i": "goldatm_finance",
+      "v": 7.12
+    },
+    {
+      "i": "carrotxbt",
+      "v": 7.12
+    },
+    {
+      "i": "shipmaster_777",
+      "v": 7.11
+    },
+    {
+      "i": "maannvreich",
+      "v": 7.11
+    },
+    {
+      "i": "jinmori23200",
+      "v": 7.09
+    },
+    {
+      "i": "uarnoisemaker",
+      "v": 7.09
+    },
+    {
+      "i": "kipowhere",
+      "v": 7.09
+    },
+    {
+      "i": "alsandeer",
+      "v": 7.07
+    },
+    {
+      "i": "0xkyb",
+      "v": 7.04
+    },
+    {
+      "i": "franadinne",
+      "v": 7.04
+    },
+    {
+      "i": "mkhtramn",
+      "v": 7.01
+    },
+    {
+      "i": "0x_stanlee",
+      "v": 7.01
+    },
+    {
+      "i": "frist_level",
+      "v": 7.0
+    },
+    {
+      "i": "limitless_yonko",
+      "v": 6.99
+    },
+    {
+      "i": "silverbenehi",
+      "v": 6.99
+    },
+    {
+      "i": "thoaitugl",
+      "v": 6.97
+    },
+    {
+      "i": "ddollar_again",
+      "v": 6.97
+    },
+    {
+      "i": "valid_block",
+      "v": 6.96
+    },
+    {
+      "i": "mezie_umuwanyi",
+      "v": 6.96
+    },
+    {
+      "i": "uttoniss",
+      "v": 6.96
+    },
+    {
+      "i": "sablueyu",
+      "v": 6.96
+    },
+    {
+      "i": "potter_genny_",
+      "v": 6.96
+    },
+    {
+      "i": "nowmew_chain",
+      "v": 6.96
+    },
+    {
+      "i": "nordamex",
+      "v": 6.96
+    },
+    {
+      "i": "nomoney_crypro",
+      "v": 6.96
+    },
+    {
+      "i": "nodezillla",
+      "v": 6.96
+    },
+    {
+      "i": "niklaus651",
+      "v": 6.96
+    },
+    {
+      "i": "namfuentesganti",
+      "v": 6.96
+    },
+    {
+      "i": "twaltoner",
+      "v": 6.96
+    },
+    {
+      "i": "mary_ruiz83266",
+      "v": 6.96
+    },
+    {
+      "i": "afolabi__039",
+      "v": 6.96
+    },
+    {
+      "i": "m_serz009",
+      "v": 6.96
+    },
+    {
+      "i": "0rangebobby",
+      "v": 6.96
+    },
+    {
+      "i": "25_rumba",
+      "v": 6.96
+    },
+    {
+      "i": "easycake_",
+      "v": 6.96
+    },
+    {
+      "i": "babycielou",
+      "v": 6.96
+    },
+    {
+      "i": "cutegina0118",
+      "v": 6.96
+    },
+    {
+      "i": "dnpay_ai",
+      "v": 6.96
+    },
+    {
+      "i": "leon_mullerrr",
+      "v": 6.96
+    },
+    {
+      "i": "xvnxzn",
+      "v": 6.91
+    },
+    {
+      "i": "mhforever9878",
+      "v": 6.87
+    },
+    {
+      "i": "oldgarden1122",
+      "v": 6.85
+    },
+    {
+      "i": "jattbhai4200",
+      "v": 6.8
+    },
+    {
+      "i": "josephnedo007",
+      "v": 6.74
+    },
+    {
+      "i": "kalantar2020",
+      "v": 6.72
+    },
+    {
+      "i": "denis_zykh",
+      "v": 6.67
+    },
+    {
+      "i": "miinnichan",
+      "v": 6.6
+    },
+    {
+      "i": "amoriminweb3",
+      "v": 6.59
+    },
+    {
+      "i": "cheezzy16",
+      "v": 6.59
+    },
+    {
+      "i": "ox_wize",
+      "v": 6.55
+    },
+    {
+      "i": "requiemeternity",
+      "v": 6.48
+    },
+    {
+      "i": "slickboyy__",
+      "v": 6.43
+    },
+    {
+      "i": "toriola0x",
+      "v": 6.3
+    },
+    {
+      "i": "jaybassd",
+      "v": 6.3
+    },
+    {
+      "i": "zazzy_stardust",
+      "v": 6.21
+    },
+    {
+      "i": "ola_tesleem",
+      "v": 6.19
+    },
+    {
+      "i": "im_rajaali",
+      "v": 6.13
+    },
+    {
+      "i": "0xtrendyy",
+      "v": 6.12
+    },
+    {
+      "i": "0xsze_",
+      "v": 6.07
+    },
+    {
+      "i": "bigru013",
+      "v": 6.04
+    },
+    {
+      "i": "mahin0x",
+      "v": 6.03
+    },
+    {
+      "i": "iscosantiago1",
+      "v": 6.03
+    },
+    {
+      "i": "jala_0x",
+      "v": 5.96
+    },
+    {
+      "i": "primeau5454",
+      "v": 5.93
+    },
+    {
+      "i": "eb1chu9un",
+      "v": 5.92
+    },
+    {
+      "i": "mustbethesky",
+      "v": 5.88
+    },
+    {
+      "i": "0xdankesenpai",
+      "v": 5.87
+    },
+    {
+      "i": "choc4lat",
+      "v": 5.85
+    },
+    {
+      "i": "samiul9599",
+      "v": 5.81
+    },
+    {
+      "i": "jdc3011",
+      "v": 5.79
+    },
+    {
+      "i": "abbahyaha_54640",
+      "v": 5.75
+    },
+    {
+      "i": "thehuseyin02",
+      "v": 5.7
+    },
+    {
+      "i": "0xhazegra",
+      "v": 5.61
+    },
+    {
+      "i": "smash_yy1",
+      "v": 5.4
+    },
+    {
+      "i": "woso777",
+      "v": 5.3
+    },
+    {
+      "i": "dave_not_santan",
+      "v": 5.27
+    },
+    {
+      "i": "tomas91586563",
+      "v": 5.24
+    },
+    {
+      "i": "saebaeko",
+      "v": 5.21
+    },
+    {
+      "i": "gogoruirui2",
+      "v": 5.13
+    },
+    {
+      "i": "catmistry1",
+      "v": 4.99
+    },
+    {
+      "i": "chhiiimmy",
+      "v": 4.98
+    },
+    {
+      "i": "zaddyondc",
+      "v": 4.98
+    },
+    {
+      "i": "raaikan",
+      "v": 4.97
+    },
+    {
+      "i": "3thugger6",
+      "v": 4.93
+    },
+    {
+      "i": "qb_dellas",
+      "v": 4.9
+    },
+    {
+      "i": "d3xbuddy",
+      "v": 4.87
+    },
+    {
+      "i": "hybridcrypt",
+      "v": 4.8
+    },
+    {
+      "i": "coco_krypton",
+      "v": 4.7
+    },
+    {
+      "i": "noctxbt",
+      "v": 4.6
+    },
+    {
+      "i": "virus94368",
+      "v": 4.57
+    },
+    {
+      "i": "temi___tope",
+      "v": 4.51
+    },
+    {
+      "i": "hunter_waitsee",
+      "v": 4.49
+    },
+    {
+      "i": "web3webhead",
+      "v": 4.43
+    },
+    {
+      "i": "therichworth",
+      "v": 4.4
+    },
+    {
+      "i": "khatskevych",
+      "v": 4.34
+    },
+    {
+      "i": "cgt77065",
+      "v": 4.29
+    },
+    {
+      "i": "huntolu",
+      "v": 4.24
+    },
+    {
+      "i": "liptail1028",
+      "v": 4.24
+    },
+    {
+      "i": "habibxy_",
+      "v": 4.19
+    },
+    {
+      "i": "s0lom0nn",
+      "v": 4.19
+    },
+    {
+      "i": "whitenight1557",
+      "v": 4.18
+    },
+    {
+      "i": "lvmnvnt",
+      "v": 4.09
+    },
+    {
+      "i": "bullishfellow",
+      "v": 4.08
+    },
+    {
+      "i": "khamisbnk",
+      "v": 3.98
+    },
+    {
+      "i": "punisher_f",
+      "v": 3.96
+    },
+    {
+      "i": "maybesaffs",
+      "v": 3.92
+    },
+    {
+      "i": "masterpasserby",
+      "v": 3.86
+    },
+    {
+      "i": "justlight159",
+      "v": 3.84
+    },
+    {
+      "i": "teoomerr",
+      "v": 3.78
+    },
+    {
+      "i": "katiasabate",
+      "v": 3.76
+    },
+    {
+      "i": "ocanfauzanh",
+      "v": 3.75
+    },
+    {
+      "i": "umcexdexd",
+      "v": 3.72
+    },
+    {
+      "i": "assideng2",
+      "v": 3.71
+    },
+    {
+      "i": "happycombo234",
+      "v": 3.67
+    },
+    {
+      "i": "moonsteph17",
+      "v": 3.65
+    },
+    {
+      "i": "timiondegen",
+      "v": 3.63
+    },
+    {
+      "i": "cybercraft01",
+      "v": 3.61
+    },
+    {
+      "i": "ryuk6357",
+      "v": 3.57
+    },
+    {
+      "i": "starryskyy23",
+      "v": 3.54
+    },
+    {
+      "i": "aniitech",
+      "v": 3.36
+    },
+    {
+      "i": "kuye_oluseyii",
+      "v": 3.36
+    },
+    {
+      "i": "jaytopchad",
+      "v": 3.29
+    },
+    {
+      "i": "infamousovan",
+      "v": 3.27
+    },
+    {
+      "i": "chinweokwu84148",
+      "v": 3.25
+    },
+    {
+      "i": "jxtgolden",
+      "v": 3.21
+    },
+    {
+      "i": "zarkbns",
+      "v": 3.2
+    },
+    {
+      "i": "alubarika_ao",
+      "v": 3.14
+    },
+    {
+      "i": "giyuuritual",
+      "v": 3.1
+    },
+    {
+      "i": "glory_patrick1",
+      "v": 3.1
+    },
+    {
+      "i": "blueberry_xy3",
+      "v": 3.06
+    },
+    {
+      "i": "0xbeloveth",
+      "v": 3.05
+    },
+    {
+      "i": "orewa_ishow",
+      "v": 3.02
+    },
+    {
+      "i": "adeleke7557",
+      "v": 2.99
+    },
+    {
+      "i": "inno_centjamez",
+      "v": 2.95
+    },
+    {
+      "i": "chuvit_con0x",
+      "v": 2.94
+    },
+    {
+      "i": "lilsadnessbro",
+      "v": 2.91
+    },
+    {
+      "i": "babang_ferry",
+      "v": 2.9
+    },
+    {
+      "i": "ilparhunting",
+      "v": 2.9
+    },
+    {
+      "i": "ac2_airdrop",
+      "v": 2.9
+    },
+    {
+      "i": "moyosore0214",
+      "v": 2.86
+    },
+    {
+      "i": "heracluseth",
+      "v": 2.85
+    },
+    {
+      "i": "davisplatn",
+      "v": 2.83
+    },
+    {
+      "i": "jasmyyyyy35",
+      "v": 2.82
+    },
+    {
+      "i": "cyphherweb",
+      "v": 2.75
+    },
+    {
+      "i": "xarviecrpt",
+      "v": 2.74
+    },
+    {
+      "i": "0xzulf",
+      "v": 2.68
+    },
+    {
+      "i": "zenodeone",
+      "v": 2.62
+    },
+    {
+      "i": "blitz_writes",
+      "v": 2.59
+    },
+    {
+      "i": "staylockedinn",
+      "v": 2.58
+    },
+    {
+      "i": "isshorin",
+      "v": 2.56
+    },
+    {
+      "i": "asyrafalwi12",
+      "v": 2.48
+    },
+    {
+      "i": "0xprime_",
+      "v": 2.46
+    },
+    {
+      "i": "sammiedfab",
+      "v": 2.43
+    },
+    {
+      "i": "wallstreet_1son",
+      "v": 2.43
+    },
+    {
+      "i": "shinnyue1",
+      "v": 2.42
+    },
+    {
+      "i": "bottleboiz",
+      "v": 2.33
+    },
+    {
+      "i": "bixbibr",
+      "v": 2.32
+    },
+    {
+      "i": "randomrisktaker",
+      "v": 2.28
+    },
+    {
+      "i": "sibonenkk",
+      "v": 2.27
+    },
+    {
+      "i": "kvngkenzo",
+      "v": 2.27
+    },
+    {
+      "i": "filetzrena_",
+      "v": 2.25
+    },
+    {
+      "i": "ods581",
+      "v": 2.25
+    },
+    {
+      "i": "holarmihidhey",
+      "v": 2.23
+    },
+    {
+      "i": "dairzy12",
+      "v": 2.2
+    },
+    {
+      "i": "elizamarrk",
+      "v": 2.17
+    },
+    {
+      "i": "thereal_soltoby",
+      "v": 2.15
+    },
+    {
+      "i": "_uknownn1",
+      "v": 2.12
+    },
+    {
+      "i": "plutoo_xx",
+      "v": 2.12
+    },
+    {
+      "i": "imkain666",
+      "v": 2.09
+    },
+    {
+      "i": "infokuydotnet",
+      "v": 2.08
+    },
+    {
+      "i": "vdthanh00",
+      "v": 2.04
+    },
+    {
+      "i": "defi_tos",
+      "v": 2.02
+    },
+    {
+      "i": "the_rakibull",
+      "v": 1.97
+    },
+    {
+      "i": "0x_obscuro",
+      "v": 1.96
+    },
+    {
+      "i": "rayn_mentioned",
+      "v": 1.94
+    },
+    {
+      "i": "sqntiag0",
+      "v": 1.88
+    },
+    {
+      "i": "vikkaachu",
+      "v": 1.88
+    },
+    {
+      "i": "hdayzon",
+      "v": 1.85
+    },
+    {
+      "i": "meeza4pf",
+      "v": 1.85
+    },
+    {
+      "i": "iamkinggeo",
+      "v": 1.84
+    },
+    {
+      "i": "ann19403",
+      "v": 1.79
+    },
+    {
+      "i": "a_ncaptain",
+      "v": 1.79
+    },
+    {
+      "i": "zaini428700",
+      "v": 1.77
+    },
+    {
+      "i": "gentlegirlaisha",
+      "v": 1.77
+    },
+    {
+      "i": "femixsmart",
+      "v": 1.74
+    },
+    {
+      "i": "olamideayobami7",
+      "v": 1.73
+    },
+    {
+      "i": "boognerc",
+      "v": 1.68
+    },
+    {
+      "i": "0xrano",
+      "v": 1.67
+    },
+    {
+      "i": "battement1",
+      "v": 1.66
+    },
+    {
+      "i": "minyu1609",
+      "v": 1.66
+    },
+    {
+      "i": "odion_7",
+      "v": 1.62
+    },
+    {
+      "i": "jessethecav3man",
+      "v": 1.61
+    },
+    {
+      "i": "maxwellll_",
+      "v": 1.61
+    },
+    {
+      "i": "realsapis",
+      "v": 1.59
+    },
+    {
+      "i": "sirgusfring",
+      "v": 1.58
+    },
+    {
+      "i": "youngbiblophile",
+      "v": 1.58
+    },
+    {
+      "i": "har1sssssss",
+      "v": 1.56
+    },
+    {
+      "i": "defispaceini",
+      "v": 1.53
+    },
+    {
+      "i": "play_crypt",
+      "v": 1.52
+    },
+    {
+      "i": "0xbtdegen",
+      "v": 1.51
+    },
+    {
+      "i": "alla_pato75771",
+      "v": 1.45
+    },
+    {
+      "i": "bbmjnr127",
+      "v": 1.43
+    },
+    {
+      "i": "riffqithegoat",
+      "v": 1.42
+    },
+    {
+      "i": "0xataraxia",
+      "v": 1.39
+    },
+    {
+      "i": "montanaby300",
+      "v": 1.36
+    },
+    {
+      "i": "learntorich",
+      "v": 1.35
+    },
+    {
+      "i": "nerdydruskii",
+      "v": 1.33
+    },
+    {
+      "i": "lexzayo",
+      "v": 1.3
+    },
+    {
+      "i": "saintly122",
+      "v": 1.25
+    },
+    {
+      "i": "kasala91",
+      "v": 1.24
+    },
+    {
+      "i": "j_mumeen",
+      "v": 1.24
+    },
+    {
+      "i": "zaluper3",
+      "v": 1.23
+    },
+    {
+      "i": "that_posh",
+      "v": 1.22
+    },
+    {
+      "i": "69_kopernik",
+      "v": 1.2
+    },
+    {
+      "i": "zabbilow",
+      "v": 1.18
+    },
+    {
+      "i": "realchad13",
+      "v": 1.18
+    },
+    {
+      "i": "kemozabetaro",
+      "v": 1.17
+    },
+    {
+      "i": "0xarsha09",
+      "v": 1.17
+    },
+    {
+      "i": "observerlacruz",
+      "v": 1.17
+    },
+    {
+      "i": "zasswff_",
+      "v": 1.16
+    },
+    {
+      "i": "vongsakda555",
+      "v": 1.16
+    },
+    {
+      "i": "soda_amide",
+      "v": 1.16
+    },
+    {
+      "i": "degensdad",
+      "v": 1.15
+    },
+    {
+      "i": "tiensolll",
+      "v": 1.14
+    },
+    {
+      "i": "onipeds",
+      "v": 1.12
+    },
+    {
+      "i": "0xjompin",
+      "v": 1.12
+    },
+    {
+      "i": "minhnn1807",
+      "v": 1.12
+    },
+    {
+      "i": "vantran0810",
+      "v": 1.1
+    },
+    {
+      "i": "elzyuzi21",
+      "v": 1.09
+    },
+    {
+      "i": "uchesonjoe001",
+      "v": 1.09
+    },
+    {
+      "i": "jj76735",
+      "v": 1.08
+    },
+    {
+      "i": "bakerik_",
+      "v": 1.08
+    },
+    {
+      "i": "prettyreids",
+      "v": 1.06
+    },
+    {
+      "i": "supergemer1666",
+      "v": 1.06
+    },
+    {
+      "i": "batsie0x",
+      "v": 1.05
+    },
+    {
+      "i": "xbit_x",
+      "v": 1.05
+    },
+    {
+      "i": "themegamind24",
+      "v": 1.04
+    },
+    {
+      "i": "goldenpark77777",
+      "v": 1.03
+    },
+    {
+      "i": "1ghostsama",
+      "v": 1.03
+    },
+    {
+      "i": "asdam_world",
+      "v": 1.02
+    },
+    {
+      "i": "xdontol",
+      "v": 1.01
+    },
+    {
+      "i": "tollyvx",
+      "v": 1.0
+    },
+    {
+      "i": "cryingfreeman70",
+      "v": 1.0
+    },
+    {
+      "i": "0xdammycrypt",
+      "v": 1.0
+    },
+    {
+      "i": "cap_tzzz",
+      "v": 0.99
+    },
+    {
+      "i": "the__ibeast",
+      "v": 0.99
+    },
+    {
+      "i": "0xheartroy",
+      "v": 0.96
+    },
+    {
+      "i": "0xvost",
+      "v": 0.96
+    },
+    {
+      "i": "hex_anon33",
+      "v": 0.95
+    },
+    {
+      "i": "gopaww",
+      "v": 0.94
+    },
+    {
+      "i": "debbyebiz",
+      "v": 0.94
+    },
+    {
+      "i": "0x_jiruma",
+      "v": 0.93
+    },
+    {
+      "i": "sa6644987",
+      "v": 0.91
+    },
+    {
+      "i": "dgef777",
+      "v": 0.91
+    },
+    {
+      "i": "monarch1009",
+      "v": 0.88
+    },
+    {
+      "i": "mediaplugnow",
+      "v": 0.88
+    },
+    {
+      "i": "saminizle",
+      "v": 0.85
+    },
+    {
+      "i": "saintmarley97",
+      "v": 0.84
+    },
+    {
+      "i": "randomcvf",
+      "v": 0.83
+    },
+    {
+      "i": "wambuguhussein",
+      "v": 0.83
+    },
+    {
+      "i": "kkchenxx",
+      "v": 0.81
+    },
+    {
+      "i": "mrdcsxxx",
+      "v": 0.8
+    },
+    {
+      "i": "duchungtique",
+      "v": 0.76
+    },
+    {
+      "i": "nima_morad",
+      "v": 0.75
+    },
+    {
+      "i": "walken_one",
+      "v": 0.74
+    },
+    {
+      "i": "ndi_onye",
+      "v": 0.73
+    },
+    {
+      "i": "gonzales_node",
+      "v": 0.73
+    },
+    {
+      "i": "rcki131",
+      "v": 0.73
+    },
+    {
+      "i": "monadoshi_",
+      "v": 0.73
+    },
+    {
+      "i": "yevhenkuy",
+      "v": 0.73
+    },
+    {
+      "i": "ethypk",
+      "v": 0.73
+    },
+    {
+      "i": "moas539",
+      "v": 0.71
+    },
+    {
+      "i": "justminu25",
+      "v": 0.7
+    },
+    {
+      "i": "leeht1216",
+      "v": 0.69
+    },
+    {
+      "i": "val1gators",
+      "v": 0.69
+    },
+    {
+      "i": "necherem_001",
+      "v": 0.67
+    },
+    {
+      "i": "biologisteth0",
+      "v": 0.67
+    },
+    {
+      "i": "danielrichee",
+      "v": 0.66
+    },
+    {
+      "i": "itsmoonboi",
+      "v": 0.66
+    },
+    {
+      "i": "0xleawn",
+      "v": 0.64
+    },
+    {
+      "i": "iq30juju",
+      "v": 0.63
+    },
+    {
+      "i": "pizzabrain1",
+      "v": 0.62
+    },
+    {
+      "i": "0x_abu",
+      "v": 0.62
+    },
+    {
+      "i": "0xtherapy_",
+      "v": 0.62
+    },
+    {
+      "i": "onshrooms101",
+      "v": 0.58
+    },
+    {
+      "i": "bigtaofeek01",
+      "v": 0.58
+    },
+    {
+      "i": "danisio002",
+      "v": 0.57
+    },
+    {
+      "i": "guardianapril",
+      "v": 0.56
+    },
+    {
+      "i": "hugepalkon",
+      "v": 0.55
+    },
+    {
+      "i": "metallover92",
+      "v": 0.5
+    },
+    {
+      "i": "valid_nelson",
+      "v": 0.5
+    },
+    {
+      "i": "feurimas10",
+      "v": 0.49
+    },
+    {
+      "i": "okihali197621",
+      "v": 0.49
+    },
+    {
+      "i": "0xshinobu1",
+      "v": 0.47
+    },
+    {
+      "i": "chuk6834",
+      "v": 0.47
+    },
+    {
+      "i": "bumble_202",
+      "v": 0.46
+    },
+    {
+      "i": "rifeeth",
+      "v": 0.46
+    },
+    {
+      "i": "0x_aspenth",
+      "v": 0.46
+    },
+    {
+      "i": "sudakovde",
+      "v": 0.44
+    },
+    {
+      "i": "wankstajavier",
+      "v": 0.44
+    },
+    {
+      "i": "marquze21",
+      "v": 0.44
+    },
+    {
+      "i": "swim_akishou",
+      "v": 0.44
+    },
+    {
+      "i": "ant_ua5",
+      "v": 0.44
+    },
+    {
+      "i": "0xloki_gg",
+      "v": 0.43
+    },
+    {
+      "i": "eligiblist002",
+      "v": 0.42
+    },
+    {
+      "i": "nennagospelc",
+      "v": 0.42
+    },
+    {
+      "i": "lowercaseg_y",
+      "v": 0.38
+    },
+    {
+      "i": "jamestran817",
+      "v": 0.37
+    },
+    {
+      "i": "z3k22",
+      "v": 0.37
+    },
+    {
+      "i": "weirdo___001",
+      "v": 0.36
+    },
+    {
+      "i": "sdxweb3guy",
+      "v": 0.36
+    },
+    {
+      "i": "xora_no",
+      "v": 0.36
+    },
+    {
+      "i": "vitiukkr",
+      "v": 0.35
+    },
+    {
+      "i": "htwtech_intern",
+      "v": 0.33
+    },
+    {
+      "i": "jjamescarter69",
+      "v": 0.33
+    },
+    {
+      "i": "perisaljuuu",
+      "v": 0.32
+    },
+    {
+      "i": "yosefahmed789",
+      "v": 0.32
+    },
+    {
+      "i": "isonguyootobong",
+      "v": 0.32
+    },
+    {
+      "i": "geng_ges",
+      "v": 0.32
+    },
+    {
+      "i": "ferdynand_jr",
+      "v": 0.32
+    },
+    {
+      "i": "dv38013630",
+      "v": 0.32
+    },
+    {
+      "i": "mdshakilsarkars",
+      "v": 0.32
+    },
+    {
+      "i": "caboahmed817",
+      "v": 0.32
+    },
+    {
+      "i": "naveednasir110",
+      "v": 0.32
+    },
+    {
+      "i": "afif_aninditha",
+      "v": 0.32
+    },
+    {
+      "i": "kmf_wahyu",
+      "v": 0.32
+    },
+    {
+      "i": "mdweb3x",
+      "v": 0.32
+    },
+    {
+      "i": "alpianiiip",
+      "v": 0.32
+    },
+    {
+      "i": "dobbostontaft11",
+      "v": 0.32
+    },
+    {
+      "i": "iqbal_humor",
+      "v": 0.32
+    },
+    {
+      "i": "willzealoxid",
+      "v": 0.3
+    },
+    {
+      "i": "tuyentruong2021",
+      "v": 0.28
+    },
+    {
+      "i": "ilya06792382998",
+      "v": 0.28
+    },
+    {
+      "i": "kyeopta_hunter",
+      "v": 0.28
+    },
+    {
+      "i": "mdshamim4560",
+      "v": 0.28
+    },
+    {
+      "i": "knightjosse",
+      "v": 0.28
+    },
+    {
+      "i": "0xb4im",
+      "v": 0.28
+    },
+    {
+      "i": "curoro000",
+      "v": 0.27
+    },
+    {
+      "i": "mustaphamuadh15",
+      "v": 0.27
+    },
+    {
+      "i": "fg_lania",
+      "v": 0.26
+    },
+    {
+      "i": "sangre_dedrago",
+      "v": 0.25
+    },
+    {
+      "i": "aeservy",
+      "v": 0.25
+    },
+    {
+      "i": "ugx0_",
+      "v": 0.25
+    },
+    {
+      "i": "iliyasujr1012",
+      "v": 0.24
+    },
+    {
+      "i": "qunnylele",
+      "v": 0.24
+    },
+    {
+      "i": "i_am_jahboy",
+      "v": 0.24
+    },
+    {
+      "i": "mrmorion",
+      "v": 0.23
+    },
+    {
+      "i": "mr_feeret",
+      "v": 0.23
+    },
+    {
+      "i": "kingflirckz22",
+      "v": 0.22
+    },
+    {
+      "i": "zaakk_eth",
+      "v": 0.22
+    },
+    {
+      "i": "0xhypejo",
+      "v": 0.22
+    },
+    {
+      "i": "vinkalupinn",
+      "v": 0.22
+    },
+    {
+      "i": "fomaless",
+      "v": 0.22
+    },
+    {
+      "i": "khorr_age",
+      "v": 0.22
+    },
+    {
+      "i": "addison_be9499",
+      "v": 0.22
+    },
+    {
+      "i": "zaza_brain",
+      "v": 0.22
+    },
+    {
+      "i": "amir0455",
+      "v": 0.21
+    },
+    {
+      "i": "ochafrin",
+      "v": 0.21
+    },
+    {
+      "i": "thalarajesh4",
+      "v": 0.2
+    },
+    {
+      "i": "gay_porno_esp",
+      "v": 0.2
+    },
+    {
+      "i": "twangain",
+      "v": 0.2
+    },
+    {
+      "i": "ar_gz57691",
+      "v": 0.19
+    },
+    {
+      "i": "zveryonak12",
+      "v": 0.19
+    },
+    {
+      "i": "maximumuszal",
+      "v": 0.19
+    },
+    {
+      "i": "notasandyman",
+      "v": 0.19
+    },
+    {
+      "i": "igoriva123",
+      "v": 0.19
+    },
+    {
+      "i": "vikingankun",
+      "v": 0.19
+    },
+    {
+      "i": "irinaaa285",
+      "v": 0.19
+    },
+    {
+      "i": "dangchau15",
+      "v": 0.19
+    },
+    {
+      "i": "timeth18512",
+      "v": 0.19
+    },
+    {
+      "i": "moko_luka",
+      "v": 0.18
+    },
+    {
+      "i": "t_pendergrass",
+      "v": 0.18
+    },
+    {
+      "i": "bheecrush",
+      "v": 0.18
+    },
+    {
+      "i": "0xvin3",
+      "v": 0.18
+    },
+    {
+      "i": "sm0llc4annel",
+      "v": 0.18
+    },
+    {
+      "i": "webmas20",
+      "v": 0.18
+    },
+    {
+      "i": "thnkpink07",
+      "v": 0.18
+    },
+    {
+      "i": "_ti__mi",
+      "v": 0.18
+    },
+    {
+      "i": "shakyse67934329",
+      "v": 0.18
+    },
+    {
+      "i": "s1mpl30",
+      "v": 0.18
+    },
+    {
+      "i": "ricardo_kuellar",
+      "v": 0.18
+    },
+    {
+      "i": "patricwisee",
+      "v": 0.18
+    },
+    {
+      "i": "olgavik777",
+      "v": 0.18
+    },
+    {
+      "i": "stroifaq",
+      "v": 0.18
+    },
+    {
+      "i": "metaalienoffl",
+      "v": 0.18
+    },
+    {
+      "i": "d_diacuk",
+      "v": 0.18
+    },
+    {
+      "i": "matt_cr1pto",
+      "v": 0.18
+    },
+    {
+      "i": "nikitosixs124",
+      "v": 0.18
+    },
+    {
+      "i": "peaksurgicals44",
+      "v": 0.18
+    },
+    {
+      "i": "zlukabobr1",
+      "v": 0.18
+    },
+    {
+      "i": "agathabjj_",
+      "v": 0.18
+    },
+    {
+      "i": "cireasaaa",
+      "v": 0.18
+    },
+    {
+      "i": "smoler512",
+      "v": 0.18
+    },
+    {
+      "i": "ina_arwinda",
+      "v": 0.18
+    },
+    {
+      "i": "itstaksss",
+      "v": 0.18
+    },
+    {
+      "i": "lady0007best",
+      "v": 0.18
+    },
+    {
+      "i": "lysyi_ivan",
+      "v": 0.18
+    },
+    {
+      "i": "mat33n_",
+      "v": 0.18
+    },
+    {
+      "i": "julioelguapo96",
+      "v": 0.17
+    },
+    {
+      "i": "yhankie0312",
+      "v": 0.17
+    },
+    {
+      "i": "abood80_1",
+      "v": 0.17
+    },
+    {
+      "i": "adeolatunrayo",
+      "v": 0.17
+    },
+    {
+      "i": "veni_venyers",
+      "v": 0.17
+    },
+    {
+      "i": "swandygatel",
+      "v": 0.17
+    },
+    {
+      "i": "r_f011",
+      "v": 0.17
+    },
+    {
+      "i": "shsfsjeh",
+      "v": 0.17
+    },
+    {
+      "i": "iekaazzam",
+      "v": 0.17
+    },
+    {
+      "i": "hijauberangkasa",
+      "v": 0.17
+    },
+    {
+      "i": "nmukwaita",
+      "v": 0.17
+    },
+    {
+      "i": "jaison4322",
+      "v": 0.17
+    },
+    {
+      "i": "fahrisince11",
+      "v": 0.17
+    },
+    {
+      "i": "islathebuilder",
+      "v": 0.17
+    },
+    {
+      "i": "bharatmandera1",
+      "v": 0.17
+    },
+    {
+      "i": "fredyt919",
+      "v": 0.16
+    },
+    {
+      "i": "itsmeluhian",
+      "v": 0.16
+    },
+    {
+      "i": "justlyra001",
+      "v": 0.16
+    },
+    {
+      "i": "doskaks",
+      "v": 0.15
+    },
+    {
+      "i": "web3_sanya",
+      "v": 0.15
+    },
+    {
+      "i": "wavythestar",
+      "v": 0.15
+    },
+    {
+      "i": "disastrouspure5",
+      "v": 0.15
+    },
+    {
+      "i": "wdudbiswas",
+      "v": 0.14
+    },
+    {
+      "i": "hiih732",
+      "v": 0.14
+    },
+    {
+      "i": "pangpoo789",
+      "v": 0.14
+    },
+    {
+      "i": "samihmohammed",
+      "v": 0.13
+    },
+    {
+      "i": "petric111",
+      "v": 0.13
+    },
+    {
+      "i": "yakupyeilli",
+      "v": 0.12
+    },
+    {
+      "i": "tingtongbig01",
+      "v": 0.12
+    },
+    {
+      "i": "yasinyunusa",
+      "v": 0.12
+    },
+    {
+      "i": "ayu1_ayuuu",
+      "v": 0.12
+    },
+    {
+      "i": "viralmoneydude",
+      "v": 0.11
+    },
+    {
+      "i": "attitude1a",
+      "v": 0.1
+    },
+    {
+      "i": "james_gods56482",
+      "v": 0.1
+    },
+    {
+      "i": "kbnoh6",
+      "v": 0.09
+    },
+    {
+      "i": "indraneel_777",
+      "v": 0.09
+    },
+    {
+      "i": "l0_billy",
+      "v": 0.09
+    },
+    {
+      "i": "phulimphad",
+      "v": 0.08
+    },
+    {
+      "i": "watieecutee",
+      "v": 0.08
+    },
+    {
+      "i": "goldytorrent",
+      "v": 0.08
+    },
+    {
+      "i": "pirmansyahluki5",
+      "v": 0.08
+    },
+    {
+      "i": "kitsada57",
+      "v": 0.07
+    },
+    {
+      "i": "chilguy__",
+      "v": 0.07
+    },
+    {
+      "i": "dripcrypto07",
+      "v": 0.06
+    },
+    {
+      "i": "nath_d_champion",
+      "v": 0.05
+    },
+    {
+      "i": "0xboht",
+      "v": 0.05
+    },
+    {
+      "i": "kiminza_codes",
+      "v": 0.05
+    },
+    {
+      "i": "opeosh11",
+      "v": 0.04
+    },
+    {
+      "i": "monstersecs",
+      "v": 0.04
+    },
+    {
+      "i": "pettynimah0",
+      "v": 0.03
+    },
+    {
+      "i": "kamora4pf",
+      "v": 0.03
+    },
+    {
+      "i": "goondasri",
+      "v": 0.03
+    },
+    {
+      "i": "mhabhishek1998",
+      "v": 0.03
+    },
+    {
+      "i": "corytheproducer",
+      "v": 0.03
+    },
+    {
+      "i": "3wackolifestyle",
+      "v": 0.03
+    },
+    {
+      "i": "happyweirdo_999",
+      "v": 0.03
+    },
+    {
+      "i": "cryptorosen",
+      "v": 0.03
+    },
+    {
+      "i": "ishowjhaz",
+      "v": 0.01
+    },
+    {
+      "i": "nariagarineet",
+      "v": 0.01
+    },
+    {
+      "i": "highlorduthred",
+      "v": 0.01
+    },
+    {
+      "i": "lilwealthy19",
+      "v": 0.01
+    },
+    {
+      "i": "qrra_1",
+      "v": 0.01
+    },
+    {
+      "i": "mannywavess",
+      "v": 0.0
+    },
+    {
+      "i": "obinnaaaa_",
+      "v": 0.0
+    },
+    {
+      "i": "sedami_boitine",
+      "v": 0.0
+    },
+    {
+      "i": "bethany321",
+      "v": 0.0
+    }
+  ]
+}

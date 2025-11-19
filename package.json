@@ -1,0 +1,22 @@
+{
+  "name": "openrank-api",
+  "version": "1.0.0",
+  "description": "OpenRank API for Discord, GitHub, Telegram, and X datasets",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "serve": "node server.js",
+    "build": "echo 'No build step required'",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "openrank",
+    "api",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^48.10.4"
+  }
+}
