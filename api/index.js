@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     return res.status(200).end();
   }
 
-  const baseUrl = req.headers.host ? `https://${req.headers.host}` : 'https://your-deployment.vercel.app';
+  const baseUrl = req.headers.host ? `https://${req.headers.host}` : 'https://api.openrank.com';
 
   res.status(200).json({
     name: 'OpenRank API',
