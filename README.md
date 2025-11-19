@@ -99,29 +99,29 @@ Base path: `/api/x`
 
 **Example:**
 ```bash
-curl "https://your-deployment.vercel.app/api/discord/ritual/scores?start=10&size=5"
+curl "https://api.openrank.com/api/discord/ritual/scores?start=10&size=5"
 ```
 
 ## Example Usage
 
 ### Get complete Discord dataset
 ```bash
-curl https://your-deployment.vercel.app/api/discord/ritual
+curl https://api.openrank.com/api/discord/ritual
 ```
 
 ### Get GitHub seed data
 ```bash
-curl https://your-deployment.vercel.app/api/github/bitcoin/seed
+curl https://api.openrank.com/api/github/bitcoin/seed
 ```
 
 ### Get paginated scores from Telegram
 ```bash
-curl "https://your-deployment.vercel.app/api/telegram/decentraliseddotco/scores?start=0&size=20"
+curl "https://api.openrank.com/api/telegram/decentraliseddotco/scores?start=0&size=20"
 ```
 
 ### Get X community ID
 ```bash
-curl https://your-deployment.vercel.app/api/x/ritual-community/community_id
+curl https://api.openrank.com/api/x/ritual-community/community_id
 ```
 
 ## Data Structure
