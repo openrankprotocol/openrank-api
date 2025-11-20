@@ -1,18 +1,32 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 /**
- * Load a dataset file from the datasets directory
+ * Load a dataset file from local storage
  * @param {string} platform - The platform name (discord, github, telegram, x)
  * @param {string} fileName - The file name without .json extension
- * @returns {Object|null} The parsed JSON data or null if not found
+ * @returns {Promise<Object|null>} The parsed JSON data or null if not found
  */
-function loadDataset(platform, fileName) {
+async function loadDatasetAsync(platform, fileName) {
   try {
-    const filePath = path.join(process.cwd(), 'datasets', platform, `${fileName}.json`);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContent);
+    const filePath = path.join(
+      process.cwd(),
+      "datasets",
+      platform,
+      `${fileName}.json`,
+    );
+
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(fileContent);
+    }
+
+    return null;
   } catch (error) {
+    console.error(
+      `Error loading dataset ${platform}/${fileName}:`,
+      error.message,
+    );
     return null;
   }
 }
@@ -26,7 +40,9 @@ function loadDataset(platform, fileName) {
  */
 function paginate(array, start = 0, size = null) {
   const startIndex = Math.max(0, start);
-  const endIndex = size ? Math.min(array.length, startIndex + size) : array.length;
+  const endIndex = size
+    ? Math.min(array.length, startIndex + size)
+    : array.length;
   return array.slice(startIndex, endIndex);
 }
 
@@ -37,7 +53,15 @@ function paginate(array, start = 0, size = null) {
  * @param {*} data - Data to send
  */
 function sendResponse(res, statusCode, data) {
-  res.status(statusCode).json(data);
+  // Check if this is a Vercel response object or Node.js http response
+  if (res.status && res.json) {
+    // Vercel format
+    res.status(statusCode).json(data);
+  } else {
+    // Node.js http format
+    res.writeHead(statusCode, { "Content-Type": "application/json" });
+    res.end(JSON.stringify(data));
+  }
 }
 
 /**
@@ -47,7 +71,15 @@ function sendResponse(res, statusCode, data) {
  * @param {string} message - Error message
  */
 function sendError(res, statusCode, message) {
-  res.status(statusCode).json({ error: message });
+  // Check if this is a Vercel response object or Node.js http response
+  if (res.status && res.json) {
+    // Vercel format
+    res.status(statusCode).json({ error: message });
+  } else {
+    // Node.js http format
+    res.writeHead(statusCode, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ error: message }));
+  }
 }
 
 /**
@@ -55,15 +87,39 @@ function sendError(res, statusCode, message) {
  * @param {Object} res - Response object
  */
 function enableCors(res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+}
+
+/**
+ * List available dataset files for a platform
+ * @param {string} platform - The platform name (discord, github, telegram, x)
+ * @returns {Promise<Array<string>>} Array of file names without .json extension
+ */
+async function listDatasets(platform) {
+  try {
+    const dirPath = path.join(process.cwd(), "datasets", platform);
+    if (fs.existsSync(dirPath)) {
+      const files = fs.readdirSync(dirPath);
+      return files
+        .filter((file) => file.endsWith(".json"))
+        .map((file) => file.replace(".json", ""))
+        .sort();
+    }
+
+    return [];
+  } catch (error) {
+    console.error(`Error listing datasets for ${platform}:`, error.message);
+    return [];
+  }
 }
 
 module.exports = {
-  loadDataset,
+  loadDatasetAsync,
   paginate,
   sendResponse,
   sendError,
-  enableCors
+  enableCors,
+  listDatasets,
 };

@@ -1,6 +1,14 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ]
+    { "source": "/discord", "destination": "/api/discord" },
+    { "source": "/github", "destination": "/api/github" },
+    { "source": "/telegram", "destination": "/api/telegram" },
+    { "source": "/x", "destination": "/api/x" },
+    { "source": "/discord/(.*)", "destination": "/api/discord/[...params]" },
+    { "source": "/github/(.*)", "destination": "/api/github/[...params]" },
+    { "source": "/telegram/(.*)", "destination": "/api/telegram/[...params]" },
+    { "source": "/x/(.*)", "destination": "/api/x/[...params]" }
+  ],
+  "devCommand": "node server.js"
 }

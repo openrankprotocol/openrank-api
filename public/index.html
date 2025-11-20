@@ -14,302 +14,345 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
             text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #2a2a2a;
             margin-bottom: 40px;
         }
 
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
         h2 {
-            color: #667eea;
+            color: #ffffff;
             margin-bottom: 20px;
-            font-size: 2em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .platform-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .platform-card {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 24px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .platform-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .platform-card h3 {
-            color: #667eea;
-            margin-bottom: 15px;
             font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .platform {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .platform:last-child {
+            border-bottom: none;
+        }
+
+        .platform h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 500;
         }
 
         .endpoint {
-            background: white;
-            padding: 12px;
+            background: #151515;
+            padding: 12px 16px;
             margin: 8px 0;
             border-radius: 4px;
             font-family: 'Courier New', monospace;
             font-size: 0.9em;
-            color: #2d3748;
-            border: 1px solid #e2e8f0;
+            color: #b0b0b0;
+            border: 1px solid #2a2a2a;
         }
 
         .method {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
+            color: #666;
             font-weight: bold;
             margin-right: 8px;
         }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+        .description {
+            color: #888;
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
 
-        .feature {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
+        ul {
+            margin-left: 20px;
+            color: #888;
         }
 
-        .feature-icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .feature h3 {
-            color: #667eea;
-            margin-bottom: 10px;
+        ul li {
+            margin: 8px 0;
         }
 
         code {
-            background: #2d3748;
-            color: #68d391;
-            padding: 2px 6px;
+            background: #151515;
+            color: #b0b0b0;
+            padding: 3px 8px;
             border-radius: 3px;
             font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border: 1px solid #2a2a2a;
         }
 
         .example {
-            background: #2d3748;
-            color: #68d391;
-            padding: 20px;
-            border-radius: 8px;
+            background: #151515;
+            color: #b0b0b0;
+            padding: 16px;
+            border-radius: 4px;
             overflow-x: auto;
             margin: 15px 0;
+            border: 1px solid #2a2a2a;
         }
 
         .example pre {
             margin: 0;
             font-family: 'Courier New', monospace;
+            font-size: 0.9em;
         }
 
         footer {
-            background: #2d3748;
-            color: white;
             text-align: center;
-            padding: 30px;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 1px solid #2a2a2a;
+            color: #666;
+            font-size: 0.9em;
         }
 
-        footer a {
-            color: #68d391;
+        a {
+            color: #888;
             text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.85em;
-            margin: 0 4px;
+        a:hover {
+            color: #b0b0b0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🚀 OpenRank API</h1>
-            <p>Serverless REST API for OpenRank data across Discord, GitHub, Telegram, and X</p>
-            <div style="margin-top: 20px;">
-                <span class="badge">Vercel</span>
-                <span class="badge">Serverless</span>
-                <span class="badge">CORS Enabled</span>
-            </div>
+            <h1>OpenRank API</h1>
+            <p>REST API for OpenRank data across Discord, GitHub, Telegram, and X</p>
         </header>
 
-        <div class="content">
-            <div class="section">
-                <h2>✨ Features</h2>
-                <div class="features">
-                    <div class="feature">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Serverless</h3>
-                        <p>Fast and scalable deployment on Vercel</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">📊</div>
-                        <h3>Multi-Platform</h3>
-                        <p>Discord, GitHub, Telegram, and X data</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🔄</div>
-                        <h3>Pagination</h3>
-                        <p>Efficient data retrieval with pagination</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🌐</div>
-                        <h3>CORS Ready</h3>
-                        <p>Cross-origin requests enabled</p>
-                    </div>
-                </div>
+        <div class="section">
+            <h2>Endpoints</h2>
+
+            <div class="platform">
+                <h3>Discord</h3>
+                <p class="description">Available files: <code>ritual</code></p>
+                <div class="endpoint"><span class="method">GET</span>/discord/{file_name}</div>
+                <div class="endpoint"><span class="method">GET</span>/discord/{file_name}/seed</div>
+                <div class="endpoint"><span class="method">GET</span>/discord/{file_name}/server_id</div>
+                <div class="endpoint"><span class="method">GET</span>/discord/{file_name}/scores</div>
             </div>
 
-            <div class="section">
-                <h2>📡 API Endpoints</h2>
-
-                <div class="platform-grid">
-                    <div class="platform-card">
-                        <h3>💬 Discord</h3>
-                        <div class="endpoint"><span class="method">GET</span>/api/discord/{file_name}</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/discord/{file_name}/seed</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/discord/{file_name}/server_id</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/discord/{file_name}/scores</div>
-                    </div>
-
-                    <div class="platform-card">
-                        <h3>🐙 GitHub</h3>
-                        <div class="endpoint"><span class="method">GET</span>/api/github/{file_name}</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/github/{file_name}/seed</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/github/{file_name}/ecosystem</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/github/{file_name}/scores</div>
-                    </div>
-
-                    <div class="platform-card">
-                        <h3>✈️ Telegram</h3>
-                        <div class="endpoint"><span class="method">GET</span>/api/telegram/{file_name}</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/telegram/{file_name}/seed</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/telegram/{file_name}/channel_id</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/telegram/{file_name}/scores</div>
-                    </div>
-
-                    <div class="platform-card">
-                        <h3>🐦 X (Twitter)</h3>
-                        <div class="endpoint"><span class="method">GET</span>/api/x/{file_name}</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/x/{file_name}/seed</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/x/{file_name}/community_id</div>
-                        <div class="endpoint"><span class="method">GET</span>/api/x/{file_name}/scores</div>
-                    </div>
-                </div>
+            <div class="platform">
+                <h3>GitHub</h3>
+                <p class="description">Available files: <code>bitcoin</code></p>
+                <div class="endpoint"><span class="method">GET</span>/github/{file_name}</div>
+                <div class="endpoint"><span class="method">GET</span>/github/{file_name}/seed</div>
+                <div class="endpoint"><span class="method">GET</span>/github/{file_name}/ecosystem</div>
+                <div class="endpoint"><span class="method">GET</span>/github/{file_name}/scores</div>
             </div>
 
-            <div class="section">
-                <h2>📖 Query Parameters</h2>
-                <p>For <code>/scores</code> endpoints, use these optional query parameters:</p>
-                <ul style="margin-top: 15px; margin-left: 20px;">
-                    <li><code>start</code> - Starting index for pagination (default: 0)</li>
-                    <li><code>size</code> - Number of items to return (default: all)</li>
-                </ul>
+            <div class="platform">
+                <h3>Telegram</h3>
+                <p class="description">Available files: <code>decentraliseddotco</code></p>
+                <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}</div>
+                <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/seed</div>
+                <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/channel_id</div>
+                <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/scores</div>
             </div>
 
-            <div class="section">
-                <h2>💻 Example Usage</h2>
+            <div class="platform">
+                <h3>X</h3>
+                <p class="description">Available files: <code>ritual-community</code></p>
+                <div class="endpoint"><span class="method">GET</span>/x/{file_name}</div>
+                <div class="endpoint"><span class="method">GET</span>/x/{file_name}/seed</div>
+                <div class="endpoint"><span class="method">GET</span>/x/{file_name}/community_id</div>
+                <div class="endpoint"><span class="method">GET</span>/x/{file_name}/scores</div>
+            </div>
+        </div>
 
-                <h3 style="margin-top: 20px; margin-bottom: 10px;">Get complete Discord dataset:</h3>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/api/discord/ritual</pre>
-                </div>
+        <div class="section">
+            <h2>Query Parameters</h2>
+            <p class="description">For /scores endpoints, use these optional query parameters:</p>
+            <ul>
+                <li><code>start</code> - Starting index for pagination (default: 0)</li>
+                <li><code>size</code> - Number of items to return (default: all)</li>
+            </ul>
+        </div>
 
-                <h3 style="margin-top: 20px; margin-bottom: 10px;">Get GitHub seed data:</h3>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/api/github/bitcoin/seed</pre>
-                </div>
+        <div class="section">
+            <h2>Examples</h2>
 
-                <h3 style="margin-top: 20px; margin-bottom: 10px;">Get paginated scores:</h3>
-                <div class="example">
-                    <pre>curl "https://api.openrank.com/api/discord/ritual/scores?start=0&size=10"</pre>
-                </div>
-
-                <h3 style="margin-top: 20px; margin-bottom: 10px;">Get X community ID:</h3>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/api/x/ritual-community/community_id</pre>
-                </div>
+            <p class="description">Get complete Discord dataset:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/discord/ritual</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "category": "socialrank",
+  "server_id": "1210468736205852672",
+  "seed": [
+    { "i": "josh.simenhoff", "v": 0.25 },
+    { "i": "0xqt3.14", "v": 0.25 },
+    ...
+  ],
+  "scores": [
+    { "i": "josh.simenhoff", "v": 1000.0 },
+    { "i": "0xqt3.14", "v": 986.31 },
+    ...
+  ]
+}</pre>
             </div>
 
-            <div class="section">
-                <h2>🔧 Response Format</h2>
-                <p>All responses are returned in JSON format. Score entries follow this structure:</p>
-                <div class="example">
-                    <pre>{
+            <p class="description">Get Discord server ID:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/discord/ritual/server_id</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "server_id": "1210468736205852672"
+}</pre>
+            </div>
+
+            <p class="description">Get GitHub seed data:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/github/bitcoin/seed</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "seed": [
+    { "i": "ethereum/go-ethereum", "v": 0.05 },
+    { "i": "ethereum-optimism/optimism", "v": 0.05 },
+    { "i": "op-rs/kona", "v": 0.05 },
+    ...
+  ]
+}</pre>
+            </div>
+
+            <p class="description">Get GitHub ecosystem:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/github/bitcoin/ecosystem</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "ecosystem": "Crypto"
+}</pre>
+            </div>
+
+            <p class="description">Get paginated scores (first 10):</p>
+            <div class="example">
+                <pre>curl "https://api.openrank.com/discord/ritual/scores?start=0&size=10"</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "scores": [
+    { "i": "josh.simenhoff", "v": 1000.0 },
+    { "i": "0xqt3.14", "v": 986.31 },
+    { "i": "jez5728", "v": 813.87 },
+    { "i": "majorproject8", "v": 789.45 },
+    { "i": "flashme", "v": 756.32 },
+    { "i": "stefan_1", "v": 723.18 },
+    { "i": "dunken_96", "v": 698.54 },
+    { "i": "ezy2049", "v": 675.21 },
+    { "i": "user123", "v": 654.89 },
+    { "i": "user456", "v": 632.47 }
+  ],
+  "pagination": {
+    "start": 0,
+    "size": 10,
+    "total": 150
+  }
+}</pre>
+            </div>
+
+            <p class="description">Get Telegram channel ID:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/telegram/decentraliseddotco/channel_id</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "channel_id": "..."
+}</pre>
+            </div>
+
+            <p class="description">Get X community ID:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/x/ritual-community/community_id</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "community_id": "..."
+}</pre>
+            </div>
+
+            <p class="description">Get X scores with pagination:</p>
+            <div class="example">
+                <pre>curl "https://api.openrank.com/x/ritual-community/scores?start=20&size=5"</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "scores": [
+    { "i": "user_20", "v": 542.12 },
+    { "i": "user_21", "v": 538.45 },
+    { "i": "user_22", "v": 535.67 },
+    { "i": "user_23", "v": 532.89 },
+    { "i": "user_24", "v": 530.11 }
+  ],
+  "pagination": {
+    "start": 20,
+    "size": 5,
+    "total": 200
+  }
+}</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Response Format</h2>
+            <p class="description">All responses are returned in JSON format. Score entries follow this structure:</p>
+            <div class="example">
+                <pre>{
   "i": "identifier",
   "v": 123.45
 }</pre>
-                </div>
             </div>
         </div>
 
         <footer>
-            <p>&copy; 2024 OpenRank API</p>
-            <p style="margin-top: 10px;">
-                Built with Node.js and deployed on <a href="https://vercel.com" target="_blank">Vercel</a>
-            </p>
+            <p>Open</p>Rank API - Built with Node.js</p>
         </footer>
     </div>
 </body>

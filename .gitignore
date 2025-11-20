@@ -32,3 +32,6 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+# Datasets (large files, sync from external storage)
+datasets/

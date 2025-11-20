@@ -1,0 +1,52 @@
+# Vercel Ignore File
+# Files/folders listed here will NOT be uploaded to Vercel
+# (This is different from .gitignore - datasets are in git ignore but NOT in vercel ignore)
+
+# Node modules (installed during build)
+node_modules/
+
+# Development files
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files (set via Vercel dashboard)
+.env
+.env.local
+.env.*.local
+
+# Git files
+.git/
+.gitignore
+
+# Documentation (not needed in production)
+DATASETS.md
+README-DATASETS.md
+CHANGELOG-DATASETS.md
+IMPLEMENTATION-SUMMARY.md
+README_SECTION.md
+
+# Scripts (not needed in production)
+scripts/
+
+# Vercel metadata
+.vercel/
+
+# Rust artifacts (if any)
+target/
+Cargo.lock
+
+# Logs
+logs/
+*.log
+
+# Note: datasets/ is NOT ignored here
+# This means datasets will be deployed to Vercel even though they're not in git
