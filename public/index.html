@@ -161,7 +161,8 @@
 
             <div class="platform">
                 <h3>Discord</h3>
-                <p class="description">Available files: <code>ritual</code></p>
+                <p class="description">Use <code>GET /discord</code> to list all available datasets dynamically</p>
+                <div class="endpoint"><span class="method">GET</span>/discord</div>
                 <div class="endpoint"><span class="method">GET</span>/discord/{file_name}</div>
                 <div class="endpoint"><span class="method">GET</span>/discord/{file_name}/seed</div>
                 <div class="endpoint"><span class="method">GET</span>/discord/{file_name}/server_id</div>
@@ -170,7 +171,8 @@
 
             <div class="platform">
                 <h3>GitHub</h3>
-                <p class="description">Available files: <code>bitcoin</code></p>
+                <p class="description">Use <code>GET /github</code> to list all available datasets dynamically</p>
+                <div class="endpoint"><span class="method">GET</span>/github</div>
                 <div class="endpoint"><span class="method">GET</span>/github/{file_name}</div>
                 <div class="endpoint"><span class="method">GET</span>/github/{file_name}/seed</div>
                 <div class="endpoint"><span class="method">GET</span>/github/{file_name}/ecosystem</div>
@@ -179,7 +181,8 @@
 
             <div class="platform">
                 <h3>Telegram</h3>
-                <p class="description">Available files: <code>decentraliseddotco</code></p>
+                <p class="description">Use <code>GET /telegram</code> to list all available datasets dynamically</p>
+                <div class="endpoint"><span class="method">GET</span>/telegram</div>
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}</div>
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/seed</div>
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/channel_id</div>
@@ -188,7 +191,8 @@
 
             <div class="platform">
                 <h3>X</h3>
-                <p class="description">Available files: <code>ritual-community</code></p>
+                <p class="description">Use <code>GET /x</code> to list all available datasets dynamically</p>
+                <div class="endpoint"><span class="method">GET</span>/x</div>
                 <div class="endpoint"><span class="method">GET</span>/x/{file_name}</div>
                 <div class="endpoint"><span class="method">GET</span>/x/{file_name}/seed</div>
                 <div class="endpoint"><span class="method">GET</span>/x/{file_name}/community_id</div>
@@ -206,7 +210,34 @@
         </div>
 
         <div class="section">
-            <h2>Examples</h2>
+            <h2>List Endpoints</h2>
+            <p class="description">Each platform has a list endpoint that returns all available datasets dynamically. These endpoints read from the <code>datasets/{platform}/</code> directory and return all .json files (without the extension).</p>
+
+            <p class="description">List available Discord datasets:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/discord</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "datasets": ["ritual"]
+}</pre>
+            </div>
+
+            <p class="description">List available GitHub datasets:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/github</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "datasets": ["bitcoin", "crypto", "cryptoxai", "eigenlayer", "protocol-guild", "ritual", "solana"]
+}</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Dataset Endpoints</h2>
 
             <p class="description">Get complete Discord dataset:</p>
             <div class="example">

@@ -17,10 +17,29 @@ module.exports = async (req, res) => {
     return sendError(res, 405, "Method not allowed");
   }
 
-  const { params } = req.query;
+  // Handle params from both Vercel and local server
+  let params = req.query.params;
 
+  // On Vercel, params might come from the URL directly
+  // Extract from req.url if params not in query
+  if (!params) {
+    const url = req.url || "";
+    // Try different URL patterns (Vercel may strip the platform prefix)
+    const match = url.match(/\/github\/([^?]+)/) || url.match(/^\/([^?]+)/);
+    if (match && match[1]) {
+      params = match[1].split("/");
+    }
+  }
+
+  // If no params found, return error
   if (!params || params.length === 0) {
     return sendError(res, 400, "Missing parameters");
+  }
+
+  // Ensure params is an array and split if it's a string with slashes
+  if (!Array.isArray(params)) {
+    // If it's a string like "bitcoin/seed", split it
+    params = typeof params === "string" ? params.split("/") : [params];
   }
 
   const fileName = params[0];

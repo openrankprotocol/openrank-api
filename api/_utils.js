@@ -1,6 +1,27 @@
 const fs = require("fs");
 const path = require("path");
 
+// Get the correct base path for datasets
+// On Vercel, files are relative to the function location
+function getDatasetsPath() {
+  // Try multiple possible locations
+  const possiblePaths = [
+    path.join(process.cwd(), "datasets"),
+    path.join(__dirname, "..", "..", "datasets"),
+    path.join("/var/task", "datasets"),
+    "datasets",
+  ];
+
+  for (const testPath of possiblePaths) {
+    if (fs.existsSync(testPath)) {
+      return testPath;
+    }
+  }
+
+  // Default to process.cwd() if none found
+  return path.join(process.cwd(), "datasets");
+}
+
 /**
  * Load a dataset file from local storage
  * @param {string} platform - The platform name (discord, github, telegram, x)
@@ -9,12 +30,8 @@ const path = require("path");
  */
 async function loadDatasetAsync(platform, fileName) {
   try {
-    const filePath = path.join(
-      process.cwd(),
-      "datasets",
-      platform,
-      `${fileName}.json`,
-    );
+    const datasetsPath = getDatasetsPath();
+    const filePath = path.join(datasetsPath, platform, `${fileName}.json`);
 
     if (fs.existsSync(filePath)) {
       const fileContent = fs.readFileSync(filePath, "utf8");
@@ -99,7 +116,9 @@ function enableCors(res) {
  */
 async function listDatasets(platform) {
   try {
-    const dirPath = path.join(process.cwd(), "datasets", platform);
+    const datasetsPath = getDatasetsPath();
+    const dirPath = path.join(datasetsPath, platform);
+
     if (fs.existsSync(dirPath)) {
       const files = fs.readdirSync(dirPath);
       return files
