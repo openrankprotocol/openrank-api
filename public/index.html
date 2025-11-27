@@ -189,6 +189,7 @@
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/seed</div>
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/channel_id</div>
                 <div class="endpoint"><span class="method">GET</span>/telegram/{file_name}/scores</div>
+                <div class="endpoint"><span class="method">GET</span>/telegram/pfps/{user_id}.jpg</div>
             </div>
 
             <div class="platform">
@@ -338,6 +339,12 @@
   "channel_id": "..."
 }</pre>
             </div>
+
+            <p class="description">Get Telegram user profile picture:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg</pre>
+            </div>
+            <p class="description">Returns the profile picture as a JPEG image. The response has <code>Content-Type: image/jpeg</code>.</p>
 
             <p class="description">Get X community ID:</p>
             <div class="example">
