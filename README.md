@@ -80,6 +80,7 @@ Base path: `/api/telegram`
 - **GET** `/api/telegram/{file_name}/seed` - Get seed data
 - **GET** `/api/telegram/{file_name}/channel_id` - Get Telegram channel ID
 - **GET** `/api/telegram/{file_name}/scores?start=0&size=10` - Get paginated scores
+- **GET** `/telegram/pfps/{user_id}.jpg` - Get user profile picture
 
 ### X (Twitter) Endpoints
 
@@ -117,6 +118,11 @@ curl https://api.openrank.com/api/github/bitcoin/seed
 ### Get paginated scores from Telegram
 ```bash
 curl "https://api.openrank.com/api/telegram/decentraliseddotco/scores?start=0&size=20"
+```
+
+### Get Telegram user profile picture
+```bash
+curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg
 ```
 
 ### Get X community ID
@@ -187,7 +193,9 @@ openrank-api/
 │   ├── github/
 │   │   └── [...params].js          # GitHub endpoints
 │   ├── telegram/
-│   │   └── [...params].js          # Telegram endpoints
+│   │   ├── [...params].js          # Telegram endpoints
+│   │   └── pfps/
+│   │       └── [id].js             # Profile pictures endpoint
 │   └── x/
 │       └── [...params].js          # X endpoints
 ├── datasets/
@@ -196,7 +204,9 @@ openrank-api/
 │   ├── github/
 │   │   └── bitcoin.json
 │   ├── telegram/
-│   │   └── decentraliseddotco.json
+│   │   ├── decentraliseddotco.json
+│   │   └── pfps/
+│   │       └── {user_id}.jpg       # Profile pictures
 │   └── x/
 │       └── ritual-community.json
 ├── package.json

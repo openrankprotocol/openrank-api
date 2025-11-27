@@ -3,6 +3,9 @@ const fs = require("fs");
 const path = require("path");
 const url = require("url");
 
+// Import pfp handler
+const telegramPfpHandler = require("./api/telegram/pfps/[id]");
+
 // Import handlers
 const discordHandler = require("./api/discord/[...params]");
 const githubHandler = require("./api/github/[...params]");
@@ -102,6 +105,10 @@ const server = http.createServer(async (req, res) => {
           if (params.length === 0) {
             // List all available datasets
             await telegramListHandler(req, res);
+          } else if (params[0] === "pfps" && params.length >= 2) {
+            // Handle profile picture requests
+            req.query.id = params[1];
+            await telegramPfpHandler(req, res);
           } else {
             // Handle specific dataset
             await telegramHandler(req, res);

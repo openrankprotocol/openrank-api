@@ -6,6 +6,10 @@
     { "source": "/telegram", "destination": "/api/telegram" },
     { "source": "/x", "destination": "/api/x" },
     {
+      "source": "/telegram/pfps/:id",
+      "destination": "/api/telegram/pfps/[id]?id=:id"
+    },
+    {
       "source": "/discord/(.*)",
       "destination": "/api/discord/[...params]?params=$1"
     },
