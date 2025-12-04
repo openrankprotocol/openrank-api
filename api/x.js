@@ -1,9 +1,5 @@
-const {
-  listDatasets,
-  sendResponse,
-  sendError,
-  enableCors,
-} = require("./_utils");
+const { sendResponse, sendError, enableCors } = require("./_utils");
+const db = require("../lib/db");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -16,7 +12,15 @@ module.exports = async (req, res) => {
     return sendError(res, 405, "Method not allowed");
   }
 
-  const datasets = await listDatasets("x");
+  try {
+    const result = await db.query(
+      "SELECT name FROM xrank.communities WHERE name IS NOT NULL ORDER BY name",
+    );
+    const datasets = result.rows.map((row) => row.name);
 
-  return sendResponse(res, 200, { datasets });
+    return sendResponse(res, 200, { datasets });
+  } catch (error) {
+    console.error("Error fetching datasets:", error);
+    return sendError(res, 500, "Internal server error");
+  }
 };
