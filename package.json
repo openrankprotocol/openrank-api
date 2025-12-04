@@ -4,7 +4,7 @@
   "description": "OpenRank API for Discord, GitHub, Telegram, and X datasets",
   "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "node server.js",
     "serve": "node server.js",
     "build": "echo 'No build step required'",
     "start": "node server.js"
@@ -18,5 +18,9 @@
   "license": "MIT",
   "devDependencies": {
     "vercel": "^48.10.4"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3"
   }
 }

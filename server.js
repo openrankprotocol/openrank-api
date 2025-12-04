@@ -1,3 +1,4 @@
+require("dotenv").config();
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -9,7 +10,6 @@ const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 // Import handlers
 const discordHandler = require("./api/discord/[...params]");
 const githubHandler = require("./api/github/[...params]");
-const telegramHandler = require("./api/telegram/[...params]");
 const xHandler = require("./api/x/[...params]");
 const apiIndexHandler = require("./api/index");
 
@@ -110,8 +110,30 @@ const server = http.createServer(async (req, res) => {
             req.query.id = params[1];
             await telegramPfpHandler(req, res);
           } else {
-            // Handle specific dataset
-            await telegramHandler(req, res);
+            // New file-based routing for telegram
+            const channelId = params[0];
+            req.query.channelId = channelId;
+
+            if (params.length === 1) {
+              // /telegram/:channelId -> index.js
+              await require("./api/telegram/[channelId]/index")(req, res);
+            } else if (params.length === 2) {
+              const endpoint = params[1];
+              if (endpoint === "seed") {
+                await require("./api/telegram/[channelId]/seed")(req, res);
+              } else if (endpoint === "scores") {
+                await require("./api/telegram/[channelId]/scores")(req, res);
+              } else if (endpoint === "channel_id") {
+                await require("./api/telegram/[channelId]/channel_id")(req, res);
+              } else {
+                 // Fallback or 404 for unknown sub-endpoints
+                 res.writeHead(404, { "Content-Type": "application/json" });
+                 res.end(JSON.stringify({ error: "Endpoint not found" }));
+              }
+            } else {
+               res.writeHead(404, { "Content-Type": "application/json" });
+               res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
           }
           return;
         case "x":

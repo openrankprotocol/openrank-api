@@ -1,9 +1,5 @@
-const {
-  listDatasets,
-  sendResponse,
-  sendError,
-  enableCors,
-} = require("./_utils");
+const { sendResponse, sendError, enableCors } = require("./_utils");
+const db = require("../lib/db");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -16,7 +12,14 @@ module.exports = async (req, res) => {
     return sendError(res, 405, "Method not allowed");
   }
 
-  const datasets = await listDatasets("telegram");
-
-  return sendResponse(res, 200, { datasets });
+  try {
+    const result = await db.query(
+      "SELECT username FROM trank.channels WHERE username IS NOT NULL ORDER BY username",
+    );
+    const datasets = result.rows.map((row) => row.username);
+    return sendResponse(res, 200, { datasets });
+  } catch (error) {
+    console.error("Error fetching channels:", error);
+    return sendError(res, 500, "Internal server error");
+  }
 };
