@@ -201,6 +201,13 @@
                 <div class="endpoint"><span class="method">GET</span>/x/{file_name}/community_id</div>
                 <div class="endpoint"><span class="method">GET</span>/x/{file_name}/scores</div>
             </div>
+
+            <div class="platform">
+                <h3>Communities</h3>
+                <p class="description">OpenRank Communities aggregate data from Telegram and X platforms</p>
+                <div class="endpoint"><span class="method">GET</span>/communities</div>
+                <div class="endpoint"><span class="method">GET</span>/communities/{community_id}</div>
+            </div>
         </div>
 
         <div class="section">
@@ -378,6 +385,64 @@
   }
 }</pre>
             </div>
+
+            <p class="description">List all communities:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/communities</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>[
+  {
+    "id": 1,
+    "name": "Crypto Community",
+    "display_picture": "https://...",
+    "trank_refs_count": 3,
+    "xrank_refs_count": 2,
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  ...
+]</pre>
+            </div>
+
+            <p class="description">Get complete community data by ID:</p>
+            <div class="example">
+                <pre>curl https://api.openrank.com/communities/1</pre>
+            </div>
+            <p class="description">Response:</p>
+            <div class="example">
+                <pre>{
+  "id": 1,
+  "name": "Crypto Community",
+  "display_picture": "https://...",
+  "created_at": "2024-01-01T00:00:00Z",
+  "updated_at": "2024-01-01T00:00:00Z",
+  "trank_refs": [
+    {
+      "channel_id": "123456789",
+      "name": "Crypto Channel",
+      "username": "cryptochannel",
+      "is_group": false,
+      "description": "Community channel for crypto discussions",
+      "member_count": 1000,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "xrank_refs": [
+    {
+      "community_id": "987654321",
+      "name": "X Crypto Community",
+      "description": "Crypto community on X platform",
+      "created_at": "2024-01-01T00:00:00",
+      "imported_at": "2024-01-01T00:00:00",
+      "updated_at": "2024-01-01T00:00:00",
+      "creator_username": "crypto_creator"
+    }
+  ]
+}</pre>
+            </div>
         </div>
 
         <div class="section">
@@ -392,7 +457,7 @@
         </div>
 
         <footer>
-            <p>Open</p>Rank API - Built with Node.js</p>
+            <p>OpenRank API - Built with Node.js</p>
         </footer>
     </div>
 </body>

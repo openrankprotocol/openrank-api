@@ -17,6 +17,7 @@ const discordListHandler = require("./api/discord");
 const githubListHandler = require("./api/github");
 const telegramListHandler = require("./api/telegram");
 const xListHandler = require("./api/x");
+const communitiesListHandler = require("./api/communities/index");
 
 const PORT = process.env.PORT || 3000;
 
@@ -160,6 +161,24 @@ const server = http.createServer(async (req, res) => {
                 res.writeHead(404, { "Content-Type": "application/json" });
                 res.end(JSON.stringify({ error: "Endpoint not found" }));
               }
+            } else {
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
+          }
+          return;
+        case "communities":
+          if (params.length === 0) {
+            // List all communities
+            await communitiesListHandler(req, res);
+          } else {
+            // File-based routing for communities
+            const communityId = params[0];
+            req.query.communityId = communityId;
+
+            if (params.length === 1) {
+              // /communities/:communityId -> index.js
+              await require("./api/communities/[communityId]/index")(req, res);
             } else {
               res.writeHead(404, { "Content-Type": "application/json" });
               res.end(JSON.stringify({ error: "Endpoint not found" }));
