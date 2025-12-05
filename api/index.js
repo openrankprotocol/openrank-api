@@ -49,6 +49,13 @@ module.exports = async (req, res) => {
           `${baseUrl}/api/x/{file_name}/community_id`,
           `${baseUrl}/api/x/{file_name}/scores?start=0&size=10`
         ]
+      },
+      {
+        name: 'Communities',
+        endpoints: [
+          `${baseUrl}/api/communities`,
+          `${baseUrl}/api/communities/{community_id}`,
+        ]
       }
     ],
     documentation: `${baseUrl}/`

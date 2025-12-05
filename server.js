@@ -1,3 +1,4 @@
+require("dotenv").config();
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
@@ -9,8 +10,6 @@ const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 // Import handlers
 const discordHandler = require("./api/discord/[...params]");
 const githubHandler = require("./api/github/[...params]");
-const telegramHandler = require("./api/telegram/[...params]");
-const xHandler = require("./api/x/[...params]");
 const apiIndexHandler = require("./api/index");
 
 // Import list handlers
@@ -18,6 +17,7 @@ const discordListHandler = require("./api/discord");
 const githubListHandler = require("./api/github");
 const telegramListHandler = require("./api/telegram");
 const xListHandler = require("./api/x");
+const communitiesListHandler = require("./api/communities/index");
 
 const PORT = process.env.PORT || 3000;
 
@@ -110,8 +110,30 @@ const server = http.createServer(async (req, res) => {
             req.query.id = params[1];
             await telegramPfpHandler(req, res);
           } else {
-            // Handle specific dataset
-            await telegramHandler(req, res);
+            // New file-based routing for telegram
+            const channelId = params[0];
+            req.query.channelId = channelId;
+
+            if (params.length === 1) {
+              // /telegram/:channelId -> index.js
+              await require("./api/telegram/[channelId]/index")(req, res);
+            } else if (params.length === 2) {
+              const endpoint = params[1];
+              if (endpoint === "seed") {
+                await require("./api/telegram/[channelId]/seed")(req, res);
+              } else if (endpoint === "scores") {
+                await require("./api/telegram/[channelId]/scores")(req, res);
+              } else if (endpoint === "channel_id") {
+                await require("./api/telegram/[channelId]/channel_id")(req, res);
+              } else {
+                 // Fallback or 404 for unknown sub-endpoints
+                 res.writeHead(404, { "Content-Type": "application/json" });
+                 res.end(JSON.stringify({ error: "Endpoint not found" }));
+              }
+            } else {
+               res.writeHead(404, { "Content-Type": "application/json" });
+               res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
           }
           return;
         case "x":
@@ -119,8 +141,48 @@ const server = http.createServer(async (req, res) => {
             // List all available datasets
             await xListHandler(req, res);
           } else {
-            // Handle specific dataset
-            await xHandler(req, res);
+            // New file-based routing for x
+            const communityId = params[0];
+            req.query.communityId = communityId;
+
+            if (params.length === 1) {
+              // /x/:communityId -> index.js
+              await require("./api/x/[communityId]/index")(req, res);
+            } else if (params.length === 2) {
+              const endpoint = params[1];
+              if (endpoint === "seed") {
+                await require("./api/x/[communityId]/seed")(req, res);
+              } else if (endpoint === "scores") {
+                await require("./api/x/[communityId]/scores")(req, res);
+              } else if (endpoint === "community_id") {
+                await require("./api/x/[communityId]/community_id")(req, res);
+              } else {
+                // Fallback or 404 for unknown sub-endpoints
+                res.writeHead(404, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ error: "Endpoint not found" }));
+              }
+            } else {
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
+          }
+          return;
+        case "communities":
+          if (params.length === 0) {
+            // List all communities
+            await communitiesListHandler(req, res);
+          } else {
+            // File-based routing for communities
+            const communityId = params[0];
+            req.query.communityId = communityId;
+
+            if (params.length === 1) {
+              // /communities/:communityId -> index.js
+              await require("./api/communities/[communityId]/index")(req, res);
+            } else {
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
           }
           return;
       }
