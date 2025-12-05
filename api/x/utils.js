@@ -1,11 +1,30 @@
 const db = require("../../lib/db");
 
-async function getCommunityId(name) {
+async function validateCommunityId(id) {
+  // Validate numeric format using regex to avoid partial parsing
+  if (!/^\d+$/.test(id)) {
+    return {
+      valid: false,
+      error: "Community ID must be a valid number",
+    };
+  }
+  // Check existence in database
   const res = await db.query(
-    "SELECT community_id FROM xrank.communities WHERE name = $1",
-    [name],
+    "SELECT 1 FROM xrank.communities WHERE community_id = $1",
+    [id],
   );
-  return res.rows.length > 0 ? res.rows[0].community_id : null;
+
+  if (res.rows.length === 0) {
+    return {
+      valid: false,
+      error: "Community not found",
+    };
+  }
+
+  return {
+    valid: true,
+    communityId: id,
+  };
 }
 
 async function getLatestRunId(communityId) {
@@ -95,7 +114,7 @@ async function getAllData(communityId, runId) {
 }
 
 module.exports = {
-  getCommunityId,
+  validateCommunityId,
   getLatestRunId,
   getSeeds,
   getScores,

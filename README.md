@@ -86,10 +86,11 @@ Base path: `/api/telegram`
 
 Base path: `/api/x`
 
-- **GET** `/api/x/{file_name}` - Get complete dataset
-- **GET** `/api/x/{file_name}/seed` - Get seed data
-- **GET** `/api/x/{file_name}/community_id` - Get X community ID
-- **GET** `/api/x/{file_name}/scores?start=0&size=10` - Get paginated scores
+- **GET** `/api/x/{community_id}` - Get complete dataset
+- **GET** `/api/x/{community_id}/seed` - Get seed data
+- **GET** `/api/x/{community_id}/scores?start=0&size=10` - Get paginated scores
+
+**Note:** The `{community_id}` parameter must be a numeric X community ID (e.g., `1872222575180546208`). You can obtain community IDs from the `/communities` endpoint.
 
 ## Query Parameters
 
@@ -125,9 +126,9 @@ curl "https://api.openrank.com/api/telegram/decentraliseddotco/scores?start=0&si
 curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg
 ```
 
-### Get X community ID
+### Get X community data
 ```bash
-curl https://api.openrank.com/api/x/ritual-community/community_id
+curl https://api.openrank.com/api/x/1872222575180546208
 ```
 
 ## Data Structure

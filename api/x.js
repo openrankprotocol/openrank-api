@@ -14,9 +14,12 @@ module.exports = async (req, res) => {
 
   try {
     const result = await db.query(
-      "SELECT name FROM xrank.communities WHERE name IS NOT NULL ORDER BY name",
+      "SELECT community_id, name FROM xrank.communities WHERE name IS NOT NULL ORDER BY name",
     );
-    const datasets = result.rows.map((row) => row.name);
+    const datasets = result.rows.map((row) => ({
+      id: row.community_id.toString(),
+      name: row.name,
+    }));
 
     return sendResponse(res, 200, { datasets });
   } catch (error) {

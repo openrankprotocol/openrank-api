@@ -1,5 +1,5 @@
 const { sendResponse, sendError, enableCors } = require("../../_utils");
-const { getCommunityId, getLatestRunId, getAllData } = require("../utils");
+const { validateCommunityId, getLatestRunId, getAllData } = require("../utils");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -19,10 +19,11 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const communityId = await getCommunityId(communityIdStr);
-    if (!communityId) {
-      return sendError(res, 404, "Community not found");
+    const validation = await validateCommunityId(communityIdStr);
+    if (!validation.valid) {
+      return sendError(res, 400, validation.error);
     }
+    const communityId = validation.communityId;
 
     const runId = await getLatestRunId(communityId);
     if (!runId) {

@@ -154,8 +154,6 @@ const server = http.createServer(async (req, res) => {
                 await require("./api/x/[communityId]/seed")(req, res);
               } else if (endpoint === "scores") {
                 await require("./api/x/[communityId]/scores")(req, res);
-              } else if (endpoint === "community_id") {
-                await require("./api/x/[communityId]/community_id")(req, res);
               } else {
                 // Fallback or 404 for unknown sub-endpoints
                 res.writeHead(404, { "Content-Type": "application/json" });
