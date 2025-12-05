@@ -37,14 +37,13 @@ async function getLatestRunId(communityId) {
 
 async function getSeeds(communityId, runId) {
   const res = await db.query(
-    `SELECT s.user_id, u.username, s.score
+    `SELECT s.user_id, s.score
      FROM xrank.seeds s
-     JOIN xrank.users u ON s.user_id = u.user_id
      WHERE s.community_id = $1 AND s.run_id = $2
      ORDER BY s.score DESC`,
     [communityId, runId],
   );
-  return res.rows.map((row) => ({ i: row.username, v: row.score }));
+  return res.rows.map((row) => ({ i: row.user_id, v: row.score }));
 }
 
 async function getScores(communityId, runId, start = 0, size = null) {
@@ -64,9 +63,8 @@ async function getScores(communityId, runId, start = 0, size = null) {
 
   // Fetch paginated scores with usernames
   let query = `
-    SELECT u.username as i, sc.score as v
+    SELECT sc.user_id as i, sc.score as v
     FROM xrank.scores sc
-    JOIN xrank.users u ON sc.user_id = u.user_id
     WHERE sc.community_id = $1 AND sc.run_id = $2
     ORDER BY sc.score DESC
   `;
@@ -96,9 +94,8 @@ async function getScores(communityId, runId, start = 0, size = null) {
 async function getAllData(communityId, runId) {
   const seed = await getSeeds(communityId, runId);
   const scoresRes = await db.query(
-    `SELECT u.username as i, sc.score as v
+    `SELECT sc.user_id as i, sc.score as v
      FROM xrank.scores sc
-     JOIN xrank.users u ON sc.user_id = u.user_id
      WHERE sc.community_id = $1 AND sc.run_id = $2
      ORDER BY sc.score DESC`,
     [communityId, runId],
