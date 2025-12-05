@@ -37,7 +37,7 @@ async function getAllCommunities() {
           'created_at', xc.created_at,
           'imported_at', xc.imported_at,
           'updated_at', xc.updated_at,
-          'creator_username', xc.creator_username
+          'creator_id', xc.creator_id
         )) FILTER (WHERE xc.community_id IS NOT NULL),
         '[]'
       ) as xrank_refs
