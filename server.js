@@ -123,8 +123,6 @@ const server = http.createServer(async (req, res) => {
                 await require("./api/telegram/[channelId]/seed")(req, res);
               } else if (endpoint === "scores") {
                 await require("./api/telegram/[channelId]/scores")(req, res);
-              } else if (endpoint === "channel_id") {
-                await require("./api/telegram/[channelId]/channel_id")(req, res);
               } else {
                  // Fallback or 404 for unknown sub-endpoints
                  res.writeHead(404, { "Content-Type": "application/json" });

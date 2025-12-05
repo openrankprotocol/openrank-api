@@ -76,11 +76,12 @@ Base path: `/api/github`
 
 Base path: `/api/telegram`
 
-- **GET** `/api/telegram/{file_name}` - Get complete dataset
-- **GET** `/api/telegram/{file_name}/seed` - Get seed data
-- **GET** `/api/telegram/{file_name}/channel_id` - Get Telegram channel ID
-- **GET** `/api/telegram/{file_name}/scores?start=0&size=10` - Get paginated scores
+- **GET** `/api/telegram/{channel_id}` - Get complete dataset
+- **GET** `/api/telegram/{channel_id}/seed` - Get seed data
+- **GET** `/api/telegram/{channel_id}/scores?start=0&size=10` - Get paginated scores
 - **GET** `/telegram/pfps/{user_id}.jpg` - Get user profile picture
+
+**Note:** The `{channel_id}` parameter must be a numeric Telegram channel ID (e.g., `1533865579`). You can obtain channel IDs from the `/telegram` list endpoint.
 
 ### X (Twitter) Endpoints
 
@@ -118,7 +119,7 @@ curl https://api.openrank.com/api/github/bitcoin/seed
 
 ### Get paginated scores from Telegram
 ```bash
-curl "https://api.openrank.com/api/telegram/decentraliseddotco/scores?start=0&size=20"
+curl "https://api.openrank.com/api/telegram/1533865579/scores?start=0&size=20"
 ```
 
 ### Get Telegram user profile picture

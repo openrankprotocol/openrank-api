@@ -14,9 +14,12 @@ module.exports = async (req, res) => {
 
   try {
     const result = await db.query(
-      "SELECT username FROM trank.channels WHERE username IS NOT NULL ORDER BY username",
+      "SELECT channel_id, username FROM trank.channels WHERE username IS NOT NULL ORDER BY username",
     );
-    const datasets = result.rows.map((row) => row.username);
+    const datasets = result.rows.map((row) => ({
+      id: row.channel_id.toString(),
+      username: row.username,
+    }));
     return sendResponse(res, 200, { datasets });
   } catch (error) {
     console.error("Error fetching channels:", error);

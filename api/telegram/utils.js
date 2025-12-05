@@ -1,11 +1,31 @@
 const db = require("../../lib/db");
 
-async function getChannelId(username) {
+async function validateChannelId(id) {
+  // Validate numeric format using regex to avoid partial parsing
+  if (!/^\d+$/.test(id)) {
+    return {
+      valid: false,
+      error: "Channel ID must be a valid number",
+    };
+  }
+
+  // Check existence in database
   const res = await db.query(
-    "SELECT channel_id FROM trank.channels WHERE username = $1",
-    [username],
+    "SELECT 1 FROM trank.channels WHERE channel_id = $1",
+    [id],
   );
-  return res.rows.length > 0 ? res.rows[0].channel_id : null;
+
+  if (res.rows.length === 0) {
+    return {
+      valid: false,
+      error: "Channel not found",
+    };
+  }
+
+  return {
+    valid: true,
+    channelId: id,
+  };
 }
 
 async function getLatestRunId(channelId) {
@@ -85,7 +105,7 @@ async function getAllData(channelId, runId) {
 }
 
 module.exports = {
-  getChannelId,
+  validateChannelId,
   getLatestRunId,
   getSeeds,
   getScores,

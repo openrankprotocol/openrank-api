@@ -1,5 +1,5 @@
 const { sendResponse, sendError, enableCors } = require("../../_utils");
-const { getChannelId, getLatestRunId, getAllData } = require("../utils");
+const { validateChannelId, getLatestRunId, getAllData } = require("../utils");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -19,10 +19,11 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const channelId = await getChannelId(channelIdStr);
-    if (!channelId) {
-      return sendError(res, 404, "Channel not found");
+    const validation = await validateChannelId(channelIdStr);
+    if (!validation.valid) {
+      return sendError(res, 400, validation.error);
     }
+    const channelId = validation.channelId;
 
     const runId = await getLatestRunId(channelId);
     if (!runId) {
