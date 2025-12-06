@@ -63,10 +63,19 @@ async function getScores(communityId, runId, start = 0, size = null) {
 
   // Fetch paginated scores with usernames
   let query = `
-    SELECT sc.user_id as i, sc.score as v
-    FROM xrank.scores sc
-    WHERE sc.community_id = $1 AND sc.run_id = $2
-    ORDER BY sc.score DESC
+    WITH log_scale AS (
+      SELECT
+        log(min(score)) AS scale_offset,
+        log(max(score)) - log(min(score)) AS scale_range
+      FROM xrank.scores
+      WHERE community_id = $1 AND run_id = $2 AND score > 0
+    )
+    SELECT 
+      sc.user_id as i, 
+      (log(sc.score) - l.scale_offset) / l.scale_range as v
+    FROM xrank.scores sc, log_scale l
+    WHERE sc.community_id = $1 AND sc.run_id = $2 AND sc.score > 0
+    ORDER BY v DESC
   `;
   const queryParams = [communityId, runId];
 
@@ -94,10 +103,19 @@ async function getScores(communityId, runId, start = 0, size = null) {
 async function getAllData(communityId, runId) {
   const seed = await getSeeds(communityId, runId);
   const scoresRes = await db.query(
-    `SELECT sc.user_id as i, sc.score as v
-     FROM xrank.scores sc
-     WHERE sc.community_id = $1 AND sc.run_id = $2
-     ORDER BY sc.score DESC`,
+    `WITH log_scale AS (
+      SELECT
+        log(min(score)) AS scale_offset,
+        log(max(score)) - log(min(score)) AS scale_range
+      FROM xrank.scores
+      WHERE community_id = $1 AND run_id = $2 AND score > 0
+    )
+    SELECT 
+      sc.user_id as i, 
+      (log(sc.score) - l.scale_offset) / l.scale_range as v
+    FROM xrank.scores sc, log_scale l
+    WHERE sc.community_id = $1 AND sc.run_id = $2 AND sc.score > 0
+    ORDER BY v DESC`,
     [communityId, runId],
   );
   const scores = scoresRes.rows;

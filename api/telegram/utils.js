@@ -61,10 +61,19 @@ async function getScores(channelId, runId, start = 0, size = null) {
 
   // Fetch paginated scores
   let query = `
-    SELECT user_id as id, value as score 
-    FROM trank.scores 
-    WHERE channel_id = $1 AND run_id = $2 
-    ORDER BY value DESC
+    WITH log_scale AS (
+      SELECT
+        log(min(value)) AS scale_offset,
+        log(max(value)) - log(min(value)) AS scale_range
+      FROM trank.scores
+      WHERE channel_id = $1 AND run_id = $2 AND value > 0
+    )
+    SELECT 
+      sc.user_id as id, 
+      (log(sc.value) - l.scale_offset) / l.scale_range as score 
+    FROM trank.scores sc, log_scale l
+    WHERE sc.channel_id = $1 AND sc.run_id = $2 AND sc.value > 0
+    ORDER BY score DESC
   `;
   const queryParams = [channelId, runId];
 
@@ -92,7 +101,19 @@ async function getScores(channelId, runId, start = 0, size = null) {
 async function getAllData(channelId, runId) {
   const seed = await getSeeds(channelId, runId);
   const scoresRes = await db.query(
-    "SELECT user_id as id, value as score FROM trank.scores WHERE channel_id = $1 AND run_id = $2 ORDER BY value DESC",
+    `WITH log_scale AS (
+      SELECT
+        log(min(value)) AS scale_offset,
+        log(max(value)) - log(min(value)) AS scale_range
+      FROM trank.scores
+      WHERE channel_id = $1 AND run_id = $2 AND value > 0
+    )
+    SELECT 
+      sc.user_id as id, 
+      (log(sc.value) - l.scale_offset) / l.scale_range as score 
+    FROM trank.scores sc, log_scale l
+    WHERE sc.channel_id = $1 AND sc.run_id = $2 AND sc.value > 0
+    ORDER BY score DESC`,
     [channelId, runId],
   );
   const scores = scoresRes.rows;
