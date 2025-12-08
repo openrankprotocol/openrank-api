@@ -9,6 +9,7 @@ const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 
 // Import handlers
 const discordHandler = require("./api/discord/[...params]");
+const summariesHandler = require("./api/summaries");
 const githubHandler = require("./api/github/[...params]");
 const apiIndexHandler = require("./api/index");
 
@@ -76,13 +77,15 @@ const server = http.createServer(async (req, res) => {
   if (pathParts.length > 0) {
     const platform = pathParts[0];
     const params = pathParts.slice(1);
-
     try {
       // Mock Vercel request format
       createMockVercelContext(req, res, params, queryParams);
 
       // Route to appropriate handler
       switch (platform) {
+        case "summaries":
+          await summariesHandler(req, res);
+          return;
         case "discord":
           if (params.length === 0) {
             // List all available datasets
@@ -124,13 +127,13 @@ const server = http.createServer(async (req, res) => {
               } else if (endpoint === "scores") {
                 await require("./api/telegram/[channelId]/scores")(req, res);
               } else {
-                 // Fallback or 404 for unknown sub-endpoints
-                 res.writeHead(404, { "Content-Type": "application/json" });
-                 res.end(JSON.stringify({ error: "Endpoint not found" }));
+                // Fallback or 404 for unknown sub-endpoints
+                res.writeHead(404, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ error: "Endpoint not found" }));
               }
             } else {
-               res.writeHead(404, { "Content-Type": "application/json" });
-               res.end(JSON.stringify({ error: "Endpoint not found" }));
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
             }
           }
           return;
@@ -207,12 +210,13 @@ server.listen(PORT, () => {
   console.log(`📖 Documentation: http://localhost:${PORT}`);
   console.log("");
   console.log("Available endpoints:");
+  console.log(`  • http://localhost:${PORT}/summaries - Fetch summaries`);
   console.log(
-    `  • http://localhost:${PORT}/discord - List all Discord datasets`,
+    `  • http://localhost:${PORT}/discord - List all Discord datasets`
   );
   console.log(`  • http://localhost:${PORT}/github - List all GitHub datasets`);
   console.log(
-    `  • http://localhost:${PORT}/telegram - List all Telegram datasets`,
+    `  • http://localhost:${PORT}/telegram - List all Telegram datasets`
   );
   console.log(`  • http://localhost:${PORT}/x - List all X datasets`);
   console.log(`  • http://localhost:${PORT}/discord/ritual`);
