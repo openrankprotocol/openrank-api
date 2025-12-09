@@ -64,16 +64,39 @@ async function getXActiveUsers(communityId) {
   return parseInt(res.rows[0].count);
 }
 
+async function getDiscordActiveUsers(serverId) {
+  if (!serverId) return null;
+
+  // Get latest run_id for this server
+  const runRes = await db.query(
+    `SELECT run_id FROM socialrank.runs WHERE server_id = $1 ORDER BY created_at DESC LIMIT 1`,
+    [serverId],
+  );
+  if (runRes.rows.length === 0) return null;
+  const runId = runRes.rows[0].run_id;
+
+  // Count unique users who sent messages AND are in the scores list
+  const res = await db.query(
+    `SELECT COUNT(DISTINCT m.author_id) as count
+     FROM socialrank.messages m
+     INNER JOIN socialrank.scores s ON m.author_id = s.user_id AND s.server_id = $1 AND s.run_id = $2
+     WHERE m.channel_id IN (SELECT id FROM socialrank.channels WHERE server_id = $1)`,
+    [serverId, runId],
+  );
+  return parseInt(res.rows[0].count);
+}
+
 async function getActiveUserStats(community) {
-  const [telegram, x] = await Promise.all([
+  const [telegram, x, discord] = await Promise.all([
     getTelegramActiveUsers(community.telegram),
     getXActiveUsers(community.x),
+    getDiscordActiveUsers(community.discord),
   ]);
 
   return {
     telegram,
     x,
-    discord: null,
+    discord,
     github: null,
     farcaster: null,
   };
