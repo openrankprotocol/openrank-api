@@ -1,5 +1,5 @@
 const { sendResponse, sendError, enableCors } = require("../../_utils");
-const { getAllCommunityData } = require("../utils");
+const { getCommunityById } = require("../utils");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -12,27 +12,21 @@ module.exports = async (req, res) => {
     return sendError(res, 405, "Method not allowed");
   }
 
-  const { communityId: communityIdStr } = req.query;
+  const { communityId } = req.query;
 
-  if (!communityIdStr) {
+  if (!communityId) {
     return sendError(res, 400, "Missing community ID");
   }
 
-  // Validate that communityId is a valid integer
-  const communityId = parseInt(communityIdStr, 10);
-  if (isNaN(communityId)) {
-    return sendError(res, 400, "Invalid community ID - must be a number");
-  }
-
   try {
-    const data = await getAllCommunityData(communityId);
-    if (!data) {
+    const community = await getCommunityById(communityId);
+    if (!community) {
       return sendError(res, 404, "Community not found");
     }
 
-    return sendResponse(res, 200, data);
+    return sendResponse(res, 200, community);
   } catch (error) {
-    console.error("Error fetching community data:", error);
+    console.error("Error fetching community:", error);
     return sendError(res, 500, "Internal server error");
   }
 };
