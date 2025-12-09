@@ -21,7 +21,7 @@ async function getLatestChannelSummaries(db, channelIds = []) {
   );
 
   const rows = res.rows;
-  return rows.reduce((acc, curr) => (acc[curr.id] = curr), {});
+  return rows.reduce((acc, curr) => (acc[curr.channel_id] = curr), {});
 }
 
 async function getLatestCommunitySummaries(db, communityIds = []) {
@@ -47,7 +47,7 @@ async function getLatestCommunitySummaries(db, communityIds = []) {
   );
 
   const rows = res.rows;
-  return rows.reduce((acc, curr) => (acc[curr.id] = curr), {});
+  return rows.reduce((acc, curr) => (acc[curr.community_id] = curr), {});
 }
 
 export async function getSummaries(db, ids = []) {
