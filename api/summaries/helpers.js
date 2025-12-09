@@ -12,12 +12,10 @@ async function getLatestChannelSummaries(db, channelIds = []) {
     SELECT DISTINCT ON (channel_id)
       id,
       channel_id,
-      summary,
       topic,
       few_words,
       one_sentence,
       error,
-      model,
       created_at
     FROM trank.channel_summaries
     WHERE channel_id = ANY($1)
@@ -42,12 +40,10 @@ async function getLatestCommunitySummaries(db, communityIds = []) {
     SELECT DISTINCT ON (community_id)
       id,
       community_id,
-      summary,
       topic,
       few_words,
       one_sentence,
       error,
-      model,
       created_at
     FROM xrank.community_summaries
     WHERE community_id = ANY($1)
