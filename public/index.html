@@ -1,379 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>OpenRank API</title>
-        <link rel="icon" type="image/png" href="/openrank-logo.png" />
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenRank API</title>
+    <link rel="icon" type="image/png" href="/openrank-logo.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-            body {
-                font-family:
-                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                    "Helvetica Neue", Arial, sans-serif;
-                line-height: 1.6;
-                color: #e0e0e0;
-                background: #0a0a0a;
-                padding: 40px 20px;
-            }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #e0e0e0;
+        background: #0a0a0a;
+        padding: 40px 20px;
+      }
 
-            .container {
-                max-width: 800px;
-                margin: 0 auto;
-            }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-            header {
-                text-align: center;
-                padding: 40px 0;
-                border-bottom: 1px solid #2a2a2a;
-                margin-bottom: 40px;
-            }
+      header {
+        text-align: center;
+        padding: 40px 0;
+        border-bottom: 1px solid #2a2a2a;
+        margin-bottom: 40px;
+      }
 
-            h1 {
-                font-size: 2.5em;
-                margin-bottom: 10px;
-                color: #ffffff;
-                font-weight: 600;
-            }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-weight: 600;
+      }
 
-            header p {
-                font-size: 1.1em;
-                color: #888;
-                margin-top: 10px;
-            }
+      header p {
+        font-size: 1.1em;
+        color: #888;
+        margin-top: 10px;
+      }
 
-            .section {
-                margin-bottom: 50px;
-            }
+      .section {
+        margin-bottom: 50px;
+      }
 
-            h2 {
-                color: #ffffff;
-                margin-bottom: 20px;
-                font-size: 1.5em;
-                font-weight: 500;
-            }
+      h2 {
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        font-weight: 500;
+      }
 
-            .platform {
-                margin-bottom: 30px;
-                padding-bottom: 30px;
-                border-bottom: 1px solid #1a1a1a;
-            }
+      .platform {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #1a1a1a;
+      }
 
-            .platform:last-child {
-                border-bottom: none;
-            }
+      .platform:last-child {
+        border-bottom: none;
+      }
 
-            .platform h3 {
-                color: #ffffff;
-                margin-bottom: 15px;
-                font-size: 1.2em;
-                font-weight: 500;
-            }
+      .platform h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
 
-            .endpoint {
-                background: #151515;
-                padding: 12px 16px;
-                margin: 8px 0;
-                border-radius: 4px;
-                font-family: "Courier New", monospace;
-                font-size: 0.9em;
-                color: #b0b0b0;
-                border: 1px solid #2a2a2a;
-            }
+      .endpoint {
+        background: #151515;
+        padding: 12px 16px;
+        margin: 8px 0;
+        border-radius: 4px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        color: #b0b0b0;
+        border: 1px solid #2a2a2a;
+      }
 
-            .method {
-                color: #666;
-                font-weight: bold;
-                margin-right: 8px;
-            }
+      .method {
+        color: #666;
+        font-weight: bold;
+        margin-right: 8px;
+      }
 
-            .description {
-                color: #888;
-                margin-bottom: 20px;
-                line-height: 1.8;
-            }
+      .description {
+        color: #888;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
 
-            ul {
-                margin-left: 20px;
-                color: #888;
-            }
+      ul {
+        margin-left: 20px;
+        color: #888;
+      }
 
-            ul li {
-                margin: 8px 0;
-            }
+      ul li {
+        margin: 8px 0;
+      }
 
-            code {
-                background: #151515;
-                color: #b0b0b0;
-                padding: 3px 8px;
-                border-radius: 3px;
-                font-family: "Courier New", monospace;
-                font-size: 0.9em;
-                border: 1px solid #2a2a2a;
-            }
+      code {
+        background: #151515;
+        color: #b0b0b0;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        border: 1px solid #2a2a2a;
+      }
 
-            .example {
-                background: #151515;
-                color: #b0b0b0;
-                padding: 16px;
-                border-radius: 4px;
-                overflow-x: auto;
-                margin: 15px 0;
-                border: 1px solid #2a2a2a;
-            }
+      .example {
+        background: #151515;
+        color: #b0b0b0;
+        padding: 16px;
+        border-radius: 4px;
+        overflow-x: auto;
+        margin: 15px 0;
+        border: 1px solid #2a2a2a;
+      }
 
-            .example pre {
-                margin: 0;
-                font-family: "Courier New", monospace;
-                font-size: 0.9em;
-            }
+      .example pre {
+        margin: 0;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+      }
 
-            footer {
-                text-align: center;
-                padding: 40px 0;
-                margin-top: 60px;
-                border-top: 1px solid #2a2a2a;
-                color: #666;
-                font-size: 0.9em;
-            }
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        margin-top: 60px;
+        border-top: 1px solid #2a2a2a;
+        color: #666;
+        font-size: 0.9em;
+      }
 
-            a {
-                color: #888;
-                text-decoration: none;
-            }
+      a {
+        color: #888;
+        text-decoration: none;
+      }
 
-            a:hover {
-                color: #b0b0b0;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <img
-                    src="/openrank-logo.png"
-                    alt="OpenRank Logo"
-                    style="width: 80px; height: 80px; margin-bottom: 20px"
-                />
-                <h1>OpenRank API</h1>
-                <p>
-                    REST API for OpenRank data across Discord, GitHub, Telegram,
-                    and X
-                </p>
-            </header>
+      a:hover {
+        color: #b0b0b0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="/openrank-logo.png"
+          alt="OpenRank Logo"
+          style="width: 80px; height: 80px; margin-bottom: 20px"
+        />
+        <h1>OpenRank API</h1>
+        <p>
+          REST API for OpenRank data across Discord, GitHub, Telegram, and X
+        </p>
+      </header>
 
-            <div class="section">
-                <h2>Endpoints</h2>
+      <div class="section">
+        <h2>Endpoints</h2>
 
-                <div class="platform">
-                    <h3>Discord</h3>
-                    <p class="description">
-                        Use <code>GET /discord</code> to list all available
-                        datasets dynamically
-                    </p>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/discord
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/discord/{file_name}
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/discord/{file_name}/seed
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/discord/{file_name}/server_id
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/discord/{file_name}/scores
-                    </div>
-                </div>
+        <div class="platform">
+          <h3>Discord</h3>
+          <p class="description">
+            Use <code>GET /discord</code> to list all available datasets
+            dynamically
+          </p>
+          <div class="endpoint"><span class="method">GET</span>/discord</div>
+          <div class="endpoint">
+            <span class="method">GET</span>/discord/{file_name}
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/discord/{file_name}/seed
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/discord/{file_name}/server_id
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/discord/{file_name}/scores
+          </div>
+        </div>
 
-                <div class="platform">
-                    <h3>GitHub</h3>
-                    <p class="description">
-                        Use <code>GET /github</code> to list all available
-                        communities. Endpoints use text-based
-                        <code>community_id</code> (e.g., "bitcoin").
-                    </p>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/github
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/github/{community_id}
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/github/{community_id}/seed
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/github/{community_id}/scores
-                    </div>
-                </div>
+        <div class="platform">
+          <h3>GitHub</h3>
+          <p class="description">
+            Use <code>GET /github</code> to list all available communities.
+            Endpoints use text-based <code>community_id</code> (e.g.,
+            "bitcoin").
+          </p>
+          <div class="endpoint"><span class="method">GET</span>/github</div>
+          <div class="endpoint">
+            <span class="method">GET</span>/github/{community_id}
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/github/{community_id}/seed
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/github/{community_id}/scores
+          </div>
+        </div>
 
-                <div class="platform">
-                    <h3>Telegram</h3>
-                    <p class="description">
-                        Use <code>GET /telegram</code> to list all available
-                        channels. Endpoints use numeric <code>channel_id</code>.
-                    </p>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/telegram
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/telegram/{channel_id}
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/telegram/{channel_id}/seed
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/telegram/{channel_id}/scores
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/telegram/pfps/{user_id}.jpg
-                    </div>
-                </div>
+        <div class="platform">
+          <h3>Telegram</h3>
+          <p class="description">
+            Use <code>GET /telegram</code> to list all available channels.
+            Endpoints use numeric <code>channel_id</code>.
+          </p>
+          <div class="endpoint"><span class="method">GET</span>/telegram</div>
+          <div class="endpoint">
+            <span class="method">GET</span>/telegram/{channel_id}
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/telegram/{channel_id}/seed
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/telegram/{channel_id}/scores
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/telegram/pfps/{user_id}.jpg
+          </div>
+        </div>
 
-                <div class="platform">
-                    <h3>X</h3>
-                    <p class="description">
-                        Use <code>GET /x</code> to list all available
-                        communities. Endpoints use numeric
-                        <code>community_id</code>.
-                    </p>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/x
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/x/{community_id}
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/x/{community_id}/seed
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/x/{community_id}/scores
-                    </div>
-                </div>
+        <div class="platform">
+          <h3>X</h3>
+          <p class="description">
+            Use <code>GET /x</code> to list all available communities. Endpoints
+            use numeric <code>community_id</code>.
+          </p>
+          <div class="endpoint"><span class="method">GET</span>/x</div>
+          <div class="endpoint">
+            <span class="method">GET</span>/x/{community_id}
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/x/{community_id}/seed
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/x/{community_id}/scores
+          </div>
+        </div>
 
-                <div class="platform">
-                    <h3>Communities</h3>
-                    <p class="description">
-                        OpenRank Communities aggregate data from Telegram,
-                        Discord, GitHub, X, and Farcaster platforms
-                    </p>
-                    <div class="endpoint">
-                        <span class="method">GET</span>/communities
-                    </div>
-                    <div class="endpoint">
-                        <span class="method">GET</span
-                        >/communities/{community_id}
-                    </div>
-                </div>
-            </div>
+        <div class="platform">
+          <h3>Communities</h3>
+          <p class="description">
+            OpenRank Communities aggregate data from Telegram, Discord, GitHub,
+            X, and Farcaster platforms
+          </p>
+          <div class="endpoint">
+            <span class="method">GET</span>/communities
+          </div>
+          <div class="endpoint">
+            <span class="method">GET</span>/communities/{community_id}
+          </div>
+        </div>
 
-            <div class="section">
-                <h2>Query Parameters</h2>
-                <p class="description">
-                    For /scores endpoints, use these optional query parameters:
-                </p>
-                <ul>
-                    <li>
-                        <code>start</code> - Starting index for pagination
-                        (default: 0)
-                    </li>
-                    <li>
-                        <code>size</code> - Number of items to return (default:
-                        all)
-                    </li>
-                </ul>
-            </div>
+        <div class="platform">
+          <h3>Summaries</h3>
+          <p class="description">
+            Get summaries for up to 100 different channels/communities.
+          </p>
 
-            <div class="section">
-                <h2>List Endpoints</h2>
-                <p class="description">
-                    Each platform has a list endpoint that returns all available
-                    datasets dynamically.
-                </p>
+          <div class="endpoint">
+            <span class="method">GET</span>/summaries?ids=community_id
+          </div>
+        </div>
+      </div>
 
-                <p class="description">List available Discord datasets:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/discord</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+      <div class="section">
+        <h2>Query Parameters</h2>
+        <p class="description">
+          For /scores endpoints, use these optional query parameters:
+        </p>
+        <ul>
+          <li>
+            <code>start</code> - Starting index for pagination (default: 0)
+          </li>
+          <li><code>size</code> - Number of items to return (default: all)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>List Endpoints</h2>
+        <p class="description">
+          Each platform has a list endpoint that returns all available datasets
+          dynamically.
+        </p>
+
+        <p class="description">List available Discord datasets:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/discord</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "datasets": ["ritual"]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">List available GitHub communities:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/github</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">List available GitHub communities:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/github</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "datasets": ["bitcoin", "crypto", "eigenlayer", "solana", ...]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">List available Telegram channels:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/telegram</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">List available Telegram channels:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/telegram</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "datasets": [
     { "id": "1234567890", "username": "examplechannel" },
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">List available X communities:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/x</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">List available X communities:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/x</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "datasets": [
     { "id": "1234567890", "name": "Example Community" },
     ...
   ]
 }</pre
-                    >
-                </div>
-            </div>
+          >
+        </div>
+      </div>
 
-            <div class="section">
-                <h2>Dataset Endpoints</h2>
+      <div class="section">
+        <h2>Dataset Endpoints</h2>
 
-                <p class="description">Get complete Discord dataset:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/discord/ritual</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get complete Discord dataset:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/discord/ritual</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "category": "socialrank",
   "server_id": "1210468736205852672",
@@ -388,31 +376,29 @@
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get Discord server ID:</p>
-                <div class="example">
-                    <pre>
-curl https://api.openrank.com/discord/ritual/server_id</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get Discord server ID:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/discord/ritual/server_id</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "server_id": "1210468736205852672"
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get complete GitHub community data:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/github/bitcoin</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get complete GitHub community data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/github/bitcoin</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "category": "devrank",
   "community_id": "bitcoin",
@@ -427,16 +413,16 @@ curl https://api.openrank.com/discord/ritual/server_id</pre
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get GitHub seed data:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/github/bitcoin/seed</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get GitHub seed data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/github/bitcoin/seed</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "seed": [
     { "i": "user_id_1", "v": 0.5 },
@@ -444,18 +430,18 @@ curl https://api.openrank.com/discord/ritual/server_id</pre
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get GitHub scores with pagination:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get GitHub scores with pagination:</p>
+        <div class="example">
+          <pre>
 curl "https://api.openrank.com/github/bitcoin/scores?start=0&size=10"</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+          >
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "scores": [
     { "i": "user_id_1", "v": 1.0 },
@@ -468,18 +454,18 @@ curl "https://api.openrank.com/github/bitcoin/scores?start=0&size=10"</pre
     "total": 500
   }
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get paginated scores (first 10):</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get paginated scores (first 10):</p>
+        <div class="example">
+          <pre>
 curl "https://api.openrank.com/discord/ritual/scores?start=0&size=10"</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+          >
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "scores": [
     { "i": "josh.simenhoff", "v": 1000.0 },
@@ -499,16 +485,16 @@ curl "https://api.openrank.com/discord/ritual/scores?start=0&size=10"</pre
     "total": 150
   }
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get complete Telegram channel data:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/telegram/1234567890</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get complete Telegram channel data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/telegram/1234567890</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "channel_id": "1234567890",
   "seed": ["user_id_1", "user_id_2", ...],
@@ -518,33 +504,31 @@ curl "https://api.openrank.com/discord/ritual/scores?start=0&size=10"</pre
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get Telegram seed data:</p>
-                <div class="example">
-                    <pre>
-curl https://api.openrank.com/telegram/1234567890/seed</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get Telegram seed data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/telegram/1234567890/seed</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "seed": ["user_id_1", "user_id_2", ...]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get Telegram scores with pagination:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get Telegram scores with pagination:</p>
+        <div class="example">
+          <pre>
 curl "https://api.openrank.com/telegram/1234567890/scores?start=0&size=10"</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+          >
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "scores": [
     { "id": "user_id_1", "score": 1.0 },
@@ -557,27 +541,27 @@ curl "https://api.openrank.com/telegram/1234567890/scores?start=0&size=10"</pre
     "total": 200
   }
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get Telegram user profile picture:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get Telegram user profile picture:</p>
+        <div class="example">
+          <pre>
 curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg</pre
-                    >
-                </div>
-                <p class="description">
-                    Returns the profile picture as a JPEG image. The response
-                    has <code>Content-Type: image/jpeg</code>.
-                </p>
+          >
+        </div>
+        <p class="description">
+          Returns the profile picture as a JPEG image. The response has
+          <code>Content-Type: image/jpeg</code>.
+        </p>
 
-                <p class="description">Get complete X community data:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/x/1234567890</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get complete X community data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/x/1234567890</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "category": "xrank",
   "community_id": "1234567890",
@@ -592,16 +576,16 @@ curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg<
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get X seed data:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/x/1234567890/seed</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get X seed data:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/x/1234567890/seed</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "seed": [
     { "i": "user_id_1", "v": 0.5 },
@@ -609,18 +593,18 @@ curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg<
     ...
   ]
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get X scores with pagination:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get X scores with pagination:</p>
+        <div class="example">
+          <pre>
 curl "https://api.openrank.com/x/1234567890/scores?start=20&size=5"</pre
-                    >
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+          >
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "scores": [
     { "i": "user_20", "v": 0.542 },
@@ -635,16 +619,16 @@ curl "https://api.openrank.com/x/1234567890/scores?start=20&size=5"</pre
     "total": 200
   }
 }</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">List all communities:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/communities</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">List all communities:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/communities</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 [
   {
     "id": "1",
@@ -660,16 +644,16 @@ curl "https://api.openrank.com/x/1234567890/scores?start=20&size=5"</pre
   },
   ...
 ]</pre
-                    >
-                </div>
+          >
+        </div>
 
-                <p class="description">Get community by ID:</p>
-                <div class="example">
-                    <pre>curl https://api.openrank.com/communities/2</pre>
-                </div>
-                <p class="description">Response:</p>
-                <div class="example">
-                    <pre>
+        <p class="description">Get community by ID:</p>
+        <div class="example">
+          <pre>curl https://api.openrank.com/communities/2</pre>
+        </div>
+        <p class="description">Response:</p>
+        <div class="example">
+          <pre>
 {
   "id": "2",
   "name": "Ritual",
@@ -682,39 +666,37 @@ curl "https://api.openrank.com/x/1234567890/scores?start=20&size=5"</pre
   "created_at": "2025-12-05T12:19:49.615Z",
   "updated_at": "2025-12-08T23:33:36.778Z"
 }</pre
-                    >
-                </div>
-            </div>
+          >
+        </div>
+      </div>
 
-            <div class="section">
-                <h2>Response Format</h2>
-                <p class="description">
-                    Discord, GitHub, and X score entries follow this structure:
-                </p>
-                <div class="example">
-                    <pre>
+      <div class="section">
+        <h2>Response Format</h2>
+        <p class="description">
+          Discord, GitHub, and X score entries follow this structure:
+        </p>
+        <div class="example">
+          <pre>
 {
   "i": "identifier",
   "v": 0.123
 }</pre
-                    >
-                </div>
-                <p class="description">
-                    Telegram score entries follow this structure:
-                </p>
-                <div class="example">
-                    <pre>
+          >
+        </div>
+        <p class="description">Telegram score entries follow this structure:</p>
+        <div class="example">
+          <pre>
 {
   "id": "user_id",
   "score": 0.123
 }</pre
-                    >
-                </div>
-            </div>
-
-            <footer>
-                <p>OpenRank API - Built with Node.js</p>
-            </footer>
+          >
         </div>
-    </body>
+      </div>
+
+      <footer>
+        <p>OpenRank API - Built with Node.js</p>
+      </footer>
+    </div>
+  </body>
 </html>

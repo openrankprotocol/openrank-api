@@ -39,11 +39,13 @@ The server will start on `http://localhost:3000`
 ### Deploy to Vercel
 
 1. Install Vercel CLI (if not already installed):
+
 ```bash
 npm i -g vercel
 ```
 
 2. Deploy:
+
 ```bash
 vercel
 ```
@@ -53,6 +55,12 @@ Or connect your GitHub repository to Vercel for automatic deployments.
 ## API Endpoints
 
 The API provides endpoints for four different platforms: Discord, GitHub, Telegram, and X (Twitter).
+
+### Summaries
+
+Base path: `/api/summaries`
+
+- **GET** `/` - Get summaries
 
 ### Discord Endpoints
 
@@ -101,6 +109,7 @@ Base path: `/api/x`
 - `size` (optional, default: all) - Number of items to return
 
 **Example:**
+
 ```bash
 curl "https://api.openrank.com/api/discord/ritual/scores?start=10&size=5"
 ```
@@ -108,26 +117,31 @@ curl "https://api.openrank.com/api/discord/ritual/scores?start=10&size=5"
 ## Example Usage
 
 ### Get complete Discord dataset
+
 ```bash
 curl https://api.openrank.com/api/discord/ritual
 ```
 
 ### Get GitHub seed data
+
 ```bash
 curl https://api.openrank.com/api/github/bitcoin/seed
 ```
 
 ### Get paginated scores from Telegram
+
 ```bash
 curl "https://api.openrank.com/api/telegram/1533865579/scores?start=0&size=20"
 ```
 
 ### Get Telegram user profile picture
+
 ```bash
 curl https://api.openrank.com/telegram/pfps/1002217307.jpg --output profile.jpg
 ```
 
 ### Get X community data
+
 ```bash
 curl https://api.openrank.com/api/x/1872222575180546208
 ```
@@ -137,6 +151,7 @@ curl https://api.openrank.com/api/x/1872222575180546208
 All datasets follow a similar structure:
 
 ### Score Entry
+
 ```json
 {
   "i": "identifier",
@@ -145,42 +160,62 @@ All datasets follow a similar structure:
 ```
 
 ### Discord Dataset
+
 ```json
 {
   "category": "socialrank",
   "server_id": "1210468736205852672",
-  "seed": [/* ScoreEntry array */],
-  "scores": [/* ScoreEntry array */]
+  "seed": [
+    /* ScoreEntry array */
+  ],
+  "scores": [
+    /* ScoreEntry array */
+  ]
 }
 ```
 
 ### GitHub Dataset
+
 ```json
 {
   "category": "devrank",
   "ecosystem": "Crypto",
-  "seed": [/* ScoreEntry array */],
-  "scores": [/* ScoreEntry array */]
+  "seed": [
+    /* ScoreEntry array */
+  ],
+  "scores": [
+    /* ScoreEntry array */
+  ]
 }
 ```
 
 ### Telegram Dataset
+
 ```json
 {
   "category": "socialrank",
   "channel_id": "1533865579",
-  "seed": [/* ScoreEntry array */],
-  "scores": [/* ScoreEntry array */]
+  "seed": [
+    /* ScoreEntry array */
+  ],
+  "scores": [
+    /* ScoreEntry array */
+  ]
 }
 ```
 
 ### X Dataset
+
 ```json
 {
   "category": "xrank",
   "community_id": "1896991026272723220",
-  "seed": [/* ScoreEntry array */],
-  "scores": [/* ScoreEntry array */]
+  "seed": [
+    /* ScoreEntry array */
+  ],
+  "scores": [
+    /* ScoreEntry array */
+  ]
 }
 ```
 
@@ -232,6 +267,7 @@ Example: `datasets/discord/new-server.json` will be accessible at `/api/discord/
 ## Local Development
 
 ### Using Vercel Dev
+
 ```bash
 npm run dev
 ```

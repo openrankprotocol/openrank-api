@@ -2,6 +2,10 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/summaries",
+      "destination": "/api/summaries"
+    },
+    {
       "source": "/discord",
       "destination": "/api/discord"
     },
