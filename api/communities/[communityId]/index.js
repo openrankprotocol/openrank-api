@@ -1,5 +1,5 @@
 const { sendResponse, sendError, enableCors } = require("../../_utils");
-const { getCommunityById } = require("../utils");
+const { getCommunityById, getActiveUserStats } = require("../utils");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -24,7 +24,14 @@ module.exports = async (req, res) => {
       return sendError(res, 404, "Community not found");
     }
 
-    return sendResponse(res, 200, community);
+    const numActiveUsers = await getActiveUserStats(community);
+
+    return sendResponse(res, 200, {
+      ...community,
+      stats: {
+        num_active_users: numActiveUsers,
+      },
+    });
   } catch (error) {
     console.error("Error fetching community:", error);
     return sendError(res, 500, "Internal server error");
