@@ -1,10 +1,11 @@
+const { sendResponse, sendError, enableCors } = require("../_utils");
 const {
-  loadDatasetAsync,
-  paginate,
-  sendResponse,
-  sendError,
-  enableCors,
-} = require("../_utils");
+  validateCommunityId,
+  getLatestRunId,
+  getSeeds,
+  getScores,
+  getAllData,
+} = require("./utils");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -38,66 +39,49 @@ module.exports = async (req, res) => {
 
   // Ensure params is an array and split if it's a string with slashes
   if (!Array.isArray(params)) {
-    // If it's a string like "bitcoin/seed", split it
+    // If it's a string like "123/seed", split it
     params = typeof params === "string" ? params.split("/") : [params];
   }
 
-  const fileName = params[0];
+  const communityIdStr = params[0];
   const endpoint = params[1] || null;
 
-  // Load the dataset
-  const data = await loadDatasetAsync("github", fileName);
+  try {
+    // Validate community ID
+    const validation = await validateCommunityId(communityIdStr);
+    if (!validation.valid) {
+      return sendError(res, 400, validation.error);
+    }
+    const communityId = validation.communityId;
 
-  if (!data) {
-    return sendError(res, 404, "File not found");
-  }
-
-  // Handle different endpoints
-  if (!endpoint) {
-    // Return complete dataset
-    return sendResponse(res, 200, data);
-  }
-
-  if (endpoint === "seed") {
-    return sendResponse(res, 200, { seed: data.seed });
-  }
-
-  if (endpoint === "ecosystem") {
-    return sendResponse(res, 200, { ecosystem: data.ecosystem });
-  }
-
-  if (endpoint === "scores") {
-    const start = parseInt(req.query.start) || 0;
-    const size = req.query.size ? parseInt(req.query.size) : null;
-
-    // Handle start beyond array bounds
-    if (start >= data.scores.length) {
-      return sendResponse(res, 200, {
-        scores: [],
-        pagination: {
-          start: start,
-          size: 0,
-          total: data.scores.length,
-        },
-      });
+    // Get latest run ID
+    const runId = await getLatestRunId(communityId);
+    if (!runId) {
+      return sendError(res, 404, "No runs found for this community");
     }
 
-    const paginatedScores = paginate(data.scores, start, size);
+    // Handle different endpoints
+    if (!endpoint) {
+      // Return complete dataset
+      const data = await getAllData(communityId, runId);
+      return sendResponse(res, 200, data);
+    }
 
-    // Calculate actual size returned
-    const actualSize = size
-      ? Math.min(size, data.scores.length - start)
-      : data.scores.length - start;
+    if (endpoint === "seed") {
+      const seed = await getSeeds(communityId, runId);
+      return sendResponse(res, 200, { seed });
+    }
 
-    return sendResponse(res, 200, {
-      scores: paginatedScores,
-      pagination: {
-        start: start,
-        size: actualSize,
-        total: data.scores.length,
-      },
-    });
+    if (endpoint === "scores") {
+      const start = parseInt(req.query.start) || 0;
+      const size = req.query.size ? parseInt(req.query.size) : null;
+      const data = await getScores(communityId, runId, start, size);
+      return sendResponse(res, 200, data);
+    }
+
+    return sendError(res, 404, "Endpoint not found");
+  } catch (error) {
+    console.error("Error fetching GitHub data:", error);
+    return sendError(res, 500, "Internal server error");
   }
-
-  return sendError(res, 404, "Endpoint not found");
 };
