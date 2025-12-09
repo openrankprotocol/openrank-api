@@ -38,10 +38,6 @@
       "destination": "/api/discord/[serverId]/scores?serverId=:serverId"
     },
     {
-      "source": "/discord/(.*)",
-      "destination": "/api/discord/[...params]?params=$1"
-    },
-    {
       "source": "/github/(.*)",
       "destination": "/api/github/[...params]?params=$1"
     },

@@ -8,7 +8,6 @@ const url = require("url");
 const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 
 // Import handlers
-const discordHandler = require("./api/discord/[...params]");
 const summariesHandler = require("./api/summaries");
 const githubHandler = require("./api/github/[...params]");
 const apiIndexHandler = require("./api/index");
