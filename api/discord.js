@@ -1,9 +1,5 @@
-const {
-  listDatasets,
-  sendResponse,
-  sendError,
-  enableCors,
-} = require("./_utils");
+const { sendResponse, sendError, enableCors } = require("./_utils");
+const db = require("../lib/db");
 
 module.exports = async (req, res) => {
   enableCors(res);
@@ -16,7 +12,17 @@ module.exports = async (req, res) => {
     return sendError(res, 405, "Method not allowed");
   }
 
-  const datasets = await listDatasets("discord");
-
-  return sendResponse(res, 200, { datasets });
+  try {
+    const result = await db.query(
+      "SELECT id, name FROM socialrank.servers WHERE name IS NOT NULL ORDER BY name",
+    );
+    const datasets = result.rows.map((row) => ({
+      id: row.id.toString(),
+      name: row.name,
+    }));
+    return sendResponse(res, 200, { datasets });
+  } catch (error) {
+    console.error("Error fetching servers:", error);
+    return sendError(res, 500, "Internal server error");
+  }
 };

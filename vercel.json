@@ -26,6 +26,18 @@
       "destination": "/api/telegram/pfps/[id]?id=:id"
     },
     {
+      "source": "/discord/:serverId",
+      "destination": "/api/discord/[serverId]/index?serverId=:serverId"
+    },
+    {
+      "source": "/discord/:serverId/seed",
+      "destination": "/api/discord/[serverId]/seed?serverId=:serverId"
+    },
+    {
+      "source": "/discord/:serverId/scores",
+      "destination": "/api/discord/[serverId]/scores?serverId=:serverId"
+    },
+    {
       "source": "/discord/(.*)",
       "destination": "/api/discord/[...params]?params=$1"
     },

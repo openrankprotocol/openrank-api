@@ -91,8 +91,28 @@ const server = http.createServer(async (req, res) => {
             // List all available datasets
             await discordListHandler(req, res);
           } else {
-            // Handle specific dataset
-            await discordHandler(req, res);
+            // New file-based routing for discord (like telegram/x)
+            const serverId = params[0];
+            req.query.serverId = serverId;
+
+            if (params.length === 1) {
+              // /discord/:serverId -> index.js
+              await require("./api/discord/[serverId]/index")(req, res);
+            } else if (params.length === 2) {
+              const endpoint = params[1];
+              if (endpoint === "seed") {
+                await require("./api/discord/[serverId]/seed")(req, res);
+              } else if (endpoint === "scores") {
+                await require("./api/discord/[serverId]/scores")(req, res);
+              } else {
+                // Fallback or 404 for unknown sub-endpoints
+                res.writeHead(404, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ error: "Endpoint not found" }));
+              }
+            } else {
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
           }
           return;
         case "github":
