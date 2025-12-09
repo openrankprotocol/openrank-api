@@ -74,6 +74,7 @@ async function getActiveUserStats(community) {
     telegram,
     x,
     discord: null,
+    github: null,
     farcaster: null,
   };
 }
