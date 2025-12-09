@@ -1,5 +1,11 @@
+const emptyDefault = {
+  trank: {},
+  xrank: {},
+};
+
 async function getLatestChannelSummaries(db, channelIds = []) {
-  if (!Array.isArray(channelIds) || channelIds.length === 0) return [];
+  if (!Array.isArray(channelIds) || channelIds.length === 0)
+    return emptyDefault;
 
   const res = await db.query(
     `
@@ -21,11 +27,15 @@ async function getLatestChannelSummaries(db, channelIds = []) {
   );
 
   const rows = res.rows;
-  return rows.reduce((acc, curr) => (acc[curr.channel_id] = curr), {});
+  return rows.reduce((acc, curr) => {
+    acc[curr.channel_id] = curr;
+    return acc;
+  }, {});
 }
 
 async function getLatestCommunitySummaries(db, communityIds = []) {
-  if (!Array.isArray(communityIds) || communityIds.length === 0) return [];
+  if (!Array.isArray(communityIds) || communityIds.length === 0)
+    return emptyDefault;
 
   const res = await db.query(
     `
@@ -47,7 +57,10 @@ async function getLatestCommunitySummaries(db, communityIds = []) {
   );
 
   const rows = res.rows;
-  return rows.reduce((acc, curr) => (acc[curr.community_id] = curr), {});
+  return rows.reduce((acc, curr) => {
+    acc[curr.community_id] = curr;
+    return acc;
+  }, {});
 }
 
 export async function getSummaries(db, ids = []) {
