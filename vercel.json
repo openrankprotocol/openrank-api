@@ -18,6 +18,10 @@
       "destination": "/api/telegram"
     },
     {
+      "source": "/telegram/users",
+      "destination": "/api/telegram/users"
+    },
+    {
       "source": "/x",
       "destination": "/api/x"
     },

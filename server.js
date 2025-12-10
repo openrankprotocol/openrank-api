@@ -11,6 +11,7 @@ const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 const summariesHandler = require("./api/summaries");
 const githubHandler = require("./api/github/[...params]");
 const apiIndexHandler = require("./api/index");
+const telegramUsersHandler = require("./api/telegram/users");
 
 // Import list handlers
 const discordListHandler = require("./api/discord");
@@ -131,6 +132,9 @@ const server = http.createServer(async (req, res) => {
             // Handle profile picture requests
             req.query.id = params[1];
             await telegramPfpHandler(req, res);
+          } else if (params[0] === "users") {
+            // Handle /telegram/users endpoint
+            await telegramUsersHandler(req, res);
           } else {
             // New file-based routing for telegram
             const channelId = params[0];
@@ -231,11 +235,11 @@ server.listen(PORT, () => {
   console.log("Available endpoints:");
   console.log(`  • http://localhost:${PORT}/summaries - Fetch summaries`);
   console.log(
-    `  • http://localhost:${PORT}/discord - List all Discord datasets`
+    `  • http://localhost:${PORT}/discord - List all Discord datasets`,
   );
   console.log(`  • http://localhost:${PORT}/github - List all GitHub datasets`);
   console.log(
-    `  • http://localhost:${PORT}/telegram - List all Telegram datasets`
+    `  • http://localhost:${PORT}/telegram - List all Telegram datasets`,
   );
   console.log(`  • http://localhost:${PORT}/x - List all X datasets`);
   console.log(`  • http://localhost:${PORT}/discord/ritual`);
