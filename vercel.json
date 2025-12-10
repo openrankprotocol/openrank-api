@@ -10,6 +10,10 @@
       "destination": "/api/discord"
     },
     {
+      "source": "/discord/user-stats",
+      "destination": "/api/discord/user-stats"
+    },
+    {
       "source": "/github",
       "destination": "/api/github"
     },
