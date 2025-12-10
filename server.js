@@ -12,6 +12,7 @@ const summariesHandler = require("./api/summaries");
 const githubHandler = require("./api/github/[...params]");
 const apiIndexHandler = require("./api/index");
 const telegramUsersHandler = require("./api/telegram/users");
+const discordUserStatsHandler = require("./api/discord/user-stats");
 
 // Import list handlers
 const discordListHandler = require("./api/discord");
@@ -90,6 +91,9 @@ const server = http.createServer(async (req, res) => {
           if (params.length === 0) {
             // List all available datasets
             await discordListHandler(req, res);
+          } else if (params[0] === "user-stats") {
+            // Handle /discord/user-stats endpoint
+            await discordUserStatsHandler(req, res);
           } else {
             // New file-based routing for discord (like telegram/x)
             const serverId = params[0];
