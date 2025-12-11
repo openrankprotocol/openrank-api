@@ -13,6 +13,7 @@ const githubHandler = require("./api/github/[...params]");
 const apiIndexHandler = require("./api/index");
 const telegramUsersHandler = require("./api/telegram/users");
 const discordUserStatsHandler = require("./api/discord/user-stats");
+const devrankUsersHandler = require("./api/devrank/users");
 
 // Import list handlers
 const discordListHandler = require("./api/discord");
@@ -191,6 +192,15 @@ const server = http.createServer(async (req, res) => {
               res.writeHead(404, { "Content-Type": "application/json" });
               res.end(JSON.stringify({ error: "Endpoint not found" }));
             }
+          }
+          return;
+        case "devrank":
+          if (params[0] === "users") {
+            // Handle /devrank/users endpoint
+            await devrankUsersHandler(req, res);
+          } else {
+            res.writeHead(404, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ error: "Endpoint not found" }));
           }
           return;
         case "communities":

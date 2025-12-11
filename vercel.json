@@ -30,6 +30,10 @@
       "destination": "/api/x"
     },
     {
+      "source": "/devrank/users",
+      "destination": "/api/devrank/users"
+    },
+    {
       "source": "/telegram/pfps/:id",
       "destination": "/api/telegram/pfps/[id]?id=:id"
     },
