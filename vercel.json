@@ -30,6 +30,10 @@
       "destination": "/api/x"
     },
     {
+      "source": "/x/user-stats",
+      "destination": "/api/x/user-stats"
+    },
+    {
       "source": "/devrank/user-stats",
       "destination": "/api/devrank/user-stats"
     },

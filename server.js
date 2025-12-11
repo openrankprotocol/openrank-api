@@ -10,10 +10,10 @@ const telegramPfpHandler = require("./api/telegram/pfps/[id]");
 // Import handlers
 const summariesHandler = require("./api/summaries");
 const githubHandler = require("./api/github/[...params]");
-const apiIndexHandler = require("./api/index");
 const telegramUsersHandler = require("./api/telegram/users");
 const discordUserStatsHandler = require("./api/discord/user-stats");
 const devrankUserStatsHandler = require("./api/devrank/user-stats");
+const xUserStatsHandler = require("./api/x/user-stats");
 
 // Import list handlers
 const discordListHandler = require("./api/discord");
@@ -169,6 +169,9 @@ const server = http.createServer(async (req, res) => {
           if (params.length === 0) {
             // List all available datasets
             await xListHandler(req, res);
+          } else if (params[0] === "user-stats") {
+            // Handle /x/user-stats endpoint
+            await xUserStatsHandler(req, res);
           } else {
             // New file-based routing for x
             const communityId = params[0];
