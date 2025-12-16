@@ -20,6 +20,7 @@ const discordListHandler = require("./api/discord");
 const githubListHandler = require("./api/github");
 const telegramListHandler = require("./api/telegram");
 const xListHandler = require("./api/x");
+const xSeedListHandler = require("./api/x_seed");
 const communitiesListHandler = require("./api/communities/index");
 
 const PORT = process.env.PORT || 3000;
@@ -197,6 +198,35 @@ const server = http.createServer(async (req, res) => {
             }
           }
           return;
+        case "x_seed":
+          if (params.length === 0) {
+            // List all available datasets
+            await xSeedListHandler(req, res);
+          } else {
+            // File-based routing for x_seed
+            const communityId = params[0];
+            req.query.communityId = communityId;
+
+            if (params.length === 1) {
+              // /x_seed/:communityId -> index.js
+              await require("./api/x_seed/[communityId]/index")(req, res);
+            } else if (params.length === 2) {
+              const endpoint = params[1];
+              if (endpoint === "seed") {
+                await require("./api/x_seed/[communityId]/seed")(req, res);
+              } else if (endpoint === "scores") {
+                await require("./api/x_seed/[communityId]/scores")(req, res);
+              } else {
+                // Fallback or 404 for unknown sub-endpoints
+                res.writeHead(404, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ error: "Endpoint not found" }));
+              }
+            } else {
+              res.writeHead(404, { "Content-Type": "application/json" });
+              res.end(JSON.stringify({ error: "Endpoint not found" }));
+            }
+          }
+          return;
         case "devrank":
           if (params[0] === "user-stats") {
             // Handle /devrank/user-stats endpoint
@@ -259,6 +289,7 @@ server.listen(PORT, () => {
     `  • http://localhost:${PORT}/telegram - List all Telegram datasets`,
   );
   console.log(`  • http://localhost:${PORT}/x - List all X datasets`);
+  console.log(`  • http://localhost:${PORT}/x_seed - List all X Seed datasets`);
   console.log(`  • http://localhost:${PORT}/discord/ritual`);
   console.log(`  • http://localhost:${PORT}/github/bitcoin`);
   console.log(`  • http://localhost:${PORT}/telegram/decentraliseddotco`);

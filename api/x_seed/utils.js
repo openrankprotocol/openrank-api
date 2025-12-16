@@ -1,0 +1,136 @@
+const db = require("../../lib/db");
+
+async function validateCommunityId(id) {
+  if (!id || typeof id !== "string") {
+    return {
+      valid: false,
+      error: "Community ID is required",
+    };
+  }
+  // Check existence in database
+  const res = await db.query(
+    "SELECT 1 FROM openrank.communities WHERE x_seed = $1",
+    [id],
+  );
+
+  if (res.rows.length === 0) {
+    return {
+      valid: false,
+      error: "Community not found",
+    };
+  }
+
+  return {
+    valid: true,
+    communityId: id,
+  };
+}
+
+async function getLatestRunId(communityId) {
+  const res = await db.query(
+    "SELECT run_id FROM xrank_seed.runs WHERE community_id = $1 ORDER BY created_at DESC LIMIT 1",
+    [communityId],
+  );
+  return res.rows.length > 0 ? res.rows[0].run_id : null;
+}
+
+async function getSeeds(communityId, runId) {
+  const res = await db.query(
+    `SELECT s.user_id, s.score
+     FROM xrank_seed.seeds s
+     WHERE s.community_id = $1 AND s.run_id = $2
+     ORDER BY s.score DESC`,
+    [communityId, runId],
+  );
+  return res.rows.map((row) => ({ i: row.user_id, v: row.score }));
+}
+
+async function getScores(communityId, runId, start = 0, size = null) {
+  // Count total scores
+  const countRes = await db.query(
+    "SELECT COUNT(*) FROM xrank_seed.scores WHERE community_id = $1 AND run_id = $2",
+    [communityId, runId],
+  );
+  const total = parseInt(countRes.rows[0].count);
+
+  if (start >= total) {
+    return {
+      scores: [],
+      pagination: { start, size: 0, total },
+    };
+  }
+
+  // Fetch paginated scores with usernames
+  let query = `
+    WITH log_scale AS (
+      SELECT
+        log(min(score)) AS scale_offset,
+        log(max(score)) - log(min(score)) AS scale_range
+      FROM xrank_seed.scores
+      WHERE community_id = $1 AND run_id = $2 AND score > 0
+    )
+    SELECT
+      sc.user_id as i,
+      (log(sc.score) - l.scale_offset) / l.scale_range as v
+    FROM xrank_seed.scores sc, log_scale l
+    WHERE sc.community_id = $1 AND sc.run_id = $2 AND sc.score > 0
+    ORDER BY v DESC
+  `;
+  const queryParams = [communityId, runId];
+
+  if (size !== null) {
+    query += ` LIMIT $3 OFFSET $4`;
+    queryParams.push(size, start);
+  } else {
+    query += ` OFFSET $3`;
+    queryParams.push(start);
+  }
+
+  const scoresRes = await db.query(query, queryParams);
+  const scores = scoresRes.rows;
+
+  return {
+    scores,
+    pagination: {
+      start,
+      size: scores.length,
+      total,
+    },
+  };
+}
+
+async function getAllData(communityId, runId) {
+  const seed = await getSeeds(communityId, runId);
+  const scoresRes = await db.query(
+    `WITH log_scale AS (
+      SELECT
+        log(min(score)) AS scale_offset,
+        log(max(score)) - log(min(score)) AS scale_range
+      FROM xrank_seed.scores
+      WHERE community_id = $1 AND run_id = $2 AND score > 0
+    )
+    SELECT
+      sc.user_id as i,
+      (log(sc.score) - l.scale_offset) / l.scale_range as v
+    FROM xrank_seed.scores sc, log_scale l
+    WHERE sc.community_id = $1 AND sc.run_id = $2 AND sc.score > 0
+    ORDER BY v DESC`,
+    [communityId, runId],
+  );
+  const scores = scoresRes.rows;
+
+  return {
+    category: "x_seed",
+    community_id: communityId.toString(),
+    seed,
+    scores,
+  };
+}
+
+module.exports = {
+  validateCommunityId,
+  getLatestRunId,
+  getSeeds,
+  getScores,
+  getAllData,
+};
