@@ -88,6 +88,22 @@
     {
       "source": "/x/:communityId/scores",
       "destination": "/api/x/[communityId]/scores?communityId=:communityId"
+    },
+    {
+      "source": "/x_seed",
+      "destination": "/api/x_seed"
+    },
+    {
+      "source": "/x_seed/:communityId",
+      "destination": "/api/x_seed/[communityId]/index?communityId=:communityId"
+    },
+    {
+      "source": "/x_seed/:communityId/seed",
+      "destination": "/api/x_seed/[communityId]/seed?communityId=:communityId"
+    },
+    {
+      "source": "/x_seed/:communityId/scores",
+      "destination": "/api/x_seed/[communityId]/scores?communityId=:communityId"
     }
   ],
   "devCommand": "node server.js"
